@@ -1,0 +1,10 @@
+# Trajectory files
+*.nc
+*.mdout
+*.mdinfo
+*.bck
+\#*\#
+*.xtc
+*.trr
+*.dcd
+
