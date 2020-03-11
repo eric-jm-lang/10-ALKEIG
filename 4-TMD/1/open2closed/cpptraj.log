@@ -1,0 +1,32 @@
+# 03/21/18 13:48:25
+parm open10.parm7
+trajin open10.rst7
+trajin open_1_tmd1.nc
+trajin closed_forfit_watok_fitted.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_1_tmd1_reimage.nc
+run
+quit
+# 03/21/18 14:45:12
+parm open10.parm7
+trajin open10.rst7
+trajin open_1_eq3.rst7
+trajin open_1_tmd1.nc
+trajin closed_forfit_watok_fitted.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_1_tmd1_reimage.nc
+run
+quit
+# 03/23/18 14:00:02
+parm open10.parm7
+trajin open10.rst7
+trajin open_1_eq3.rst7
+trajin open_1_tmd1.nc
+trajin closed_forfit_watok_fitted.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_1_tmd1_reimage.nc
+run
+quit

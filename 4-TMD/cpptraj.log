@@ -1,0 +1,35 @@
+# 03/19/18 15:46:42
+parm open10_dry.parm7
+trajin open10_dry.rst7
+rms reference xray_open_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+quit
+# 03/19/18 15:55:07
+parm open10_dry.parm7
+reference closed10_dry.rst7
+trajin open10_dry.rst7
+rms reference xray_open_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+trajout open10_dry_fit2closed.rst7
+run
+clear all
+parm closed10_dry.parm7
+reference open10_dry.rst7
+trajin closed10_dry.rst7
+rms reference xray_closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+trajout closed10_dry_fit2open.rst7
+run
+quit
+# 03/19/18 15:56:54
+parm open10_dry.parm7
+reference closed10_dry.rst7
+trajin open10_dry.rst7
+rms reference out xray_open_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+trajout open10_dry_fit2closed.rst7
+run
+clear all
+parm closed10_dry.parm7
+reference open10_dry.rst7
+trajin closed10_dry.rst7
+rms reference out xray_closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+trajout closed10_dry_fit2open.rst7
+run
+quit

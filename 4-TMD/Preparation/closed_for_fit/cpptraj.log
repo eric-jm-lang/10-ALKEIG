@@ -1,0 +1,11 @@
+# 03/20/18 11:51:36
+quit
+# 03/20/18 12:41:02
+parm open10.parm7
+reference open10.rst7
+trajin closed_forfit_watok.rst7
+rms reference out xray_closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+trajout closed_forfit_watok_fitted.rst7
+quit
+run
+quit
