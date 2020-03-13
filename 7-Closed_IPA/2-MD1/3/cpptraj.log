@@ -1,0 +1,8 @@
+# 03/10/20 15:52:18
+parm closed_ipa_HMR.parm7
+trajin TEMP_closed_ipa_3_md7.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout closed_ipa_3_md7.rst7
+run
+quit

@@ -1,0 +1,15 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p 
+loadamberparams JorgAA_IPAnb.frcmod
+loadamberprep JorgAA_IPAnb.prepi
+IPA = loadpdb JorgAA_IPAbox.pdb
+set IPA restype solvent
+setbox IPA centers
+prot = loadpdb 1alb_setup.pdb
+addions prot Cl- 0
+solvateshell prot IPA 7.0 0.5
+solvatebox prot TIP3PBOX 10.15 0.5
+savepdb prot IPA_1alb_solvated.pdb
+saveamberparm prot IPA_1alb_solvated.prmtop IPA_1alb_solvated.inpcrd
+quit
+

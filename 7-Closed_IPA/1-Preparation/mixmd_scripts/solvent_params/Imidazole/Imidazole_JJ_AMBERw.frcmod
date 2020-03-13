@@ -1,0 +1,59 @@
+remark goes here
+MASS
+nA 14.01         0.530               sp2 N in 5 memb.ring w/H atom (HIS)
+h  1.008         0.161               H bonded to nitrogen atoms
+cW 12.01         0.360               sp2 arom. 5 memb.ring w/1 N-H and 1 H (HIS)
+hA 1.008         0.167               H arom. bond. to C without elctrwd. groups 
+cV 12.01         0.360               sp2 arom. 5 memb.ring w/1 N and 1 H (HIS)
+nB 14.01         0.530               sp2 N in 5 memb.ring w/LP (HIS,ADE,GUA)
+cR 12.01         0.360               sp2 arom as CQ but in HIS
+
+BOND
+nA-h   434.0   1.010       #Mod with JJ OPLS paper 
+nA-cW  427.0   1.381       #Mod with JJ OPLS paper 
+nA-cR  477.0   1.343       #Mod with JJ OPLS paper 
+cW-hA  367.0   1.080       #Mod with JJ OPLS paper 
+cW-cV  520.0   1.370       #Mod with JJ OPLS paper 
+cV-hA  367.0   1.080       #Mod with JJ OPLS paper 
+cV-nB  410.0   1.394       #Mod with JJ OPLS paper 
+nB-cR  488.0   1.335       #Mod with JJ OPLS paper 
+cR-hA  367.0   1.080       #Mod with JJ OPLS paper 
+
+ANGLE
+nA-cW-hA   35.0     121.6   #Mod with JJ OPLS paper 
+nA-cW-cV   70.0     106.3   #Mod with JJ OPLS paper 
+nA-cR-nB   70.0     120.0   #Mod with JJ OPLS paper 
+nA-cR-hA   35.0     120.0   #Mod with JJ OPLS paper 
+h -nA-cW   35.0     120.0   #Mod with JJ OPLS paper 
+h -nA-cR   35.0     120.0   #Mod with JJ OPLS paper 
+cW-nA-cR   70.0     109.8   #Mod with JJ OPLS paper 
+cW-cV-hA   35.0     128.2   #Mod with JJ OPLS paper 
+cV-cW-hA   35.0     130.7   #Mod with JJ OPLS paper
+cW-cV-nB   70.0     111.0   #Mod with JJ OPLS paper 
+cV-nB-cR   70.0     110.0   #Mod with JJ OPLS paper 
+hA-cV-nB   35.0     120.0   #Mod with JJ OPLS paper 
+nB-cR-hA   35.0     120.0   #Mod with JJ OPLS paper 
+
+DIHE
+X -cV-cW-X    4   21.50        180.0             2.         intrpol.bsd.on C6H6 (OriginAlly cV=CC)
+X -cW-nA-X    4    5.60        180.0             2.         JCC,7,(1986),230 (OriginAlly cW=CC)
+X -cR-nA-X    4    5.60        180.0             2.         JCC,7,(1986),230 (OriginAlly cR=CC)
+X -cV-nB-X    2    4.80        180.0             2.         JCC,7,(1986),230 (OriginAlly cV=CC)
+X -cR-nB-X    2    4.80        180.0             2.         JCC,7,(1986),230( OriginAlly cR=CC)
+
+IMPROPER
+cR-cW-nA-h          1.1          180.0         2.0          Using default value
+cV-hA-cW-nA         1.1          180.0         2.0          Using default value
+cW-hA-cV-nB         1.1          180.0         2.0          Using default value
+hA-nA-cR-nB         1.1          180.0         2.0          Using default value
+
+NONBON
+  nA          1.8240  0.1700             #Mod with JJ OPLS paper 
+  h           0.0000  0.0000             #Mod with JJ OPLS paper 
+  cW          1.9924  0.0700             #Mod with JJ OPLS paper 
+  hA          1.3582  0.0300             #Mod with JJ OPLS paper 
+  cV          1.9924  0.0700             #Mod with JJ OPLS paper 
+  nB          1.8240  0.1700             #Mod with JJ OPLS paper 
+  cR          1.9924  0.0700             #Mod with JJ OPLS paper
+
+

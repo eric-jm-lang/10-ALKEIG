@@ -1,0 +1,34 @@
+============Sample ptraj analysis script================
+trajin /users/sarahgra/mixmd/run_1/New4H_production.1.crd.bz2 1 1250 1
+
+#Center and process image
+center :1-161 mass origin
+image origin familiar com :1-161
+
+#Align trajectory to reference structure by minimizing RMSD
+reference /users/sarahgra/mixmd/run_1/1P3.pdb
+strip :Cl-,Na+
+rms reference mass out 1P3_rmsd.txt :1-161@CA
+
+#Write out grid count of probe occupancy
+grid 1P3_10.0-20.0ns_1P3.xplor 200 0.5 200 0.5 200 0.5 :1P3 origin max 0.9
+grid WAT_10.0-20.0ns_WAT.xplor 200 0.5 200 0.5 200 0.5 :WAT origin max 0.9
+
+#Correct for systematic error induced by ptraj grid function
+translate x -0.25 y -0.25 z -0.25
+
+#Calculate Average Structure
+average 1P3_avg_10.0-20.0ns.pdb :1-161 pdb append
+
+===========================================================
+You can normalize the output by running the enclosed python normalization script.  This outputs a normalized .xplor file which can also be visualized in pymol.  It also prints to the screen the pertinent stats on the distribution of occupancies (max, mean, std. deviation)
+
+% python faster_normalize_xplor_density_cpptraj.py -x 1P3_10.0-20.0ns_1P3.xplor > stats_file
+
+This can then be visualized in pymol (Chimera works well too and has a handy slider-GUI to contour the density)
+1) Load the xplor files and average pdb
+2) isomesh Pick_a_name, 1P3_10.0-20.0ns_1P3.xplor, 10 (The # corresponds to the occupancy of the probes)
+
+If visualizing multiple maps of the same protein, you need to align the average structures and then move the maps to this new frame of reference
+http://www.pymolwiki.org/index.php/Matrix_Copy
+

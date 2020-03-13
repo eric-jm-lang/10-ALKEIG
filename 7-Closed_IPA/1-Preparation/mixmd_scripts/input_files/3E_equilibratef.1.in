@@ -1,0 +1,11 @@
+Restrained NPT Eq
+&cntrl
+   imin = 0, 
+   irest = 1, ntx = 5,
+   ntwe = 1000, ntwx = 1000, ntwr = 1000, ntpr = 1000,
+   ntt = 2, temp0 = 300, tempi = 300,
+   scnb = 2.0, scee = 1.2, dielc = 1, cut = 10.0,
+   ntb = 2, ntp = 1, ntc = 2, ntf = 2, 
+   ig = -1,
+   nstlim = 700000, dt = 0.002, 
+/

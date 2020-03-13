@@ -1,0 +1,31 @@
+This directory contains the amber input files.
+The order of the simulations with AMBER is as follws
+Note: These files will need to be altered slightly to indicate which residues
+      are protein to restrain.
+
+Minmize solvant and then all atoms:
+1A_solvmin.1.in   
+1B_allmin.1.in
+
+Heat slowly to 300K in four steps:
+2A_heating1.1.in
+2B_heating2.1.in
+2C_heating3.1.in
+2D_heating4.1.in
+
+Equilibrate: Gradually removing restraints.  The last step is 1.4 ns of unrestrained dynamics
+3A_equilibrate.1.in
+3B_equilibrate-bb1.1.in
+3C_equilibrate-bb2.1.in
+3D_equilibrate-bb3.1.in
+3E_equilibratef.1.in
+
+Production:  20ns in 8 2.5ns simulations
+New4A_production.in
+New4B_production.in
+New4C_production.in
+New4D_production.in
+New4E_production.in
+New4F_production.in
+New4G_production.in
+New4H_production.in

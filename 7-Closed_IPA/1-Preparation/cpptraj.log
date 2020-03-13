@@ -1,0 +1,9 @@
+# 12/19/19 14:57:34
+parm closed_ipa_10.parm7
+trajin TEMP_closed_ipa_10.rst7
+principal :1-192 dorotation mass
+center mass origin :1-192
+trajout closed_ipa_10.rst7
+trajout closed_ipa_10.pdb
+run
+quit

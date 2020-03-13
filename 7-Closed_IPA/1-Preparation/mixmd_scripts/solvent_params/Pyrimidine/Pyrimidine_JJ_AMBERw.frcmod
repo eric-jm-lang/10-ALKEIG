@@ -1,0 +1,38 @@
+remark goes here
+MASS
+nC 14.01         0.530               sp2 N in 6 memb.ring w/LP (ADE,GUA)
+cA 12.01         0.360               sp2 C pure aromatic (benzene)
+cQ 12.01         0.360               sp2 C in 5 mem.ring of purines between 2 N
+hA 1.008         0.167               H arom. bond. to C without elctrwd. groups
+
+BOND
+cA-nC  483.0    1.339        #From JJ OPLS paper on heterocycles
+cQ-nC  502.0    1.324        #From JJ OPLS paper on heterocycles
+cA-hA  367.0    1.080        #From JJ OPLS paper on heterocycles
+cQ-hA  367.0    1.080        #From JJ OPLS paper on heterocycles
+cA-cA  469.0    1.400        #From JJ OPLS paper on heterocycles
+
+ANGLE
+nC-cA-hA    35.0      116.00   #From JJ OPLS paper on heterocycles
+cA-cA-nC    70.0      124.00   #From JJ OPLS paper on heterocycles
+cA-cA-hA    35.0      120.00   #From JJ OPLS paper on heterocycles
+cA-cA-cA    63.0      120.00   #From JJ OPLS paper on heterocycles
+cA-nC-cQ    70.0      118.60   #From JJ OPLS paper on heterocycles
+nC-cQ-nC    70.0      129.10   #From JJ OPLS paper on heterocycles
+nC-cQ-hA    35.0      115.45   #From JJ OPLS paper on heterocycles
+
+DIHE
+X -cA-cA-X    4   14.50        180.0             2.         intrpol.bsd.on C6H6
+X -cA-nC-X    2    9.60        180.0             2.         JCC,7,(1986),230
+X -cQ-nC-X    2   13.60        180.0             2.         JCC,7,(1986),230
+
+IMPROPER
+cA-hA-cA-nC         1.1          180.0         2.0          Using default value
+cA-cA-cA-hA         1.1          180.0         2.0          Using default value
+hA-nC-cQ-nC         1.1          180.0         2.0          Using default value
+
+NONBON
+  nC          1.8240  0.1700 #From JJ OPLS paper on heterocycles
+  cA          1.9923  0.0700 #From JJ OPLS paper on heterocycles
+  cQ          1.9923  0.0700 #From JJ OPLS paper on heterocycles
+  hA          1.3581  0.0300 #From JJ OPLS paper on heterocycles

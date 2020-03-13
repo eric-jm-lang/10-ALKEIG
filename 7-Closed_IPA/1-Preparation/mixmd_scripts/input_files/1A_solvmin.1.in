@@ -1,0 +1,23 @@
+Solvent and ion Minimization 
+ &cntrl  
+  imin = 1, 
+  igb = 0,
+  cut = 10.0, 
+  maxcyc = 5000, 
+  ncyc = 250, 
+  ntb = 1, 
+ /
+ Hold the protein fixed
+ 500.0
+ RES 1 161
+ END
+ END
+
+  #Activate minimizer
+  #Set explicit solvent model (turn-off GB implicit solvent)
+  #Set NB cutoff to 10A
+  #5000 steps for SD + CG
+  #250 steps for SD
+  #Constant volume PBC used
+  #Restrain protein with 500kcal/mol force for res1-198
+
