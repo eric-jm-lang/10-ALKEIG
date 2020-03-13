@@ -1,0 +1,39 @@
+remark goes here
+MASS
+cT 12.01         0.878               sp3 aliphatic C
+hC 1.008         0.135               H aliph. bond. to C without electrwd.group
+oH 16.00         0.465               oxygen in hydroxyl group
+hO 1.008         0.135               hydroxyl group
+h9 1.008         0.135               H aliph. bond. to C with 1 electrwd. group
+
+BOND
+cT-hC    340.0    1.090       changed from 331 bsd on NMA nmodes; AA, SUGARS
+cT-cT    310.0    1.526       JCC,7,(1986),230; AA, SUGARS
+cT-oH    320.0    1.410       JCC,7,(1986),230; SUGARS
+cT-h9    340.0    1.090       changed from 331 bsd on NMA nmodes; AA, RIBOSE
+oH-hO    553.0    0.960       JCC,7,(1986),230; SUGARS,SER,TYR
+
+ANGLE
+cT-cT-oH    50.0      109.50   
+cT-cT-h9    50.0      109.50    changed based on NMA nmodes
+cT-cT-cT    40.0      109.50
+hC-cT-hC    35.0      109.50
+cT-cT-hC    50.0      109.50    changed based on NMA nmodes
+cT-oH-hO    55.0      108.50
+h9-cT-oH    50.0      109.50    changed based on NMA nmodes 
+
+DIHE
+X -cT-cT-X   9    1.40          0.0             3.         JCC,7,(1986),230
+X -cT-oH-X   3    0.50          0.0             3.         JCC,7,(1986),230
+
+IMPROPER
+
+NONBON
+  cT          1.9643  0.0660    
+  hC          1.4031  0.0300          
+  oH          1.7511  0.1700           
+  hO          0.0000  0.0000             
+  h9          1.4031  0.0300            
+
+
+

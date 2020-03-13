@@ -1,0 +1,147 @@
+
+Initial FFT Slab Distribution Based on Workload Estimate:
+
+  FFT slabs assigned to    2 tasks
+  Maximum of   45 xy slabs per task
+  Maximum of   45 zx slabs per task
+  Count of FFT xy slabs assigned to each task:
+       0   0   0   0   0  45   0   0   0   0   0  45
+  Count of FFT xz slabs assigned to each task:
+       0   0   0   0   0  45   0   0   0   0   0  45
+
+First FFT Slab Distribution Based on Actual Workload:
+
+  FFT slabs assigned to    3 tasks
+  Maximum of   30 xy slabs per task
+  Maximum of   30 zx slabs per task
+  Count of FFT xy slabs assigned to each task:
+       0   0   0  30   0   0   0  30   0   0   0  30
+  Count of FFT xz slabs assigned to each task:
+       0   0   0  30   0   0   0  30   0   0   0  30
+
+Image Distribution at run step     884:
+
+  Count of images assigned to each task:
+         5250     5344     4914     1192     4393     4536     4400      960
+         4489     5116     5212     1294
+
+Atom Distribution No.     4 at run step   10005:
+
+  Count of atoms assigned to each task:
+         5385     5212     5056     1036     4486     4442     4508      834
+         4626     4974     5366     1175
+
+Atom Distribution No.     5 at run step   17774:
+
+  Count of atoms assigned to each task:
+         5241     5308     4888     1199     4444     4520     4388     1046
+         4512     5058     5207     1289
+
+Atom Distribution No.     6 at run step   23518:
+
+  Count of atoms assigned to each task:
+         5333     5210     4929     1083     4533     4476     4489      889
+         4658     4934     5367     1199
+
+Atom Distribution No.     7 at run step   28287:
+
+  Count of atoms assigned to each task:
+         5222     5244     4888     1171     4442     4574     4430      964
+         4565     5005     5283     1312
+
+Atom Distribution No.     8 at run step   32424:
+
+  Count of atoms assigned to each task:
+         5336     5145     4993     1111     4595     4510     4453      869
+         4626     4929     5340     1193
+
+Atom Distribution No.     9 at run step   36229:
+
+  Count of atoms assigned to each task:
+         5297     5118     5036     1097     4563     4459     4551      911
+         4627     4933     5283     1225
+
+Atom Distribution No.    10 at run step   39723:
+
+  Count of atoms assigned to each task:
+         5203     5163     4900     1198     4497     4544     4447      967
+         4626     5024     5263     1268
+
+Atom Distribution No.    11 at run step   42991:
+
+  Count of atoms assigned to each task:
+         5210     5139     4995     1120     4624     4433     4568      870
+         4731     4934     5286     1190
+
+Atom Distribution No.    12 at run step   46113:
+
+  Count of atoms assigned to each task:
+         5284     5124     4921     1118     4602     4530     4580      896
+         4679     4892     5304     1170
+
+Atom Distribution No.    13 at run step   49078:
+
+  Count of atoms assigned to each task:
+         5271     5068     4885     1084     4672     4507     4584      898
+         4742     5013     5241     1135
+
+Major Routine Parallel Profiling - NonSetup CPU Seconds:
+
+           D                                                              
+           a                                                              
+           t                                                              
+           a                              D                               
+           D         N                    i                               
+           i         o                    h                               
+           s         n             A      e      S      R      O         T
+   T       t         B      B      n      d      h      u      t         o
+   a       r         o      o      g      r      a      n      h         t
+   s       i         n      n      l      a      k      M      e         a
+   k       b         d      d      e      l      e      D      r         l
+------------------------------------------------------------------------------
+   0   178.0    1660.9    0.5    9.6   31.8   15.0  108.4    0.1    2004.2
+   1   179.9    1655.8    0.6    9.3   41.3   14.8  102.3    0.1    2004.1
+   2   194.4    1612.1    1.0   15.4   67.6   14.9   98.7    0.1    2004.1
+   3   380.5    1567.3    0.2    4.9   17.4    4.1   29.7    0.1    2004.1
+   4   203.9    1590.3    1.2   19.0   80.7   15.5   93.4    0.1    2004.1
+   5   198.4    1585.2    1.3   21.7   89.3   14.6   93.6    0.1    2004.1
+   6   205.2    1587.2    1.2   19.5   83.8   14.3   93.0    0.1    2004.1
+   7   390.4    1547.1    0.3    6.0   29.7    3.5   27.0    0.1    2004.1
+   8   200.4    1606.3    1.1   16.1   70.7   14.3   95.3    0.1    2004.1
+   9   183.4    1657.7    0.6    8.5   40.6   14.3   98.9    0.1    2004.1
+  10   179.0    1662.4    0.5   10.0   33.1   15.2  103.8    0.1    2004.1
+  11   377.1    1579.5    0.1    2.8    8.7    4.1   31.6    0.1    2003.9
+------------------------------------------------------------------------------
+ avg   239.2    1609.3    0.7   11.9   49.6   12.1   81.3    0.1    2004.1
+ min   178.0    1547.1    0.1    2.8    8.7    3.5   27.0    0.1    2003.9
+ max   390.4    1662.4    1.3   21.7   89.3   15.5  108.4    0.1    2004.2
+ std    83.4      38.7    0.4    6.0   26.3    4.7   30.3    0.0       0.1
+------------------------------------------------------------------------------
+
+PME NonBond Parallel Profiling - NonSetup CPU Seconds:
+
+                     D                           
+           P         i         R                 
+           a         r         e      L          
+           i         e         c      o          
+           r         c         i      a         T
+   T       l         t         p      d         o
+   a       i         F         F      B         t
+   s       s         r         r      a         a
+   k       t         c         c      l         l
+-------------------------------------------------
+   0   165.2    1495.5       0.0    0.1    1660.8
+   1   165.7    1489.9       0.0    0.1    1655.7
+   2   158.2    1453.8       0.0    0.1    1612.1
+   3    46.8     386.2    1134.2    0.1    1567.2
+   4   154.1    1436.0       0.0    0.1    1590.2
+   5   156.5    1427.9       0.6    0.1    1585.1
+   6   153.6    1433.4       0.0    0.1    1587.1
+   7    40.5     343.6    1162.8    0.1    1547.0
+   8   157.2    1448.9       0.0    0.1    1606.2
+   9   166.6    1491.0       0.0    0.1    1657.7
+  10   168.4    1493.9       0.0    0.1    1662.3
+  11    48.1     399.6    1131.6    0.1    1579.4
+-------------------------------------------------
+ avg   131.7    1191.7     285.8    0.1    1609.2
+-------------------------------------------------

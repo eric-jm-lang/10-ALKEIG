@@ -1,0 +1,6 @@
+# 12/09/19 11:40:53
+parm open_ipa_HMR.parm7
+trajin open_ipa_2_md2.rst7
+trajout open_ipa_2_md2.rst7
+run
+quit

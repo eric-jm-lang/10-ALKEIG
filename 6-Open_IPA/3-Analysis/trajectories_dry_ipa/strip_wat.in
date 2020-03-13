@@ -1,0 +1,16 @@
+parm ../../2-MD1/1/open_ipa_HMR.parm7
+parmstrip :WAT
+parmstrip :Na+
+parmstrip :Cl-
+parmwrite out open_ipa_dry_ipa.parm7
+run
+clear all
+parm ../../2-MD1/1/open_ipa_HMR.parm7
+trajin ../../2-MD1/1/open_ipa_1_ini.rst7
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout open_ipa_dry_ipa.rst7
+run
+clear all
+quit

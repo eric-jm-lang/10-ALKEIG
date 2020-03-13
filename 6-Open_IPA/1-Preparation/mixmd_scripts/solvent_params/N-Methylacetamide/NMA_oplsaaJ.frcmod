@@ -1,0 +1,21 @@
+remark goes here
+MASS
+c3 12.000        0.878
+hc 1.008         0.135
+c  12.000        0.616
+o  15.999        0.434
+n  14.007        0.530
+hn 1.008         0.161
+
+
+IMPROPER
+c3-n -c -o         10.5          180.0         2.0          General improper torsional angle (2 general atom types)
+c -c3-n -hn         1.1          180.0         2.0
+
+NONBON
+  c3          1.9640  0.0660
+  hc          1.4031  0.0300
+  c           2.1046  0.1050
+  o           1.6612  0.2100
+  n           1.8240  0.1700
+  hn          0.0000  0.0000

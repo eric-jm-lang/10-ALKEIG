@@ -1,0 +1,24 @@
+remark goes here
+MASS
+c3 12.01         0.878               Sp3 C
+hc 1.008         0.135               H bonded to aliphatic carbon without electrwd. group
+c  12.01         0.616               Sp2 C carbonyl group
+o  16.00         0.434               Oxygen with one connected atom
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+c3-o -c -o          1.1          180.0         2.0          General improper torsional angle (1 general atom type)
+
+NONBON
+c3	1.9643  0.066
+hc	1.4031  0.030
+c 	2.1046  0.105
+o 	1.6612  0.210
+
+
+

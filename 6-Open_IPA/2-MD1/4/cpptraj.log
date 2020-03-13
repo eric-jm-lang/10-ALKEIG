@@ -1,0 +1,26 @@
+# 12/09/19 11:12:03
+parm open_ipa_HMR.parm7
+trajin open_ipa_4_md1.nc
+trajin open_ipa_4_md2.nc
+trajout 4.nc
+quit
+# 12/09/19 11:12:57
+parm open_ipa_HMR.parm7
+trajin open_ipa_4_md1.nc
+trajin open_ipa_4_md2.nc
+center :1-192 mass origin
+image familiar com :1-192
+trajout 4.nc
+run
+quit
+# 12/09/19 11:25:04
+parm open_ipa_HMR.parm7
+trajin TEMP_open_ipa_4_md2.rst7
+quit
+# 12/09/19 11:25:37
+parm open_ipa_HMR.parm7
+trajin open_ipa_4_md2.rst7
+ls
+trajout open_ipa_4_md2_viz.rst7
+run
+quit

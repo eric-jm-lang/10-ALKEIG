@@ -1,0 +1,41 @@
+remark goes here
+MASS
+CT 12.010        0.878               same as c3 
+HC 1.008         0.135               same as hc 
+H1 1.008         0.135               same as hc 
+OH 16.000        0.465               same as oh 
+HO 1.008         0.135               same as ho 
+
+BOND
+CT-HC  337.30   1.092       same as c3-hc
+CT-CT  303.10   1.535       same as c3-c3
+CT-H1  337.30   1.092       same as c3-hc
+CT-OH  314.10   1.426       same as c3-oh
+OH-HO  369.60   0.974       same as ho-oh
+
+ANGLE
+CT-CT-H1   46.400     110.050   same as c3-c3-hc
+CT-CT-OH   67.700     109.430   same as c3-c3-oh
+HC-CT-HC   39.400     108.350   same as hc-c3-hc
+HC-CT-CT   46.400     110.050   same as c3-c3-hc
+CT-OH-HO   47.100     108.160   same as c3-oh-ho
+H1-CT-H1   39.400     108.350   same as hc-c3-hc
+H1-CT-OH   51.100     109.500   same as hc-c3-oh
+
+DIHE
+CT-CT-OH-HO   1    0.167         0.000           3.000      same as X -c3-oh-X 
+HC-CT-CT-H1   1    0.156         0.000           3.000      same as X -c3-c3-X 
+HC-CT-CT-OH   1    0.156         0.000           3.000      same as X -c3-c3-X 
+H1-CT-OH-HO   1    0.167         0.000           3.000      same as X -c3-oh-X 
+
+IMPROPER
+
+NONBON
+  CT          1.9080  0.1094             same as c3 
+  HC          1.4870  0.0157             same as hc 
+  H1          1.4870  0.0157             same as hc 
+  OH          1.7210  0.2104             same as oh 
+  HO          0.0000  0.0000             same as ho 
+
+
+

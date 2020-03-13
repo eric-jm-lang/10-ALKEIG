@@ -1,0 +1,23 @@
+remark goes here
+MASS
+c3 12.01         0.878               Sp3 C
+hn 1.008         0.161               H bonded to nitrogen atoms
+hx 1.008         0.135               H bonded to C next to positively charged group
+n4 14.01         0.530               Sp3 N with four connected atoms
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+
+NONBON
+c3	1.9643 0.066
+hn	0.0000 0.0
+hx	1.4031 0.030
+n4	1.8240 0.170
+
+
+

@@ -1,0 +1,6 @@
+parm open_ipa_dry_ipa.parm7
+trajin open_ipa_dry_ipa_3_ali.nc
+grid grid_normdens_3.dx 80 0.5 80 0.5 140 0.5 :IPA normdensity
+run
+clear all
+quit

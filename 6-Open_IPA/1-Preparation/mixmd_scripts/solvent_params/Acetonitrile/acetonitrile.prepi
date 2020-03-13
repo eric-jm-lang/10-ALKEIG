@@ -1,0 +1,24 @@
+    0    0    2
+
+Acetonitrile from Kollman and co authors with HF 6-311G* derived charges, modified NY
+molecule.res
+C3N   INT  0
+CORRECT     OMIT DU   BEG
+  0.0000
+   1  DUMM  DU    M    0  -1  -2     0.000      .0        .0      .00000
+   2  DUMM  DU    M    1   0  -1     1.449      .0        .0      .00000
+   3  DUMM  DU    M    2   1   0     1.522   111.1        .0      .00000
+   4  N1    NY    M    3   2   1     1.540   111.208   180.000 -0.533000
+   5  C2    CY    M    4   3   2     1.116    62.875   154.931  0.481000
+   6  C3    CT    M    5   4   3     1.435   173.934  -165.471 -0.479000
+   7  H4    HC    E    6   5   4     1.038   112.476    54.290  0.177000
+   8  H5    HC    E    6   5   4     1.087   112.347   170.861  0.177000
+   9  H6    HC    E    6   5   4     1.097   107.907   -67.912  0.177000
+
+
+LOOP
+
+IMPROPER
+
+DONE
+STOP

@@ -1,0 +1,16 @@
+parm open_ipa_HMR.parm7
+trajin open_ipa_5_eq7.nc
+trajin open_ipa_5_eq8.nc
+trajin open_ipa_5_md1.nc
+trajin open_ipa_5_md2.nc
+trajin open_ipa_5_md3.nc
+trajin open_ipa_5_md4.nc
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+strip :IPA
+trajout ../../4-Analysis/trajectories_dry/open_ipa_dry_5.nc
+clear all
+quit

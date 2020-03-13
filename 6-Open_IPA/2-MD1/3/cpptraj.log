@@ -1,0 +1,41 @@
+# 11/14/19 09:46:52
+parm open_ipa_HMR.parm7
+trajin open_ipa_3_eq1.nc
+trajin open_ipa_3_eq3.nc
+trajin open_ipa_3_eq4.nc
+trajin open_ipa_3_eq5.nc
+trajin open_ipa_3_eq6.nc
+trajin open_ipa_3_eq7.nc
+trajin open_ipa_3_eq8.nc
+trajin open_ipa_3_md1.nc
+reference open_ipa_3_ini.rst7
+center :1-192 mass origin
+image familiar com :1-192
+rms reference out check_rmsd.dat '(!:WAT & @CA,C,N,O)'
+trajout check_eq_md1.nc
+run
+quit
+# 11/14/19 10:17:43
+parm open_ipa_HMR.parm7
+trajin TEMP_open_ipa_3_md1.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_ipa_3_md1.rst7 ncrestart
+run
+quit
+# 11/14/19 10:19:58
+parm open_ipa_HMR.parm7
+trajin TEMP_open_ipa_3_md1.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_ipa_3_md1.rst7
+run
+quit
+# 11/14/19 10:25:39
+parm open_ipa_HMR.parm7
+trajin TEMP_open_ipa_3_md1.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout open_ipa_3_md1.rst7 ncrestart
+run
+quit

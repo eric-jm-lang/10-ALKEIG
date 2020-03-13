@@ -1,0 +1,65 @@
+$AMBERHOME/bin/tleap -f leaprc.protein.ff14SB
+source leaprc.gaff
+source leaprc.water.tip3p
+
+----------------then solvent specific parameter files-----------
+#Pyrimidine
+loadamberprep Pyrimidine_JJ_AMBER.prepi
+loadamberparams Pyrimidine_JJ_AMBERw.frcmod
+1P3=loadpdb Pyrimidine_W_Equ.pdb
+
+#N-methylacetamide
+loadamberprep NMA_oplsaaJ.prepi
+loadamberparams NMA_oplsaaJ.frcmod
+NMA=loadpdb Jorg-newBoxnmanpt.rst.pdb
+
+#Acetonitrile
+loadamberprep acetonitrile.prepi
+loadamberparams acetonitrile.frcmod
+C3N=loadpdb ACNbox.prmpdb
+
+#Isopropyl alcohol
+loadamberprep JorgAA_IPAnb.prepi
+loadamberparams JorgAA_IPAnb.frcmod
+IPA=loadpdb JorgAA_IPAbox.pdb
+
+#Methylammonium/Acetate mix
+loadamberprep MAI.prepi
+loadamberparams MAI.frcmod
+loadamberprep ACT.prepi
+loadamberparams ACT.frcmod
+AMA=loadpdb ACTMAI_eqbox.pdb
+
+#Imidazole
+loadamberprep Imidazole_JJ_AMBER.prepi
+loadamberparams Imidazole_JJ_AMBERw.frcmod
+IMI=loadpdb Imidazole_W_Equ.pdb
+
+----------------------
+
+set AMA restype solvent   #Change AMA to name of solvent you are using
+setbox AMA centers        
+prot=loadpdb protein.pdb
+solvateshell prot AMA 9.6  
+savepdb prot prot_nowater.pdb
+saveamberparm prot_nowater.prmtop prot_nowater.inpcrd
+solvatebox prot TIP3PBOX 10    
+savepdb prot prot_solvated.pdb
+
+Ratios for 5%/95% v/v probe to water
+1 IMI: 69.7 waters
+1 NMA: 80.62 waters
+1 ACN: 55.07 waters
+1 IPA: 80.62 waters
+1 ACT: 118.6 waters
+1 1P3: 83.11 waters
+
+There are two possible ways to get the correct ratio that I've used:
+1) Use constant thickness of probes, ex. 9.6, and then vary the thickness of the water layer
+2) Determine how many waters you would add normally, calculate how many probes you want, and then vary probe layer.
+
+When solvating with the charged probes (ACT/MAI), equal numbers of each are not necessarily added.  I save an intermediate pdb, delete how ever many are necessary to get a net neutral charge, and then reload this into tleap.
+
+
+
+
