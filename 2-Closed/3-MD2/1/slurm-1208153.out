@@ -1,0 +1,14 @@
+/tmp/slurmd/job1208153/slurm_script: line 18: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/2-Closed/3-MD2/1: No such file or directory
+STOP PMEMD Terminated Abnormally!
+
+  Unit    8 Error on OPEN: closed10_HMR.parm7                                                                                                                                                                                                                                              
+
+  Unit    5 Error on OPEN: min7.i                                                                                                                                                                                                                                                          
+STOP PMEMD Terminated Abnormally!
+
+  Unit    5 Error on OPEN: min7.i                                                                                                                                                                                                                                                          
+
+  Unit    5 Error on OPEN: min8.i                                                                                                                                                                                                                                                          
+STOP PMEMD Terminated Abnormally!
+
+  Unit    5 Error on OPEN: min8.i                                                                                                                                                                                                                                                          

@@ -1,0 +1,51 @@
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/28/18 10:07:39
+| Available memory: 168.860 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm closed10_dry.parm7]
+	Reading 'closed10_dry.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [reference open10_dry.rst7]
+	Reading 'open10_dry.rst7' as Amber Restart
+	Setting active reference for distance-based masks: 'open10_dry.rst7'
+  [trajin closed_all_dry.nc]
+	Reading 'closed_all_dry.nc' as Amber NetCDF
+  [rms reference out closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)']
+    RMSD: ((!:WAT & @CA,C,N,O)), reference is "Cpptraj Generated Restart" ((!:WAT & @CA,C,N,O)).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [trajout closed_all_dry_fit2open.nc]
+	Writing 'closed_all_dry_fit2open.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: closed10_dry.parm7, 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'closed_all_dry.nc' is a NetCDF AMBER trajectory, Parm closed10_dry.parm7 (Trunc. Oct. box) (reading 186683 of 186683)
+  Coordinate processing will occur on 186683 frames.
+
+REFERENCE FRAMES (1 total):
+    0: open10_dry.rst7:1
+	Active reference frame for distance-based masks is 'Cpptraj Generated Restart'
+
+OUTPUT TRAJECTORIES (1 total):
+  'closed_all_dry_fit2open.nc' (186683 frames) is a NetCDF AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'closed10_dry.parm7' (1 actions):
+  0: [rms reference out closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)']
+	Target mask: [(!:WAT & @CA,C,N,O)](738)
+	Reference mask: [(!:WAT & @CA,C,N,O)](738)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+----- closed_all_dry.nc (1-186683, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 

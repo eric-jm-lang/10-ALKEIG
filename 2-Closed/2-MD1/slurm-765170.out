@@ -1,0 +1,5 @@
+/tmp/slurmd/job765170/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/2-Closed/2-MD1/: No such file or directory
+[highmem12.bc4.acrc.priv:19245] 27 more processes have sent help message help-mpi-common-cuda.txt / dlopen failed
+[highmem12.bc4.acrc.priv:19245] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+mpirun: Forwarding signal 18 to job
+slurmstepd: error: *** JOB 765170 ON highmem12 CANCELLED AT 2018-02-27T14:02:26 ***

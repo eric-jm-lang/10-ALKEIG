@@ -1,0 +1,161 @@
+parm closed10.parm7
+trajin ./1/closed_1_md1.nc
+trajin ./1/closed_1_md2.nc
+trajin ./1/closed_1_md3.nc
+trajin ./1/closed_1_md4.nc
+trajin ./1/closed_1_md5.nc
+trajin ./1/closed_1_md6.nc
+trajin ./1/closed_1_md7.nc
+trajin ./1/closed_1_md8.nc
+trajin ./1/closed_1_md9.nc
+trajin ./1/closed_1_md10.nc
+trajin ./1/closed_1_md11.nc
+trajin ./1/closed_1_md12.nc
+trajin ./1/closed_1_md13.nc
+trajin ./1/closed_1_md14.nc
+trajin ./1/closed_1_md15.nc
+trajin ./2/closed_2_md1.nc
+trajin ./2/closed_2_md2.nc
+trajin ./2/closed_2_md3.nc
+trajin ./2/closed_2_md4.nc
+trajin ./2/closed_2_md5.nc
+trajin ./2/closed_2_md6.nc
+trajin ./2/closed_2_md7.nc
+trajin ./2/closed_2_md8.nc
+trajin ./2/closed_2_md9.nc
+trajin ./2/closed_2_md10.nc
+trajin ./2/closed_2_md11.nc
+trajin ./2/closed_2_md12.nc
+trajin ./2/closed_2_md13.nc
+trajin ./2/closed_2_md14.nc
+trajin ./2/closed_2_md15.nc
+trajin ./3/closed_3_md1.nc
+trajin ./3/closed_3_md2.nc
+trajin ./3/closed_3_md3.nc
+trajin ./3/closed_3_md4.nc
+trajin ./3/closed_3_md5.nc
+trajin ./3/closed_3_md6.nc
+trajin ./3/closed_3_md7.nc
+trajin ./3/closed_3_md8.nc
+trajin ./3/closed_3_md9.nc
+trajin ./3/closed_3_md10.nc
+trajin ./3/closed_3_md11.nc
+trajin ./3/closed_3_md12.nc
+trajin ./3/closed_3_md13.nc
+trajin ./3/closed_3_md14.nc
+trajin ./3/closed_3_md15.nc
+trajin ./4/closed_4_md1.nc
+trajin ./4/closed_4_md2.nc
+trajin ./4/closed_4_md3.nc
+trajin ./4/closed_4_md4.nc
+trajin ./4/closed_4_md5.nc
+trajin ./4/closed_4_md6.nc
+trajin ./4/closed_4_md7.nc
+trajin ./4/closed_4_md8.nc
+trajin ./4/closed_4_md9.nc
+trajin ./4/closed_4_md10.nc
+trajin ./4/closed_4_md11.nc
+trajin ./4/closed_4_md12.nc
+trajin ./4/closed_4_md13.nc
+trajin ./4/closed_4_md14.nc
+trajin ./4/closed_4_md15.nc
+trajin ./5/closed_5_md1.nc
+trajin ./5/closed_5_md2.nc
+trajin ./5/closed_5_md3.nc
+trajin ./5/closed_5_md4.nc
+trajin ./5/closed_5_md5.nc
+trajin ./5/closed_5_md6.nc
+trajin ./5/closed_5_md7.nc
+trajin ./5/closed_5_md8.nc
+trajin ./5/closed_5_md9.nc
+trajin ./5/closed_5_md10.nc
+trajin ./5/closed_5_md11.nc
+trajin ./5/closed_5_md12.nc
+trajin ./5/closed_5_md13.nc
+trajin ./5/closed_5_md14.nc
+trajin ./5/closed_5_md15.nc
+center :1-192 mass origin
+image familiar com :1-192
+trajout closed_all.nc
+run
+clear all
+parm closed10.parm7
+trajin closed_all.nc
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout closed_all_dry.nc
+run
+clear all
+parm closed10.parm7
+parmstrip :WAT
+parmstrip :Na+
+parmstrip :Cl-
+parmwrite out closed10_dry.parm7
+run
+clear all
+parm closed10.parm7
+trajin closed10.rst7
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout closed10_dry.rst7
+run
+clear all
+parm open10.parm7
+trajin open10.rst7
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout open10_dry.rst7
+run
+parm closed10_dry.parm7
+reference open10_dry.rst7
+trajin closed_all_dry.nc
+rms reference out closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+run
+clear all
+parm closed10_dry.parm7
+reference closed10_dry.rst7
+trajin closed_all_dry.nc
+rms reference out closed_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+run
+clear all
+parm closed10.parm7
+trajin closed_all.nc
+principal :1-192 dorotation mass
+center mass origin :1-192
+trajout closed_all_rot.nc
+trajout closed_all_rot.dcd
+run
+clear all 
+parm closed10.parm7
+trajin closed10.rst7
+principal :1-192 dorotation mass
+center mass origin :1-192
+trajout closed10_rot.rst7
+run
+clear all 
+parm closed10.parm7
+trajin closed_all_rot.nc
+grid water_density.dx 80 0.5 80 0.5 120 0.5 :WAT@O normdensity
+run 
+clear all 
+clear all 
+parm closed10.parm7
+trajin closed_all_rot.nc
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout closed_all_rot_dry.nc
+run
+clear all
+parm closed10.parm7
+trajin closed10_rot.rst7
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout closed10_rot_dry.rst7
+run
+clear all
+quit

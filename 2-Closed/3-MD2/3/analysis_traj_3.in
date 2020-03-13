@@ -1,0 +1,32 @@
+parm closed10.parm7
+trajin ./closed_3_eq7.nc
+trajin ./closed_3_eq8.nc
+trajin ./closed_3_md1.nc
+trajin ./closed_3_md2.nc
+trajin ./closed_3_md3.nc
+trajin ./closed_3_md4.nc
+trajin ./closed_3_md5.nc
+trajin ./closed_3_md6.nc
+trajin ./closed_3_md7.nc
+trajin ./closed_3_md8.nc
+trajin ./closed_3_md9.nc
+trajin ./closed_3_md10.nc
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout ../closed_all_dry_3.nc
+run
+clear all
+parm ../closed10_dry.parm7
+reference ../open10_dry.rst7
+trajin ../closed_all_dry_3.nc
+rms reference out ../closed_rmsd_to_open_3.dat '(!:WAT & @CA,C,N,O)'
+run
+clear all
+parm ../closed10_dry.parm7
+reference ../closed10_dry.rst7
+trajin ../closed_all_dry_3.nc
+rms reference out ../closed_rmsd_to_closed_3.dat '(!:WAT & @CA,C,N,O)'
+quit

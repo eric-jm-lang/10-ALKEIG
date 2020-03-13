@@ -1,0 +1,258 @@
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[12686,1],11] (PID 7384)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+#0  0x2AD39045ADC7
+#1  0x2AD390459FC0
+#2  0x2AD3908D624F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 11 with PID 7384 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[12404,1],17] (PID 7532)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+#0  0x2B4DBDFC3DC7
+#1  0x2B4DBDFC2FC0
+#2  0x2B4DBE43F24F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 17 with PID 7532 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[12537,1],17] (PID 7678)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+#0  0x2AF8808A4DC7
+#1  0x2AF8808A3FC0
+#2  0x2AF880D2024F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+#0  0x2AF624EC8DC7
+#1  0x2AF624EC7FC0
+#2  0x2AF62534424F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 26 with PID 7709 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[gpu09.bc4.acrc.priv:07630] 1 more process has sent help message help-opal-runtime.txt / opal_init:warn-fork
+[gpu09.bc4.acrc.priv:07630] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[13172,1],3] (PID 7759)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+#0  0x2B22F4A6ADC7
+#1  0x2B22F4A69FC0
+#2  0x2B22F4EE624F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+#0  0x2B6BDD5F3DC7
+#1  0x2B6BDD5F2FC0
+#2  0x2B6BDDA6F24F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 7759 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[gpu09.bc4.acrc.priv:07747] 1 more process has sent help message help-opal-runtime.txt / opal_init:warn-fork
+[gpu09.bc4.acrc.priv:07747] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[13214,1],0] (PID 7859)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+** Something went wrong while running addr2line. **
+** Falling back to a simpler backtrace scheme. **
+#11  0x2af3fcf4cc92
+#12  0x2af3fcf4bfc0
+#13  0x2af3fd3c824f
+#14  0x4b399e
+#15  0x4a8d94
+#16  0x4dd990
+#17  0x50b329
+#18  0x4058ec
+#19  0x2af3fd3b4b34
+#20  0x405e76
+#21  0xffffffffffffffff
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x2B01E990BDC7
+#1  0x2B01E990AFC0
+#2  0x2B01E9D8724F
+#0  0x2AD7D0622DC7
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#0  0x2B09E9630DC7
+#1  0x2AD7D0621FC0
+#1  0x2B09E962FFC0
+#2  0x2B09E9AAC24F
+#2  0x2AD7D0A9E24F
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+#0  0x2B1043EFFDC7
+#1  0x2B1043EFEFC0
+#2  0x2B104437B24F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 7859 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[gpu09.bc4.acrc.priv:07849] 4 more processes have sent help message help-opal-runtime.txt / opal_init:warn-fork
+[gpu09.bc4.acrc.priv:07849] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[12826,1],27] (PID 8057)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+#0  0x2B4000220DC7
+#1  0x2B400021FFC0
+#2  0x2B400069C24F
+#3  0x4B399E in __nb_exclusions_mod_MOD_nb_adjust
+#4  0x4A8D94 in __pme_force_mod_MOD_pme_force
+#5  0x4DD252 in __runmin_mod_MOD_runmin_slave
+#6  0x50B90D in MAIN__ at pmemd.F90:?
+--------------------------------------------------------------------------
+mpirun noticed that process rank 27 with PID 8057 on node gpu09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

@@ -1,0 +1,70 @@
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/23/18 11:32:24
+| Available memory: 105.420 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm closed10_HMR.parm7]
+	Reading 'closed10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_closed_1_md1.rst7]
+	Reading 'TEMP_closed_1_md1.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout closed_1_md1.rst7 restart]
+	Writing 'closed_1_md1.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: closed10_HMR.parm7, 43615 atoms, 13833 res, box: Trunc. Oct., 13647 mol, 13583 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_closed_1_md1.rst7' is an AMBER restart file with velocity info, Parm closed10_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'closed_1_md1.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'closed10_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 43615 atoms.
+	Number of molecules to be imaged is 13647
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_closed_1_md1.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 5.9913 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.1669 s ( 99.92%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 0.1670 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.3159 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

@@ -1,0 +1,14 @@
+# 06/26/18 11:12:35
+parm ../closed10_dry.parm7
+reference ../closed10_dry.rst7
+trajin closed_all_dry_2.nc
+rms reference out ../closed_rmsd_to_closed_2.dat '(!:WAT & @CA,C,N,O)'
+run
+quit
+# 06/26/18 23:51:16
+parm ../closed10_dry.parm7
+reference ../closed10_dry.rst7
+trajin ../closed_dry_2.nc
+rms reference out ../closed_rmsd_to_closed_2.dat '(!:WAT & @CA,C,N,O)'
+run
+quit

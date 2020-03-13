@@ -1,0 +1,7 @@
+/tmp/slurmd/job758595/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/2-Closed/2-MD1/: No such file or directory
+Error: Number of atoms in Amber Restart open10_dry.rst7 (2808) does not
+       match number in associated parmtop (38558)
+Error: Could not set up 'open10_dry.rst7' for reading.
+Error: reference: Could not set up trajectory.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.

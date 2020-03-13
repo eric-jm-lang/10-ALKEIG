@@ -1,0 +1,26 @@
+#!/bin/bash -login
+#
+#SBATCH -p test
+#SBATCH -J analysis
+#SBATCH --time=01:00:00     # Walltime
+#SBATCH --mail-user=eric.lang@bristol.ac.uk
+#SBATCH --mail-type=ALL
+#SBATCH --nodes=1          # number of tasks
+#SBATCH --ntasks-per-node=1 # number of tasks per node
+#
+module add OpenMPI/2.0.1-gcccuda-2016.10
+export AMBERHOME=/mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16
+source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
+
+export MYDIR="/mnt/storage/home/el14718/mulholland_group/el14718/10-ALKEIG/2-Closed/3-MD2/"
+#
+cd $MYDIR
+
+for i in 1 2 3 4 5; do
+  cd $i
+
+  $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
+  
+  cd ..
+
+done

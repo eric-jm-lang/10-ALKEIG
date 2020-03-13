@@ -1,0 +1,21 @@
+parm closed10_dry.parm7
+reference open10_dry.rst7
+trajin closed_all_dry.nc
+rms reference out closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+trajout closed_all_dry_fit2open.nc
+run
+clear all
+parm closed10_dry.parm7
+reference closed10_dry.rst7
+trajin closed_all_dry.nc
+rms reference out closed_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+trajout closed_all_dry_fit2closed.nc
+run
+clear all
+parm closed10_dry.parm7
+reference open10_dry.rst7
+trajin closed10_dry.rst7
+rms reference xray_closed_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+trajout closed10_dry_fit2open.rst7
+run 
+quit

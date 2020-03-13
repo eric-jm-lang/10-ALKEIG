@@ -1,0 +1,9 @@
+# 12/21/17 17:12:21
+parm closed10.parm7
+trajin TEMP_closed10.rst7
+principal :1-192 dorotation mass
+center mass origin :1-192
+trajout closed10.rst7
+trajout closed10.pdb
+run
+quit
