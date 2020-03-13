@@ -1,0 +1,26 @@
+# Log started on 12/04/2019 [mm/dd/yyyy] at 11:25:42
+parm closed10_dry.parm7
+addPDB closed4.pdb
+loadCoordinates closed10_dry.rst7
+outparm closed10_dry_org_resid.parm7
+quit
+# Log started on 12/04/2019 [mm/dd/yyyy] at 11:27:09
+parm closed10_dry.parm7
+addPDB closed4_dry.pdb
+loadCoordinates closed10_dry.rst7
+outparm closed10_dry_org_resid.parm7
+quit
+# Log started on 12/04/2019 [mm/dd/yyyy] at 11:27:30
+parm closed10_dry.parm7
+addPDB closed4_dry.pdb
+loadCoordinates closed10_dry.rst7
+outparm closed10_dry_org_resid.parm7
+ls
+cp closed10_dry_org_resid.parm7 ../Trajectories_all
+quit
+# Log started on 12/04/2019 [mm/dd/yyyy] at 12:08:21
+parm closed10_dry.parm7
+addPDB closed4_wrongchains_dry.pdb
+loadCoordinates closed10_dry.rst7
+outparm closed10_dry_wrong_resid.parm7
+quit

@@ -1,0 +1,71 @@
+
+# Run this in Pymol
+
+alter (closed4_A), chain='B'
+alter (closed4_B), chain='C'
+alter (closed4_C), chain='D'
+alter (closed4_D), chain='E'
+alter (closed4_E), chain='F'
+alter (closed4_F), chain='A'
+
+order closed4_F closed4_A closed4_B closed4_C closed4_D closed4_E
+save closed4_dry_rot1.pdb, (closed4_F,closed4_A,closed4_B,closed4_C,closed4_D,closed4_E)
+
+
+alter (closed4_A), chain='C'
+alter (closed4_B), chain='D'
+alter (closed4_C), chain='E'
+alter (closed4_D), chain='F'
+alter (closed4_E), chain='A'
+alter (closed4_F), chain='B'
+
+order closed4_E closed4_F closed4_A closed4_B closed4_C closed4_D
+save closed4_dry_rot2.pdb, (closed4_E, closed4_F, closed4_A, closed4_B, closed4_C, closed4_D)
+
+
+alter (closed4_A), chain='D'
+alter (closed4_B), chain='E'
+alter (closed4_C), chain='F'
+alter (closed4_D), chain='A'
+alter (closed4_E), chain='B'
+alter (closed4_F), chain='C'
+
+order closed4_D closed4_E closed4_F closed4_A closed4_B closed4_C 
+save closed4_dry_rot3.pdb, (closed4_D, closed4_E, closed4_F, closed4_A, closed4_B, closed4_C)
+
+
+alter (closed4_A), chain='E'
+alter (closed4_B), chain='F'
+alter (closed4_C), chain='A'
+alter (closed4_D), chain='B'
+alter (closed4_E), chain='C'
+alter (closed4_F), chain='D'
+
+order closed4_C closed4_D closed4_E closed4_F closed4_A closed4_B  
+save closed4_dry_rot4.pdb, (closed4_C, closed4_D, closed4_E, closed4_F, closed4_A, closed4_B)
+
+
+alter (closed4_A), chain='F'
+alter (closed4_B), chain='A'
+alter (closed4_C), chain='B'
+alter (closed4_D), chain='c'
+alter (closed4_E), chain='D'
+alter (closed4_F), chain='E'
+
+order closed4_B closed4_C closed4_D closed4_E closed4_F closed4_A
+save closed4_dry_rot5.pdb, (closed4_B, closed4_C, closed4_D, closed4_E, closed4_F, closed4_A)
+
+
+alter (closed4_A), chain='A'
+alter (closed4_B), chain='B'
+alter (closed4_C), chain='C'
+alter (closed4_D), chain='D'
+alter (closed4_E), chain='E'
+alter (closed4_F), chain='F'
+
+order closed4_A closed4_B closed4_C closed4_D closed4_E closed4_F 
+save closed4_dry_rot0.pdb, (closed4_A, closed4_B, closed4_C, closed4_D, closed4_E, closed4_F)
+
+
+
+

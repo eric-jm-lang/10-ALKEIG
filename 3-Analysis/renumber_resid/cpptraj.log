@@ -1,0 +1,9 @@
+# 12/04/19 11:35:49
+parm closed10_dry_org_resid.parm7
+trajin ../Trajectories_all/open_all_dry_1.nc
+trajout test.nc
+run
+quit
+# 12/07/19 10:17:02
+xtalsymm
+quit

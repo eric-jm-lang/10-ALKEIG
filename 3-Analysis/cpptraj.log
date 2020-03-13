@@ -1,0 +1,32 @@
+# 06/27/18 13:34:19
+parm ./Trajectories/closed10_dry.parm7
+trajin ./Trajectories/closed_dry_1.nc
+trajin ./Trajectories/open_dry_1.nc
+trajin ./Trajectories/closed_dry_2.nc
+trajin ./Trajectories/closed_dry_3.nc
+trajin ./Trajectories/open_dry_2.nc
+trajin ./Trajectories/closed_dry_4.nc
+trajin ./Trajectories/open_dry_3.nc
+trajin ./Trajectories/open_dry_4.nc
+trajin ./Trajectories/open_dry_5.nc
+trajin ./Trajectories/closed_dry_5.nc
+trajout toy_traj.nc
+run
+quit
+# 06/27/18 13:52:25
+parm ./Trajectories/closed10_dry.parm7
+trajin ./Trajectories/closed10_dry.rst7
+trajin ./Trajectories/closed_dry_1.nc
+trajin ./Trajectories/open_dry_1.nc
+trajin ./Trajectories/closed_dry_2.nc
+trajin ./Trajectories/closed_dry_3.nc
+trajin ./Trajectories/open_dry_2.nc
+trajin ./Trajectories/closed_dry_4.nc
+trajin ./Trajectories/open_dry_3.nc
+trajin ./Trajectories/open_dry_4.nc
+trajin ./Trajectories/open_dry_5.nc
+trajin ./Trajectories/closed_dry_5.nc
+trajin ./Trajectories/open10_dry.rst7
+trajout toy_traj.nc
+run
+quit
