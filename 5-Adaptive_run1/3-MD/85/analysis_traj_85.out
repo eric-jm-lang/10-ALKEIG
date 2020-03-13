@@ -1,0 +1,16 @@
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/14/19 09:52:08
+| Available memory: 48.672 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_85_wat.parm7]
+	Reading 'adapt1_85_wat.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin adapt1_85_md1.nc]
+TIME: Total execution time: 0.1234 seconds.
+

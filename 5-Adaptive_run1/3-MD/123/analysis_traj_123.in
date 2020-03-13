@@ -1,0 +1,10 @@
+parm adapt1_123_wat.parm7
+trajin adapt1_123_md1.nc
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout ../../4-Analysis/trajectories_dry/adapt1_dry_123.nc
+run
+quit
