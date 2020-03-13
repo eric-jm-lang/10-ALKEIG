@@ -1,0 +1,8 @@
+/tmp/slurmd/job643642/slurm_script: line 18: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/1: No such file or directory
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+slurmstepd: error: *** JOB 643642 ON gpu04 CANCELLED AT 2017-12-11T16:46:11 ***

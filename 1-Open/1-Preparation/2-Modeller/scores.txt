@@ -1,0 +1,28 @@
+Filename                          molpdf     DOPE score
+-------------------------------------------------------
+open1_nowat_fill.B99990001.pdb       92.26434      -24.98789
+open1_nowat_fill.B99990002.pdb       92.18897      -25.52192
+open1_nowat_fill.B99990003.pdb       90.72428      -28.26737
+open1_nowat_fill.B99990004.pdb       90.64828      -28.51954
+open1_nowat_fill.B99990005.pdb       92.32777      -25.61335
+open1_nowat_fill.B99990006.pdb       92.18356      -25.23629
+open1_nowat_fill.B99990007.pdb       92.15418      -24.95606
+open1_nowat_fill.B99990008.pdb       90.69412      -28.15532
+open1_nowat_fill.B99990009.pdb       90.72614      -29.38744
+open1_nowat_fill.B99990010.pdb       92.24702      -24.65283
+open1_nowat_fill.B99990011.pdb       92.60368      -23.80948
+open1_nowat_fill.B99990012.pdb       92.38701      -26.28551
+open1_nowat_fill.B99990013.pdb       92.30779      -25.70397
+open1_nowat_fill.B99990014.pdb       92.18266      -25.92749
+open1_nowat_fill.B99990015.pdb       92.28191      -23.89630
+open1_nowat_fill.B99990016.pdb       92.38850      -26.20542
+open1_nowat_fill.B99990017.pdb       92.18537      -24.95384
+open1_nowat_fill.B99990018.pdb       90.71898      -28.90331
+open1_nowat_fill.B99990019.pdb       92.28953      -24.82939
+open1_nowat_fill.B99990020.pdb       92.29138      -26.10732
+open1_nowat_fill.B99990021.pdb       92.18522      -25.67707
+open1_nowat_fill.B99990022.pdb       92.29358      -24.63987
+open1_nowat_fill.B99990023.pdb       92.25456      -25.04641
+open1_nowat_fill.B99990024.pdb       92.22691      -24.88853
+open1_nowat_fill.B99990025.pdb       90.73352      -27.92286
+

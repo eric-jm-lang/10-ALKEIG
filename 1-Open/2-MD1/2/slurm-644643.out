@@ -1,0 +1,2 @@
+/tmp/slurmd/job644643/slurm_script: line 18: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/2: No such file or directory
+slurmstepd: error: *** JOB 644643 ON gpu03 CANCELLED AT 2017-12-12T12:44:53 ***

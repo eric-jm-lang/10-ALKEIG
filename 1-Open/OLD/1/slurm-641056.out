@@ -1,0 +1,637 @@
+/tmp/slurmd/job641056/slurm_script: line 18: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/1: No such file or directory
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:04:49
+| Available memory: 59.521 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min1.rst7]
+	Reading 'TEMP_open_1_min1.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min1.rst7 restart]
+	Writing 'open_1_min1.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min1.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min1.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min1.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 11.4157 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.0876 s ( 99.77%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.0878 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1676 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:04:55
+| Available memory: 59.519 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min2.rst7]
+	Reading 'TEMP_open_1_min2.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min2.rst7 restart]
+	Writing 'open_1_min2.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min2.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min2.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min2.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 14.0710 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.0711 s ( 99.76%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.0712 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1508 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:05:00
+| Available memory: 59.517 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min3.rst7]
+	Reading 'TEMP_open_1_min3.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min3.rst7 restart]
+	Writing 'open_1_min3.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min3.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min3.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min3.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 11.4151 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.0876 s ( 99.75%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.0878 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1934 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:05:23
+| Available memory: 59.515 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min4.rst7]
+	Reading 'TEMP_open_1_min4.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min4.rst7 restart]
+	Writing 'open_1_min4.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min4.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min4.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min4.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 11.5781 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.0864 s ( 99.72%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.0866 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1846 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:02
+| Available memory: 59.510 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min5.rst7]
+	Reading 'TEMP_open_1_min5.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min5.rst7 restart]
+	Writing 'open_1_min5.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min5.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min5.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min5.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 14.3301 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.0698 s ( 99.91%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 0.0698 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1601 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:42
+| Available memory: 59.510 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_min6.rst7]
+	Reading 'TEMP_open_1_min6.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_min6.rst7 restart]
+	Writing 'open_1_min6.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_min6.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_min6.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_min6.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 15.5804 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.0642 s ( 99.90%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 0.0642 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1431 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Error: an illegal memory access was encountered launching kernel kClearForces
+cudaFree GpuBuffer::Deallocate failed an illegal memory access was encountered
+Error: Could not determine trajectory TEMP_open_1_heat.rst7 format.
+Error: Could not set up input trajectory 'TEMP_open_1_heat.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:45
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_heat.rst7]
+TIME: Total execution time: 0.0746 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_heat.rst7                                                                                                                                                                                                                                                
+cp: cannot stat 'open_1_eq1.rst7': No such file or directory
+mv: cannot stat 'open_1_eq1.rst7': No such file or directory
+Error: 'TEMP_open_1_eq1.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq1.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:46
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq1.rst7]
+TIME: Total execution time: 0.0546 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq1.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq2.rst7': No such file or directory
+mv: cannot stat 'open_1_eq2.rst7': No such file or directory
+Error: 'TEMP_open_1_eq2.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq2.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:47
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq2.rst7]
+TIME: Total execution time: 0.0539 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq2.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq3.rst7': No such file or directory
+mv: cannot stat 'open_1_eq3.rst7': No such file or directory
+Error: 'TEMP_open_1_eq3.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq3.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:49
+| Available memory: 59.508 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq3.rst7]
+TIME: Total execution time: 0.0530 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq3.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq4.rst7': No such file or directory
+mv: cannot stat 'open_1_eq4.rst7': No such file or directory
+Error: 'TEMP_open_1_eq4.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq4.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:50
+| Available memory: 59.508 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq4.rst7]
+TIME: Total execution time: 0.0535 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq4.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq5.rst7': No such file or directory
+mv: cannot stat 'open_1_eq5.rst7': No such file or directory
+Error: 'TEMP_open_1_eq5.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq5.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:51
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq5.rst7]
+TIME: Total execution time: 0.0538 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq5.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq6.rst7': No such file or directory
+mv: cannot stat 'open_1_eq6.rst7': No such file or directory
+Error: 'TEMP_open_1_eq6.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq6.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:53
+| Available memory: 59.510 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq6.rst7]
+TIME: Total execution time: 0.0549 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq6.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq7.rst7': No such file or directory
+mv: cannot stat 'open_1_eq7.rst7': No such file or directory
+Error: 'TEMP_open_1_eq7.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq7.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:54
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq7.rst7]
+TIME: Total execution time: 0.0532 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq7.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_1_eq8.rst7': No such file or directory
+mv: cannot stat 'open_1_eq8.rst7': No such file or directory
+Error: 'TEMP_open_1_eq8.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_1_eq8.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/09/17 01:06:55
+| Available memory: 59.509 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_eq8.rst7]
+TIME: Total execution time: 0.0527 seconds.
+

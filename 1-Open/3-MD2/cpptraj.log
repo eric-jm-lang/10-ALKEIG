@@ -1,0 +1,18 @@
+# 02/09/18 13:27:01
+parm open10_dry.parm7
+reference closed10_dry.rst7
+trajin open_all_dry.nc
+rms reference out open_rmsd_to_closed.dat '(!:WAT & @CA,C,N,O)'
+run
+clear all
+parm open10_dry.parm7
+reference open10_dry.rst7
+trajin open_all_dry.nc
+rms reference out open_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+# 02/09/18 13:27:47
+parm open10_dry.parm7
+reference open10_dry.rst7
+trajin open_all_dry.nc
+rms reference out open_rmsd_to_open.dat '(!:WAT & @CA,C,N,O)'
+run
+quit

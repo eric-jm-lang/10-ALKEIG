@@ -1,0 +1,28 @@
+# 06/26/18 11:09:54
+parm ../open10_dry.parm7
+reference ../closed10_dry.rst7
+trajin open_all_dry_1.nc
+rms reference out ../open_rmsd_to_closed_1.dat '(!:WAT & @CA,C,N,O)'
+run
+quit
+# 06/26/18 11:32:22
+parm ../open10_dry.parm7
+reference ../open10_dry.rst7
+trajin open_all_dry_1.nc
+rms reference out ../open_rmsd_to_open_1.dat '(!:WAT & @CA,C,N,O)'
+run
+quit
+# 06/26/18 12:46:15
+parm ../open10_dry.parm7
+reference ../open10_dry.rst7
+trajin ../closed10_dry.rst7
+rms reference out ../rmsd_xray.dat '(!:WAT & @CA,C,N,O)'
+run
+quit
+# 06/26/18 23:47:01
+parm ../open10_dry.parm7
+reference ../open10_dry.rst7
+trajin ../open_dry_1.nc
+rms reference out ../open_rmsd_to_open_1.dat '(!:WAT & @CA,C,N,O)'
+run
+quit

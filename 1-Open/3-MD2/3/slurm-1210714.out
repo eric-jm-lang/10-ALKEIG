@@ -1,0 +1,98 @@
+STOP PMEMD Terminated Abnormally!
+cp: cannot stat 'open_3_md2.rst7': No such file or directory
+mv: cannot stat 'open_3_md2.rst7': No such file or directory
+Error: Could not determine trajectory TEMP_open_3_md2.rst7 format.
+Error: Could not set up input trajectory 'TEMP_open_3_md2.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 01:17:55
+| Available memory: 105.325 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_3_md2.rst7]
+TIME: Total execution time: 0.0595 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_3_md2.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_3_md3.rst7': No such file or directory
+mv: cannot stat 'open_3_md3.rst7': No such file or directory
+Error: 'TEMP_open_3_md3.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_3_md3.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 01:17:56
+| Available memory: 105.324 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_3_md3.rst7]
+TIME: Total execution time: 0.0685 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_3_md3.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_3_md4.rst7': No such file or directory
+mv: cannot stat 'open_3_md4.rst7': No such file or directory
+Error: 'TEMP_open_3_md4.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_3_md4.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 01:17:58
+| Available memory: 105.324 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_3_md4.rst7]
+TIME: Total execution time: 0.0701 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_3_md4.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_3_md5.rst7': No such file or directory
+mv: cannot stat 'open_3_md5.rst7': No such file or directory
+Error: 'TEMP_open_3_md5.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_3_md5.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 01:17:59
+| Available memory: 105.324 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_3_md5.rst7]
+TIME: Total execution time: 0.0704 seconds.
+

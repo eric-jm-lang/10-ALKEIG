@@ -1,0 +1,2 @@
+/tmp/slurmd/job1209790/slurm_script: line 18: cd: /mnt/storage/home/el14718/mulholland_group/el14718/10-ALKEIG/1-open/3-MD2/5: No such file or directory
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL

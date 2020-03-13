@@ -1,0 +1,7 @@
+# 07/01/18 21:54:28
+parm ../open10_dry.parm7
+reference ../open10_dry.rst7
+trajin ../open_all_dry_2.nc
+rms reference out ../open_rmsd_to_open_2.dat '(!:WAT & @CA,C,N,O)'
+run
+quit

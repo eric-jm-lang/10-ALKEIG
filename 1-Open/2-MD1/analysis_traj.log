@@ -1,0 +1,667 @@
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/20/18 21:22:43
+| Available memory: 446.833 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin ./1/open_1_md1.nc]
+	Reading './1/open_1_md1.nc' as Amber NetCDF
+  [trajin ./1/open_1_md2.nc]
+	Reading './1/open_1_md2.nc' as Amber NetCDF
+  [trajin ./1/open_1_md3.nc]
+	Reading './1/open_1_md3.nc' as Amber NetCDF
+  [trajin ./1/open_1_md4.nc]
+	Reading './1/open_1_md4.nc' as Amber NetCDF
+  [trajin ./1/open_1_md5.nc]
+	Reading './1/open_1_md5.nc' as Amber NetCDF
+  [trajin ./1/open_1_md6.nc]
+	Reading './1/open_1_md6.nc' as Amber NetCDF
+  [trajin ./1/open_1_md7.nc]
+	Reading './1/open_1_md7.nc' as Amber NetCDF
+  [trajin ./1/open_1_md8.nc]
+	Reading './1/open_1_md8.nc' as Amber NetCDF
+  [trajin ./1/open_1_md9.nc]
+	Reading './1/open_1_md9.nc' as Amber NetCDF
+  [trajin ./1/open_1_md10.nc]
+	Reading './1/open_1_md10.nc' as Amber NetCDF
+  [trajin ./1/open_1_md11.nc]
+	Reading './1/open_1_md11.nc' as Amber NetCDF
+  [trajin ./1/open_1_md12.nc]
+	Reading './1/open_1_md12.nc' as Amber NetCDF
+  [trajin ./1/open_1_md13.nc]
+	Reading './1/open_1_md13.nc' as Amber NetCDF
+  [trajin ./1/open_1_md14.nc]
+	Reading './1/open_1_md14.nc' as Amber NetCDF
+  [trajin ./1/open_1_md15.nc]
+	Reading './1/open_1_md15.nc' as Amber NetCDF
+  [trajin ./2/open_2_md1.nc]
+	Reading './2/open_2_md1.nc' as Amber NetCDF
+  [trajin ./2/open_2_md2.nc]
+	Reading './2/open_2_md2.nc' as Amber NetCDF
+  [trajin ./2/open_2_md3.nc]
+	Reading './2/open_2_md3.nc' as Amber NetCDF
+  [trajin ./2/open_2_md4.nc]
+	Reading './2/open_2_md4.nc' as Amber NetCDF
+  [trajin ./2/open_2_md5.nc]
+	Reading './2/open_2_md5.nc' as Amber NetCDF
+  [trajin ./2/open_2_md6.nc]
+	Reading './2/open_2_md6.nc' as Amber NetCDF
+  [trajin ./2/open_2_md7.nc]
+	Reading './2/open_2_md7.nc' as Amber NetCDF
+  [trajin ./2/open_2_md8.nc]
+	Reading './2/open_2_md8.nc' as Amber NetCDF
+  [trajin ./2/open_2_md9.nc]
+	Reading './2/open_2_md9.nc' as Amber NetCDF
+  [trajin ./2/open_2_md10.nc]
+	Reading './2/open_2_md10.nc' as Amber NetCDF
+  [trajin ./2/open_2_md11.nc]
+	Reading './2/open_2_md11.nc' as Amber NetCDF
+  [trajin ./2/open_2_md12.nc]
+	Reading './2/open_2_md12.nc' as Amber NetCDF
+  [trajin ./2/open_2_md13.nc]
+	Reading './2/open_2_md13.nc' as Amber NetCDF
+  [trajin ./2/open_2_md14.nc]
+	Reading './2/open_2_md14.nc' as Amber NetCDF
+  [trajin ./2/open_2_md15.nc]
+	Reading './2/open_2_md15.nc' as Amber NetCDF
+  [trajin ./3/open_3_md1.nc]
+	Reading './3/open_3_md1.nc' as Amber NetCDF
+  [trajin ./3/open_3_md2.nc]
+	Reading './3/open_3_md2.nc' as Amber NetCDF
+  [trajin ./3/open_3_md3.nc]
+	Reading './3/open_3_md3.nc' as Amber NetCDF
+  [trajin ./3/open_3_md4.nc]
+	Reading './3/open_3_md4.nc' as Amber NetCDF
+  [trajin ./3/open_3_md5.nc]
+	Reading './3/open_3_md5.nc' as Amber NetCDF
+  [trajin ./3/open_3_md6.nc]
+	Reading './3/open_3_md6.nc' as Amber NetCDF
+  [trajin ./3/open_3_md7.nc]
+	Reading './3/open_3_md7.nc' as Amber NetCDF
+  [trajin ./3/open_3_md8.nc]
+	Reading './3/open_3_md8.nc' as Amber NetCDF
+  [trajin ./3/open_3_md9.nc]
+	Reading './3/open_3_md9.nc' as Amber NetCDF
+  [trajin ./3/open_3_md10.nc]
+	Reading './3/open_3_md10.nc' as Amber NetCDF
+  [trajin ./3/open_3_md11.nc]
+	Reading './3/open_3_md11.nc' as Amber NetCDF
+  [trajin ./3/open_3_md12.nc]
+	Reading './3/open_3_md12.nc' as Amber NetCDF
+  [trajin ./3/open_3_md13.nc]
+	Reading './3/open_3_md13.nc' as Amber NetCDF
+  [trajin ./3/open_3_md14.nc]
+	Reading './3/open_3_md14.nc' as Amber NetCDF
+  [trajin ./3/open_3_md15.nc]
+	Reading './3/open_3_md15.nc' as Amber NetCDF
+  [trajin ./4/open_4_md1.nc]
+	Reading './4/open_4_md1.nc' as Amber NetCDF
+  [trajin ./4/open_4_md2.nc]
+	Reading './4/open_4_md2.nc' as Amber NetCDF
+  [trajin ./4/open_4_md3.nc]
+	Reading './4/open_4_md3.nc' as Amber NetCDF
+  [trajin ./4/open_4_md4.nc]
+	Reading './4/open_4_md4.nc' as Amber NetCDF
+  [trajin ./4/open_4_md5.nc]
+	Reading './4/open_4_md5.nc' as Amber NetCDF
+  [trajin ./4/open_4_md6.nc]
+	Reading './4/open_4_md6.nc' as Amber NetCDF
+  [trajin ./4/open_4_md7.nc]
+	Reading './4/open_4_md7.nc' as Amber NetCDF
+  [trajin ./4/open_4_md8.nc]
+	Reading './4/open_4_md8.nc' as Amber NetCDF
+  [trajin ./4/open_4_md9.nc]
+	Reading './4/open_4_md9.nc' as Amber NetCDF
+  [trajin ./4/open_4_md10.nc]
+	Reading './4/open_4_md10.nc' as Amber NetCDF
+  [trajin ./4/open_4_md11.nc]
+	Reading './4/open_4_md11.nc' as Amber NetCDF
+  [trajin ./4/open_4_md12.nc]
+	Reading './4/open_4_md12.nc' as Amber NetCDF
+  [trajin ./4/open_4_md13.nc]
+	Reading './4/open_4_md13.nc' as Amber NetCDF
+  [trajin ./4/open_4_md14.nc]
+	Reading './4/open_4_md14.nc' as Amber NetCDF
+  [trajin ./4/open_4_md15.nc]
+	Reading './4/open_4_md15.nc' as Amber NetCDF
+  [trajin ./5/open_5_md1.nc]
+	Reading './5/open_5_md1.nc' as Amber NetCDF
+  [trajin ./5/open_5_md2.nc]
+	Reading './5/open_5_md2.nc' as Amber NetCDF
+  [trajin ./5/open_5_md3.nc]
+	Reading './5/open_5_md3.nc' as Amber NetCDF
+  [trajin ./5/open_5_md4.nc]
+	Reading './5/open_5_md4.nc' as Amber NetCDF
+  [trajin ./5/open_5_md5.nc]
+	Reading './5/open_5_md5.nc' as Amber NetCDF
+  [trajin ./5/open_5_md6.nc]
+	Reading './5/open_5_md6.nc' as Amber NetCDF
+  [trajin ./5/open_5_md7.nc]
+	Reading './5/open_5_md7.nc' as Amber NetCDF
+  [trajin ./5/open_5_md8.nc]
+	Reading './5/open_5_md8.nc' as Amber NetCDF
+  [trajin ./5/open_5_md9.nc]
+	Reading './5/open_5_md9.nc' as Amber NetCDF
+  [trajin ./5/open_5_md10.nc]
+	Reading './5/open_5_md10.nc' as Amber NetCDF
+  [trajin ./5/open_5_md11.nc]
+	Reading './5/open_5_md11.nc' as Amber NetCDF
+  [trajin ./5/open_5_md12.nc]
+	Reading './5/open_5_md12.nc' as Amber NetCDF
+  [trajin ./5/open_5_md13.nc]
+	Reading './5/open_5_md13.nc' as Amber NetCDF
+  [trajin ./5/open_5_md14.nc]
+	Reading './5/open_5_md14.nc' as Amber NetCDF
+  [trajin ./5/open_5_md15.nc]
+	Reading './5/open_5_md15.nc' as Amber NetCDF
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_all.nc]
+	Writing 'open_all.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (75 total):
+ 0: 'open_1_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 1: 'open_1_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 2: 'open_1_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 3: 'open_1_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 4: 'open_1_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 5: 'open_1_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 6: 'open_1_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 7: 'open_1_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 8: 'open_1_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 9: 'open_1_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 10: 'open_1_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 11: 'open_1_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 12: 'open_1_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 13: 'open_1_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 14: 'open_1_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 15: 'open_2_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 16: 'open_2_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 17: 'open_2_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 18: 'open_2_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 19: 'open_2_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 20: 'open_2_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 21: 'open_2_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 22: 'open_2_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 23: 'open_2_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 24: 'open_2_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 25: 'open_2_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 422 of 422)
+ 26: 'open_2_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 27: 'open_2_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 28: 'open_2_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 29: 'open_2_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 998 of 998)
+ 30: 'open_3_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 31: 'open_3_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 32: 'open_3_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 33: 'open_3_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 34: 'open_3_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 35: 'open_3_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 36: 'open_3_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 37: 'open_3_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 38: 'open_3_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 39: 'open_3_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 40: 'open_3_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 41: 'open_3_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 42: 'open_3_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 43: 'open_3_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 44: 'open_3_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 45: 'open_4_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 46: 'open_4_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 47: 'open_4_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 48: 'open_4_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 49: 'open_4_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 50: 'open_4_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 51: 'open_4_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 52: 'open_4_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 53: 'open_4_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 54: 'open_4_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 55: 'open_4_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 56: 'open_4_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 57: 'open_4_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 58: 'open_4_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 59: 'open_4_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 60: 'open_5_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 61: 'open_5_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 62: 'open_5_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 63: 'open_5_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 64: 'open_5_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 65: 'open_5_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 66: 'open_5_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 67: 'open_5_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 68: 'open_5_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 69: 'open_5_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 70: 'open_5_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 71: 'open_5_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 72: 'open_5_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 73: 'open_5_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 74: 'open_5_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+  Coordinate processing will occur on 147420 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_all.nc' (147420 frames) is a NetCDF AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- open_1_md1.nc (1-2000, 1) -----
+ 0% 
+----- open_1_md2.nc (1-2000, 1) -----
+
+----- open_1_md3.nc (1-2000, 1) -----
+
+----- open_1_md4.nc (1-2000, 1) -----
+
+----- open_1_md5.nc (1-2000, 1) -----
+
+----- open_1_md6.nc (1-2000, 1) -----
+
+----- open_1_md7.nc (1-2000, 1) -----
+
+----- open_1_md8.nc (1-2000, 1) -----
+10% 
+----- open_1_md9.nc (1-2000, 1) -----
+
+----- open_1_md10.nc (1-2000, 1) -----
+
+----- open_1_md11.nc (1-2000, 1) -----
+
+----- open_1_md12.nc (1-2000, 1) -----
+
+----- open_1_md13.nc (1-2000, 1) -----
+
+----- open_1_md14.nc (1-2000, 1) -----
+
+----- open_1_md15.nc (1-2000, 1) -----
+20% 
+----- open_2_md1.nc (1-2000, 1) -----
+
+----- open_2_md2.nc (1-2000, 1) -----
+
+----- open_2_md3.nc (1-2000, 1) -----
+
+----- open_2_md4.nc (1-2000, 1) -----
+
+----- open_2_md5.nc (1-2000, 1) -----
+
+----- open_2_md6.nc (1-2000, 1) -----
+
+----- open_2_md7.nc (1-2000, 1) -----
+
+----- open_2_md8.nc (1-2000, 1) -----
+30% 
+----- open_2_md9.nc (1-2000, 1) -----
+
+----- open_2_md10.nc (1-2000, 1) -----
+
+----- open_2_md11.nc (1-422, 1) -----
+
+----- open_2_md12.nc (1-2000, 1) -----
+
+----- open_2_md13.nc (1-2000, 1) -----
+
+----- open_2_md14.nc (1-2000, 1) -----
+
+----- open_2_md15.nc (1-998, 1) -----
+
+----- open_3_md1.nc (1-2000, 1) -----
+40% 
+----- open_3_md2.nc (1-2000, 1) -----
+
+----- open_3_md3.nc (1-2000, 1) -----
+
+----- open_3_md4.nc (1-2000, 1) -----
+
+----- open_3_md5.nc (1-2000, 1) -----
+
+----- open_3_md6.nc (1-2000, 1) -----
+
+----- open_3_md7.nc (1-2000, 1) -----
+
+----- open_3_md8.nc (1-2000, 1) -----
+
+----- open_3_md9.nc (1-2000, 1) -----
+50% 
+----- open_3_md10.nc (1-2000, 1) -----
+
+----- open_3_md11.nc (1-2000, 1) -----
+
+----- open_3_md12.nc (1-2000, 1) -----
+
+----- open_3_md13.nc (1-2000, 1) -----
+
+----- open_3_md14.nc (1-2000, 1) -----
+
+----- open_3_md15.nc (1-2000, 1) -----
+
+----- open_4_md1.nc (1-2000, 1) -----
+60% 
+----- open_4_md2.nc (1-2000, 1) -----
+
+----- open_4_md3.nc (1-2000, 1) -----
+
+----- open_4_md4.nc (1-2000, 1) -----
+
+----- open_4_md5.nc (1-2000, 1) -----
+
+----- open_4_md6.nc (1-2000, 1) -----
+
+----- open_4_md7.nc (1-2000, 1) -----
+
+----- open_4_md8.nc (1-2000, 1) -----
+70% 
+----- open_4_md9.nc (1-2000, 1) -----
+
+----- open_4_md10.nc (1-2000, 1) -----
+
+----- open_4_md11.nc (1-2000, 1) -----
+
+----- open_4_md12.nc (1-2000, 1) -----
+
+----- open_4_md13.nc (1-2000, 1) -----
+
+----- open_4_md14.nc (1-2000, 1) -----
+
+----- open_4_md15.nc (1-2000, 1) -----
+
+----- open_5_md1.nc (1-2000, 1) -----
+80% 
+----- open_5_md2.nc (1-2000, 1) -----
+
+----- open_5_md3.nc (1-2000, 1) -----
+
+----- open_5_md4.nc (1-2000, 1) -----
+
+----- open_5_md5.nc (1-2000, 1) -----
+
+----- open_5_md6.nc (1-2000, 1) -----
+
+----- open_5_md7.nc (1-2000, 1) -----
+
+----- open_5_md8.nc (1-2000, 1) -----
+90% 
+----- open_5_md9.nc (1-2000, 1) -----
+
+----- open_5_md10.nc (1-2000, 1) -----
+
+----- open_5_md11.nc (1-2000, 1) -----
+
+----- open_5_md12.nc (1-2000, 1) -----
+
+----- open_5_md13.nc (1-2000, 1) -----
+
+----- open_5_md14.nc (1-2000, 1) -----
+
+----- open_5_md15.nc (1-2000, 1) -----
+100% Complete.
+
+Read 147420 frames and processed 147420 frames.
+TIME: Avg. throughput= 79.7122 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 1849.4035 s (100.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0012 s (  0.00%)
+TIME:	Run Total 1849.4048 s
+---------- RUN END ---------------------------------------------------
+  [clear all]
+	Clearing Actions.
+	Clearing input trajectories/ensembles.
+	Clearing reference coordinates.
+	Clearing output trajectories.
+	Clearing topologies.
+	Clearing Analyses.
+	Clearing data files.
+	Clearing data sets.
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin open_all.nc]
+	Reading 'open_all.nc' as Amber NetCDF
+  [strip :WAT]
+    STRIP: Stripping atoms in mask [:WAT]
+  [strip :Na+]
+    STRIP: Stripping atoms in mask [:Na+]
+  [strip :Cl-]
+    STRIP: Stripping atoms in mask [:Cl-]
+  [trajout open_all_dry.nc]
+	Writing 'open_all_dry.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'open_all.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 147420 of 147420)
+  Coordinate processing will occur on 147420 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_all_dry.nc' (147420 frames) is a NetCDF AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (3 actions):
+  0: [strip :WAT]
+	Stripping 35700 atoms.
+	Stripped topology: 2858 atoms, 242 res, box: Trunc. Oct., 56 mol
+  1: [strip :Na+]
+	Stripping 22 atoms.
+	Stripped topology: 2836 atoms, 220 res, box: Trunc. Oct., 34 mol
+  2: [strip :Cl-]
+	Stripping 28 atoms.
+	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+----- open_all.nc (1-147420, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 147420 frames and processed 147420 frames.
+TIME: Avg. throughput= 109.2648 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 1349.1992 s (100.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0018 s (  0.00%)
+TIME:	Run Total 1349.2010 s
+---------- RUN END ---------------------------------------------------
+  [clear all]
+	Clearing Actions.
+	Clearing input trajectories/ensembles.
+	Clearing reference coordinates.
+	Clearing output trajectories.
+	Clearing topologies.
+	Clearing Analyses.
+	Clearing data files.
+	Clearing data sets.
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [parmstrip :WAT]
+	Stripping atoms in mask [:WAT] (35700) from open10.parm7
+	Stripped parm: 2858 atoms, 242 res, box: Trunc. Oct., 56 mol
+  [parmstrip :Na+]
+	Stripping atoms in mask [:Na+] (22) from open10.parm7
+	Stripped parm: 2836 atoms, 220 res, box: Trunc. Oct., 34 mol
+  [parmstrip :Cl-]
+	Stripping atoms in mask [:Cl-] (28) from open10.parm7
+	Stripped parm: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+  [parmwrite out open10_dry.parm7]
+	Writing topology 0 (open10.parm7) to 'open10_dry.parm7' with format Amber Topology
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+Warning: No input trajectories specified.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 0.0000 s (  0.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  1.00%)
+TIME:	Run Total 0.0000 s
+---------- RUN END ---------------------------------------------------
+  [clear all]
+	Clearing Actions.
+	Clearing input trajectories/ensembles.
+	Clearing reference coordinates.
+	Clearing output trajectories.
+	Clearing topologies.
+	Clearing Analyses.
+	Clearing data files.
+	Clearing data sets.
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin open10.rst7]
+	Reading 'open10.rst7' as Amber Restart
+  [strip :WAT]
+    STRIP: Stripping atoms in mask [:WAT]
+  [strip :Na+]
+    STRIP: Stripping atoms in mask [:Na+]
+  [strip :Cl-]
+    STRIP: Stripping atoms in mask [:Cl-]
+  [trajout open10_dry.rst7]
+	Writing 'open10_dry.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'open10.rst7' is an AMBER restart file, no velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open10_dry.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (3 actions):
+  0: [strip :WAT]
+	Stripping 35700 atoms.
+	Stripped topology: 2858 atoms, 242 res, box: Trunc. Oct., 56 mol
+  1: [strip :Na+]
+	Stripping 22 atoms.
+	Stripped topology: 2836 atoms, 220 res, box: Trunc. Oct., 34 mol
+  2: [strip :Cl-]
+	Stripping 28 atoms.
+	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+----- open10.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 50.9580 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.05%)
+TIME:		Trajectory Process : 0.0196 s ( 97.48%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0005 s (  0.02%)
+TIME:	Run Total 0.0201 s
+---------- RUN END ---------------------------------------------------
+  [clear all]
+	Clearing Actions.
+	Clearing input trajectories/ensembles.
+	Clearing reference coordinates.
+	Clearing output trajectories.
+	Clearing topologies.
+	Clearing Analyses.
+	Clearing data files.
+	Clearing data sets.
+  [parm closed10.parm7]
+	Reading 'closed10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin closed10.rst7]
+	Reading 'closed10.rst7' as Amber Restart
+  [strip :WAT]
+    STRIP: Stripping atoms in mask [:WAT]
+  [strip :Na+]
+    STRIP: Stripping atoms in mask [:Na+]
+  [strip :Cl-]
+    STRIP: Stripping atoms in mask [:Cl-]
+  [trajout closed10_dry.rst7]
+	Writing 'closed10_dry.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: closed10.parm7, 43615 atoms, 13833 res, box: Trunc. Oct., 13647 mol, 13583 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'closed10.rst7' is an AMBER restart file, no velocities, Parm closed10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'closed10_dry.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'closed10.parm7' (3 actions):
+  0: [strip :WAT]
+	Stripping 40749 atoms.
+	Stripped topology: 2866 atoms, 250 res, box: Trunc. Oct., 64 mol
+  1: [strip :Na+]
+	Stripping 26 atoms.
+	Stripped topology: 2840 atoms, 224 res, box: Trunc. Oct., 38 mol
+  2: [strip :Cl-]
+	Stripping 32 atoms.
+	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+----- closed10.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 51.4403 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.05%)
+TIME:		Trajectory Process : 0.0194 s ( 97.60%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0005 s (  0.02%)
+TIME:	Run Total 0.0199 s
+---------- RUN END ---------------------------------------------------
+  [parm open10_dry.parm7]
+	Reading 'open10_dry.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [reference closed10_dry.rst7]
+	Reading 'closed10_dry.rst7' as Amber Restart
+TIME: Total execution time: 3205.0064 seconds.
+

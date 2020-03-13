@@ -1,0 +1,15 @@
+/tmp/slurmd/job665616/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/4: No such file or directory
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[highmem13.bc4.acrc.priv:12813] 27 more processes have sent help message help-mpi-common-cuda.txt / dlopen failed
+[highmem13.bc4.acrc.priv:12813] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

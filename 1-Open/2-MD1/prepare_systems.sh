@@ -1,0 +1,125 @@
+#!/bin/bash -f
+
+  
+#for i in 1 2 3; do
+for i in 4 5; do
+  
+
+    cp *.i ./${i}
+    cp open10.* ./${i}
+    cp open10.rst7 ./${i}/open_${i}_ini.rst7
+    cd ./${i}
+    
+
+echo "#!/bin/bash -login
+#
+#SBATCH -p test
+#SBATCH -J open${i}_min
+#SBATCH --time=01:00:00     # Walltime
+#SBATCH --mail-user=eric.lang@bristol.ac.uk
+#SBATCH --mail-type=ALL
+#SBATCH --nodes=1          # number of tasks
+#SBATCH --ntasks-per-node=28 # number of tasks per node
+#
+module add OpenMPI/2.0.1-gcccuda-2016.10
+export AMBERHOME=/mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16
+source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
+
+export MYDIR=\"/mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/${i}\"
+#
+cd \$MYDIR
+old=ini
+for name in min1 min2 min3 min4 min5 min6; do
+  mpirun -n 28 \$AMBERHOME/bin/pmemd.MPI -O -i \$name.i -o open_${i}_\$name.mdout -p open10.parm7 -c open_${i}_\$old.rst7 \
+  -ref open10.rst7 -x open_${i}_\$name.nc -r open_${i}_\$name.rst7 -inf open_${i}_\$name.mdinfo
+  
+old=\$name
+done" >  min.slurm 
+
+echo "#!/bin/bash -login
+#
+#SBATCH -p test
+#SBATCH -J open${i}_heat
+#SBATCH --time=01:00:00     # Walltime
+#SBATCH --mail-user=eric.lang@bristol.ac.uk
+#SBATCH --mail-type=ALL
+#SBATCH --nodes=1          # number of tasks
+#SBATCH --ntasks-per-node=28 # number of tasks per node
+#
+module add OpenMPI/2.0.1-gcccuda-2016.10
+export AMBERHOME=/mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16
+source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
+
+export MYDIR=\"/mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/${i}\"
+#
+cd \$MYDIR
+old=min6
+for name in heat; do
+  mpirun -n 28 \$AMBERHOME/bin/pmemd.MPI -O -i \$name.i -o open_${i}_\$name.mdout -p open10.parm7 -c open_${i}_\$old.rst7 \
+  -ref open_${i}_min6.rst7 -x open_${i}_\$name.nc -r open_${i}_\$name.rst7 -inf open_${i}_\$name.mdinfo
+
+old=\$name
+done" >  heat.slurm
+
+
+echo "#!/bin/bash -login
+#
+#SBATCH -p gpu
+#SBATCH -J open${i}_eq
+#SBATCH --time=12:00:00     # Walltime
+#SBATCH --mail-user=eric.lang@bristol.ac.uk
+#SBATCH --mail-type=ALL
+#SBATCH --nodes=1          # number of tasks
+#SBATCH --ntasks-per-node=1 # number of tasks per node
+#SBATCH --gres=gpu:1
+#
+module add OpenMPI/2.0.1-gcccuda-2016.10
+export AMBERHOME=/mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16
+source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
+
+export MYDIR=\"/mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/${i}\"
+#
+cd \$MYDIR
+old=heat
+for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 eq8; do
+  \$AMBERHOME/bin/pmemd.cuda -O -i \$name.i -o open_${i}_\$name.mdout -p open10.parm7 -c open_${i}_\$old.rst7 \
+  -ref open_${i}_min6.rst7 -x open_${i}_\$name.nc -r open_${i}_\$name.rst7 -inf open_${i}_\$name.mdinfo
+
+old=\$name
+done" >  eq.slurm
+
+
+
+echo "#!/bin/bash -login
+#
+#SBATCH -p gpu
+#SBATCH -J open${i}_md1
+#SBATCH --time=48:00:00     # Walltime
+#SBATCH --mail-user=eric.lang@bristol.ac.uk
+#SBATCH --mail-type=ALL
+#SBATCH --nodes=1          # number of tasks
+#SBATCH --ntasks-per-node=1 # number of tasks per node
+#SBATCH --gres=gpu:1
+#
+module add OpenMPI/2.0.1-gcccuda-2016.10
+export AMBERHOME=/mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16
+source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
+
+export MYDIR=\"/mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/${i}\"
+#
+cd \$MYDIR
+old=eq8
+for name in md1; do
+  \$AMBERHOME/bin/pmemd.cuda -O -i \$name.i -o open_${i}_\$name.mdout -p open10.parm7 -c open_${i}_\$old.rst7 \
+  -x open_${i}_\$name.nc -r open_${i}_\$name.rst7 -inf open_${i}_\$name.mdinfo
+ 
+  old=\$name
+done" >  md1.slurm 
+
+
+    cd ..
+
+done
+
+
+

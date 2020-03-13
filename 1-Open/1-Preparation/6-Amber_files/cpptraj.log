@@ -1,0 +1,17 @@
+# 12/08/17 23:26:44
+parm open10.parm7
+trajin TEMP_open10.rst7
+center mass origin :1-192
+trajout open10.rst7
+trajout open10.pdb
+run
+quit
+# 12/08/17 23:29:09
+parm open10.parm7
+trajin TEMP_open10.rst7
+principal :1-192 dorotation mass
+center mass origin :1-192
+trajout open10.rst7
+trajout open10.pdb
+run
+quit

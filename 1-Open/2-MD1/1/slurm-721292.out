@@ -1,0 +1,280 @@
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 01/28/18 13:15:31
+| Available memory: 108.629 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_md2.rst7]
+	Reading 'TEMP_open_1_md2.rst7' as Amber NC Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_md2.rst7 restart]
+	Writing 'open_1_md2.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_md2.rst7' is a NetCDF AMBER restart file, with velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_md2.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_md2.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 7.1419 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.1400 s ( 99.95%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.1401 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2698 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 01/29/18 10:59:27
+| Available memory: 108.600 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_md3.rst7]
+	Reading 'TEMP_open_1_md3.rst7' as Amber NC Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_md3.rst7 restart]
+	Writing 'open_1_md3.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_md3.rst7' is a NetCDF AMBER restart file, with velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_md3.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_md3.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 9.0045 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.1111 s ( 99.96%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.1111 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2175 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 01/30/18 08:45:54
+| Available memory: 108.536 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_md4.rst7]
+	Reading 'TEMP_open_1_md4.rst7' as Amber NC Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_md4.rst7 restart]
+	Writing 'open_1_md4.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_md4.rst7' is a NetCDF AMBER restart file, with velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_md4.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_md4.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 9.6596 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.03%)
+TIME:		Trajectory Process : 0.1035 s ( 99.95%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.1036 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.3115 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 01/31/18 06:30:27
+| Available memory: 82.039 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10.parm7]
+	Reading 'open10.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_1_md5.rst7]
+	Reading 'TEMP_open_1_md5.rst7' as Amber NC Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_1_md5.rst7 restart]
+	Writing 'open_1_md5.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_1_md5.rst7' is a NetCDF AMBER restart file, with velocities, Parm open10.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_1_md5.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_1_md5.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 5.7951 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.02%)
+TIME:		Trajectory Process : 0.1726 s ( 99.95%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.1726 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2943 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

@@ -1,0 +1,49 @@
+/tmp/slurmd/job643704/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/3: No such file or directory
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 28 slots
+that were requested by the application:
+  /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/bin/pmemd.MPI
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------

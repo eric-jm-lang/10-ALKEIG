@@ -1,0 +1,203 @@
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 00:17:33
+| Available memory: 105.455 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_2_md2.rst7]
+	Reading 'TEMP_open_2_md2.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_2_md2.rst7 restart]
+	Writing 'open_2_md2.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10_HMR.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_2_md2.rst7' is an AMBER restart file with velocity info, Parm open10_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_2_md2.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_2_md2.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 6.9403 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.1441 s ( 99.78%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0003 s (  0.00%)
+TIME:	Run Total 0.1444 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2741 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Error: '*' encountered (atom 16584 Y). This indicates coordinate overflow.
+Error: '*' encountered (atom 16585 Y). This indicates coordinate overflow.
+Error: '*' encountered (atom 16586 Y). This indicates coordinate overflow.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 12:09:22
+| Available memory: 105.836 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_2_md3.rst7]
+	Reading 'TEMP_open_2_md3.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout open_2_md3.rst7 restart]
+	Writing 'open_2_md3.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: open10_HMR.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_open_2_md3.rst7' is an AMBER restart file with velocity info, Parm open10_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'open_2_md3.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'open10_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 38558 atoms.
+	Number of molecules to be imaged is 11956
+	com: mask [:1-192] contains 2808 atoms.
+----- TEMP_open_2_md3.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 6.7525 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.1481 s ( 99.83%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.1483 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2852 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+ERROR: Calculation halted.  Periodic box dimensions have changed too much from their initial values.
+  Your system density has likely changed by a large amount, probably from
+  starting the simulation from a structure a long way from equilibrium.
+
+  [Although this error can also occur if the simulation has blown up for some reason]
+
+  The GPU code does not automatically reorganize grid cells and thus you
+  will need to restart the calculation from the previous restart file.
+  This will generate new grid cells and allow the calculation to continue.
+  It may be necessary to repeat this restarting multiple times if your system
+  is a long way from an equilibrated density.
+
+  Alternatively you can run with the CPU code until the density has converged
+  and then switch back to the GPU code.
+
+Error: Could not determine trajectory TEMP_open_2_md4.rst7 format.
+Error: Could not set up input trajectory 'TEMP_open_2_md4.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 12:09:26
+| Available memory: 105.836 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_2_md4.rst7]
+TIME: Total execution time: 0.0694 seconds.
+
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_2_md4.rst7                                                                                                                                                                                                                                                 
+cp: cannot stat 'open_2_md5.rst7': No such file or directory
+mv: cannot stat 'open_2_md5.rst7': No such file or directory
+Error: 'TEMP_open_2_md5.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_2_md5.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/24/18 12:09:28
+| Available memory: 105.836 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_2_md5.rst7]
+TIME: Total execution time: 0.0713 seconds.
+

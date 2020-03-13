@@ -1,0 +1,25 @@
+/tmp/slurmd/job643591/slurm_script: line 18: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/1-open/2-MD1/1: No such file or directory
+STOP PMEMD Terminated Abnormally!
+
+  Unit   10 Error on OPEN: open_1_min8.rst7                                                                                                                                                                                                                                                
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq1.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq2.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq3.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq4.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq5.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq6.rst7                                                                                                                                                                                                                                                 
+STOP PMEMD Terminated Abnormally!
+
+  Unit    9 Error on OPEN: open_1_eq7.rst7                                                                                                                                                                                                                                                 
