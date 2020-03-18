@@ -7,4 +7,9 @@
 *.xtc
 *.trr
 *.dcd
-
+*.OLD
+*.old
+*.bck
+*.p
+*.pickle
+slurm-*
