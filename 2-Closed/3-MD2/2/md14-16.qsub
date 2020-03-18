@@ -1,0 +1,35 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=1:ngpus=1
+#PBS -l walltime=72:00:00
+#PBS -j oe
+#PBS -M eric.lang@bristol.ac.uk
+#PBS -N 2_2
+
+module add lang/intel-parallel-studio-xe/2019.u3
+module add lang/cuda/10.1.105
+export CUDA_HOME=/usr/local/cuda
+export AMBERHOME=/home/el14718/SOFTWARE/amber18
+source /home/el14718/SOFTWARE/amber18/amber.sh
+
+cd $PBS_O_WORKDIR
+#
+old=md13
+for name in md14 md15 md16; do
+  $AMBERHOME/bin/pmemd.cuda -O -i $name.i -o closed_2_$name.mdout -p closed10_HMR.parm7 -c closed_2_$old.rst7   -ref closed10.rst7 -x closed_2_$name.nc -r closed_2_$name.rst7 -inf closed_2_$name.mdinfo
+
+  cp closed_2_$name.rst7 closed_2_$name.rst7.ORG
+  mv closed_2_$name.rst7 TEMP_closed_2_$name.rst7
+
+  cat > image.in <<EOF
+parm closed10_HMR.parm7
+trajin TEMP_closed_2_$name.rst7
+center :1-192 mass origin
+image familiar com :1-192
+trajout closed_2_$name.rst7 restart
+run
+EOF
+  cpptraj < image.in
+  rm image.in
+
+  old=$name
+done
