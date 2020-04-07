@@ -1,0 +1,80 @@
+ 
+ University of Bristol ACRC HPC Bluepebble Service
+ -------------------------------------------------
+ Job 5_1, jobid 122763.bp1, username el14718 - started execution at 15 :08:29 Fri 03/20/20 on node bp1-02-05-01.data.bp.acrc.priv
+ 
+
+  Unit    9 Error on OPEN: open_5_md10.rst7                                                                                                                                                                                                                                                
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘open_5_md11.rst7’: No such file or directory
+mv: cannot stat ‘open_5_md11.rst7’: No such file or directory
+Error: 'TEMP_open_5_md11.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_5_md11.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 03/20/20 15:08:32
+| Available memory: 1.031 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_5_md11.rst7]
+TIME: Total execution time: 0.2189 seconds.
+
+
+  Unit    9 Error on OPEN: open_5_md11.rst7                                                                                                                                                                                                                                                
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘open_5_md12.rst7’: No such file or directory
+mv: cannot stat ‘open_5_md12.rst7’: No such file or directory
+Error: 'TEMP_open_5_md12.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_5_md12.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 03/20/20 15:08:35
+| Available memory: 1.023 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_5_md12.rst7]
+TIME: Total execution time: 0.0614 seconds.
+
+
+  Unit    9 Error on OPEN: open_5_md12.rst7                                                                                                                                                                                                                                                
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘open_5_md13.rst7’: No such file or directory
+mv: cannot stat ‘open_5_md13.rst7’: No such file or directory
+Error: 'TEMP_open_5_md13.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_open_5_md13.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 03/20/20 15:08:37
+| Available memory: 1.023 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm open10_HMR.parm7]
+	Reading 'open10_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_open_5_md13.rst7]
+TIME: Total execution time: 0.0550 seconds.
+
