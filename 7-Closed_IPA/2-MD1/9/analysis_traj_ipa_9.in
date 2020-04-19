@@ -1,0 +1,20 @@
+parm closed_ipa_HMR.parm7
+trajin ./closed_ipa_9_md1.nc
+trajin ./closed_ipa_9_md2.nc
+trajin ./closed_ipa_9_md3.nc
+trajin ./closed_ipa_9_md4.nc
+trajin ./closed_ipa_9_md5.nc
+trajin ./closed_ipa_9_md6.nc
+trajin ./closed_ipa_9_md7.nc
+trajin ./closed_ipa_9_md8.nc
+trajin ./closed_ipa_9_md9.nc
+trajin ./closed_ipa_9_md10.nc
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout ../traj_dry_ipa_noeq/closed_ipa_dry_9.nc
+run
+clear all
+quit
