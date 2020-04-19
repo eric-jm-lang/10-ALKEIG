@@ -1,6 +1,4 @@
 parm open10.parm7
-trajin ./open_2_eq7.nc
-trajin ./open_2_eq8.nc
 trajin ./open_2_md1.nc
 trajin ./open_2_md2.nc
 trajin ./open_2_md3.nc
@@ -11,22 +9,20 @@ trajin ./open_2_md7.nc
 trajin ./open_2_md8.nc
 trajin ./open_2_md9.nc
 trajin ./open_2_md10.nc
+trajin ./open_2_md11.nc
+trajin ./open_2_md12.nc
+trajin ./open_2_md13.nc
+trajin ./open_2_md14.nc
+trajin ./open_2_md15.nc
+trajin ./open_2_md16.nc
+trajin ./open_2_md17.nc
+trajin ./open_2_md18.nc
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT
 strip :Na+
 strip :Cl-
-trajout ../open_all_dry_2.nc
+trajout ../traj_dry_noeq/open_dry_2.nc
 run
 clear all
-parm ../open10_dry.parm7
-reference ../closed10_dry.rst7
-trajin ../open_all_dry_2.nc
-rms reference out ../open_rmsd_to_closed_2.dat '(!:WAT & @CA,C,N,O)'
-run
-clear all
-parm ../open10_dry.parm7
-reference ../open10_dry.rst7
-trajin ../open_all_dry_2.nc
-rms reference out ../open_rmsd_to_open_2.dat '(!:WAT & @CA,C,N,O)'
 quit

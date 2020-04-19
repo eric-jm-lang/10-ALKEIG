@@ -19,23 +19,17 @@ trajin ./open_2_md17.nc
 trajin ./open_2_md18.nc
 trajin ./open_2_md19.nc
 trajin ./open_2_md20.nc
+trajin ./open_2_md21.nc
+trajin ./open_2_md22.nc
+trajin ./open_2_md23.nc
+trajin ./open_2_md24.nc
+trajin ./open_2_md25.nc
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT
 strip :Na+
 strip :Cl-
-trajout ../open_dry_2.nc
+trajout ../traj_dry_noeq/open_dry_2.nc
 run
 clear all
-parm ../open10_dry.parm7
-reference ../closed10_dry.rst7
-trajin ../open_dry_2.nc
-rms reference out ../open_rmsd_to_closed_2.dat '(!:WAT & @CA,C,N,O)'
-run
-clear all
-parm ../open10_dry.parm7
-reference ../open10_dry.rst7
-trajin ../open_dry_2.nc
-rms reference out ../open_rmsd_to_open_2.dat '(!:WAT & @CA,C,N,O)'
-run
 quit

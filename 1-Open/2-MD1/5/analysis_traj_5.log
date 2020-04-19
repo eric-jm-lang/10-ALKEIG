@@ -4,8 +4,8 @@ CPPTRAJ: Trajectory Analysis. V17.00
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 06/26/18 22:33:32
-| Available memory: 417.962 GB
+| Date/time: 04/08/20 16:46:39
+| Available memory: 108.085 GB
 
 INPUT: Reading input from 'STDIN'
   [parm open10.parm7]
@@ -51,6 +51,16 @@ INPUT: Reading input from 'STDIN'
 	Reading './open_5_md19.nc' as Amber NetCDF
   [trajin ./open_5_md20.nc]
 	Reading './open_5_md20.nc' as Amber NetCDF
+  [trajin ./open_5_md21.nc]
+	Reading './open_5_md21.nc' as Amber NetCDF
+  [trajin ./open_5_md22.nc]
+	Reading './open_5_md22.nc' as Amber NetCDF
+  [trajin ./open_5_md23.nc]
+	Reading './open_5_md23.nc' as Amber NetCDF
+  [trajin ./open_5_md24.nc]
+	Reading './open_5_md24.nc' as Amber NetCDF
+  [trajin ./open_5_md25.nc]
+	Reading './open_5_md25.nc' as Amber NetCDF
   [center :1-192 mass origin]
     CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
 	coordinate origin.
@@ -63,15 +73,15 @@ INPUT: Reading input from 'STDIN'
     STRIP: Stripping atoms in mask [:Na+]
   [strip :Cl-]
     STRIP: Stripping atoms in mask [:Cl-]
-  [trajout ../open_dry_5.nc]
-	Writing '../open_dry_5.nc' as Amber NetCDF
+  [trajout ../traj_dry_noeq/open_dry_5.nc]
+	Writing '../traj_dry_noeq/open_dry_5.nc' as Amber NetCDF
   [run]
 ---------- RUN BEGIN -------------------------------------------------
 
 PARAMETER FILES (1 total):
  0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
 
-INPUT TRAJECTORIES (20 total):
+INPUT TRAJECTORIES (25 total):
  0: 'open_5_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  1: 'open_5_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  2: 'open_5_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
@@ -81,7 +91,7 @@ INPUT TRAJECTORIES (20 total):
  6: 'open_5_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  7: 'open_5_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  8: 'open_5_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 9: 'open_5_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 9: 'open_5_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 743 of 743)
  10: 'open_5_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  11: 'open_5_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  12: 'open_5_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
@@ -92,10 +102,15 @@ INPUT TRAJECTORIES (20 total):
  17: 'open_5_md18.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  18: 'open_5_md19.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  19: 'open_5_md20.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
-  Coordinate processing will occur on 40000 frames.
+ 20: 'open_5_md21.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 21: 'open_5_md22.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 22: 'open_5_md23.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 23: 'open_5_md24.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 24: 'open_5_md25.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+  Coordinate processing will occur on 48743 frames.
 
 OUTPUT TRAJECTORIES (1 total):
-  'open_dry_5.nc' (40000 frames) is a NetCDF AMBER trajectory
+  'open_dry_5.nc' (48743 frames) is a NetCDF AMBER trajectory
 
 BEGIN TRAJECTORY PROCESSING:
 .....................................................
@@ -128,47 +143,57 @@ ACTION SETUP FOR PARM 'open10.parm7' (5 actions):
 ----- open_5_md6.nc (1-2000, 1) -----
 
 ----- open_5_md7.nc (1-2000, 1) -----
-30% 
------ open_5_md8.nc (1-2000, 1) -----
 
+----- open_5_md8.nc (1-2000, 1) -----
+30% 
 ----- open_5_md9.nc (1-2000, 1) -----
-40% 
------ open_5_md10.nc (1-2000, 1) -----
+
+----- open_5_md10.nc (1-743, 1) -----
 
 ----- open_5_md11.nc (1-2000, 1) -----
-50% 
+40% 
 ----- open_5_md12.nc (1-2000, 1) -----
 
 ----- open_5_md13.nc (1-2000, 1) -----
-60% 
+50% 
 ----- open_5_md14.nc (1-2000, 1) -----
 
 ----- open_5_md15.nc (1-2000, 1) -----
-70% 
+
 ----- open_5_md16.nc (1-2000, 1) -----
-
+60% 
 ----- open_5_md17.nc (1-2000, 1) -----
-80% 
------ open_5_md18.nc (1-2000, 1) -----
 
+----- open_5_md18.nc (1-2000, 1) -----
+70% 
 ----- open_5_md19.nc (1-2000, 1) -----
-90% 
+
 ----- open_5_md20.nc (1-2000, 1) -----
+
+----- open_5_md21.nc (1-2000, 1) -----
+80% 
+----- open_5_md22.nc (1-2000, 1) -----
+
+----- open_5_md23.nc (1-2000, 1) -----
+90% 
+----- open_5_md24.nc (1-2000, 1) -----
+
+----- open_5_md25.nc (1-2000, 1) -----
 100% Complete.
 
-Read 40000 frames and processed 40000 frames.
-TIME: Avg. throughput= 82.8523 frames / second.
+Read 48743 frames and processed 48743 frames.
+TIME: Avg. throughput= 77.8793 frames / second.
 
 ACTION OUTPUT:
 
 RUN TIMING:
-TIME:		Init               : 0.0000 s (  0.00%)
-TIME:		Trajectory Process : 482.7871 s (100.00%)
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 625.8786 s (100.00%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
 TIME:		Analysis           : 0.0000 s (  0.00%)
 TIME:		Data File Write    : 0.0000 s (  0.00%)
-TIME:		Other              : 0.0023 s (  0.00%)
-TIME:	Run Total 482.7895 s
+TIME:		Other              : 0.0033 s (  0.00%)
+TIME:	Run Total 625.8819 s
 ---------- RUN END ---------------------------------------------------
   [clear all]
 	Clearing Actions.
@@ -179,39 +204,11 @@ TIME:	Run Total 482.7895 s
 	Clearing Analyses.
 	Clearing data files.
 	Clearing data sets.
-  [parm ../open10_dry.parm7]
-	Reading '../open10_dry.parm7' as Amber Topology
-	Radius Set: modified Bondi radii (mbondi)
-  [reference ../closed10_dry.rst7]
-	Reading '../closed10_dry.rst7' as Amber Restart
-	Setting active reference for distance-based masks: 'closed10_dry.rst7'
-  [trajin ../open_dry_5.nc]
-	Reading '../open_dry_5.nc' as Amber NetCDF
-  [rms reference out ../open_rmsd_to_closed_5.dat '(!:WAT & @CA,C,N,O)']
-    RMSD: ((!:WAT & @CA,C,N,O)), reference is "Cpptraj Generated Restart" ((!:WAT & @CA,C,N,O)).
-	Best-fit RMSD will be calculated, coords will be rotated and translated.
-  [run]
----------- RUN BEGIN -------------------------------------------------
+  [quit]
+TIME: Total execution time: 628.0327 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
 
-PARAMETER FILES (1 total):
- 0: open10_dry.parm7, 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
-
-INPUT TRAJECTORIES (1 total):
- 0: 'open_dry_5.nc' is a NetCDF AMBER trajectory, Parm open10_dry.parm7 (Trunc. Oct. box) (reading 40000 of 40000)
-  Coordinate processing will occur on 40000 frames.
-
-REFERENCE FRAMES (1 total):
-    0: closed10_dry.rst7:1
-	Active reference frame for distance-based masks is 'Cpptraj Generated Restart'
-
-BEGIN TRAJECTORY PROCESSING:
-.....................................................
-ACTION SETUP FOR PARM 'open10_dry.parm7' (1 actions):
-  0: [rms reference out ../open_rmsd_to_closed_5.dat '(!:WAT & @CA,C,N,O)']
-	Target mask: [(!:WAT & @CA,C,N,O)](738)
-	Reference mask: [(!:WAT & @CA,C,N,O)](738)
-Warning: Coordinates are being rotated and box coordinates are present.
-Warning: Unit cell vectors are NOT rotated; imaging will not be possible
-Warning:  after the RMS-fit is performed.
------ open_dry_5.nc (1-40000, 1) -----
- 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 
