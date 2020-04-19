@@ -1,1 +1,0 @@
-/tmp/slurmd/job766177/slurm_script: line 20: 11743 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_2.in > analysis_traj_2.log

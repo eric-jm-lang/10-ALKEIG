@@ -1,6 +1,0 @@
-/tmp/slurmd/job1238180/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/2-Closed/3-MD2/: No such file or directory
-/tmp/slurmd/job1238180/slurm_script: line 22: analysis_traj_1.in: No such file or directory
-/tmp/slurmd/job1238180/slurm_script: line 22: analysis_traj_2.in: No such file or directory
-/tmp/slurmd/job1238180/slurm_script: line 22: analysis_traj_3.in: No such file or directory
-/tmp/slurmd/job1238180/slurm_script: line 22: analysis_traj_4.in: No such file or directory
-/tmp/slurmd/job1238180/slurm_script: line 22: analysis_traj_5.in: No such file or directory

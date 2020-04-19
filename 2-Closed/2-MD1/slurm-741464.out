@@ -1,6 +1,0 @@
-Error: Number of atoms in Amber Restart open10.rst7 (38558) does not
-       match number in associated parmtop (43615)
-Error: Could not set up 'open10.rst7' for reading.
-Error: reference: Could not set up trajectory.
-	1 errors encountered reading input.
-Error: Error(s) occurred during execution.

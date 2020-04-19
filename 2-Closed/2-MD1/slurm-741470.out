@@ -1,6 +1,0 @@
-Error: Number of atoms in Amber Restart open10_dry.rst7 (2808) does not
-       match number in associated parmtop (38558)
-Error: Could not set up 'open10_dry.rst7' for reading.
-Error: reference: Could not set up trajectory.
-	1 errors encountered reading input.
-Error: Error(s) occurred during execution.

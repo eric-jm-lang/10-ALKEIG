@@ -4,8 +4,8 @@ CPPTRAJ: Trajectory Analysis. V17.00
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 06/26/18 22:06:56
-| Available memory: 113.199 GB
+| Date/time: 04/08/20 15:47:51
+| Available memory: 108.007 GB
 
 INPUT: Reading input from 'STDIN'
   [parm closed10.parm7]
@@ -51,6 +51,16 @@ INPUT: Reading input from 'STDIN'
 	Reading './closed_1_md19.nc' as Amber NetCDF
   [trajin ./closed_1_md20.nc]
 	Reading './closed_1_md20.nc' as Amber NetCDF
+  [trajin ./closed_1_md21.nc]
+	Reading './closed_1_md21.nc' as Amber NetCDF
+  [trajin ./closed_1_md22.nc]
+	Reading './closed_1_md22.nc' as Amber NetCDF
+  [trajin ./closed_1_md23.nc]
+	Reading './closed_1_md23.nc' as Amber NetCDF
+  [trajin ./closed_1_md24.nc]
+	Reading './closed_1_md24.nc' as Amber NetCDF
+  [trajin ./closed_1_md25.nc]
+	Reading './closed_1_md25.nc' as Amber NetCDF
   [center :1-192 mass origin]
     CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
 	coordinate origin.
@@ -63,15 +73,15 @@ INPUT: Reading input from 'STDIN'
     STRIP: Stripping atoms in mask [:Na+]
   [strip :Cl-]
     STRIP: Stripping atoms in mask [:Cl-]
-  [trajout ../closed_dry_1.nc]
-	Writing '../closed_dry_1.nc' as Amber NetCDF
+  [trajout ../traj_dry_noeq/closed_dry_1.nc]
+	Writing '../traj_dry_noeq/closed_dry_1.nc' as Amber NetCDF
   [run]
 ---------- RUN BEGIN -------------------------------------------------
 
 PARAMETER FILES (1 total):
  0: closed10.parm7, 43615 atoms, 13833 res, box: Trunc. Oct., 13647 mol, 13583 solvent
 
-INPUT TRAJECTORIES (20 total):
+INPUT TRAJECTORIES (25 total):
  0: 'closed_1_md1.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  1: 'closed_1_md2.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  2: 'closed_1_md3.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
@@ -92,10 +102,15 @@ INPUT TRAJECTORIES (20 total):
  17: 'closed_1_md18.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  18: 'closed_1_md19.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
  19: 'closed_1_md20.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
-  Coordinate processing will occur on 40000 frames.
+ 20: 'closed_1_md21.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 21: 'closed_1_md22.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 22: 'closed_1_md23.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 23: 'closed_1_md24.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
+ 24: 'closed_1_md25.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 680 of 680)
+  Coordinate processing will occur on 48680 frames.
 
 OUTPUT TRAJECTORIES (1 total):
-  'closed_dry_1.nc' (40000 frames) is a NetCDF AMBER trajectory
+  'closed_dry_1.nc' (48680 frames) is a NetCDF AMBER trajectory
 
 BEGIN TRAJECTORY PROCESSING:
 .....................................................
@@ -128,47 +143,58 @@ ACTION SETUP FOR PARM 'closed10.parm7' (5 actions):
 ----- closed_1_md6.nc (1-2000, 1) -----
 
 ----- closed_1_md7.nc (1-2000, 1) -----
-30% 
+
 ----- closed_1_md8.nc (1-2000, 1) -----
-
+30% 
 ----- closed_1_md9.nc (1-2000, 1) -----
-40% 
------ closed_1_md10.nc (1-2000, 1) -----
 
+----- closed_1_md10.nc (1-2000, 1) -----
+40% 
 ----- closed_1_md11.nc (1-2000, 1) -----
-50% 
+
 ----- closed_1_md12.nc (1-2000, 1) -----
 
 ----- closed_1_md13.nc (1-2000, 1) -----
-60% 
+50% 
 ----- closed_1_md14.nc (1-2000, 1) -----
 
 ----- closed_1_md15.nc (1-2000, 1) -----
-70% 
+60% 
 ----- closed_1_md16.nc (1-2000, 1) -----
 
 ----- closed_1_md17.nc (1-2000, 1) -----
-80% 
------ closed_1_md18.nc (1-2000, 1) -----
 
+----- closed_1_md18.nc (1-2000, 1) -----
+70% 
 ----- closed_1_md19.nc (1-2000, 1) -----
-90% 
+
 ----- closed_1_md20.nc (1-2000, 1) -----
+80% 
+----- closed_1_md21.nc (1-2000, 1) -----
+
+----- closed_1_md22.nc (1-2000, 1) -----
+90% 
+----- closed_1_md23.nc (1-2000, 1) -----
+
+----- closed_1_md24.nc (1-2000, 1) -----
+
+----- closed_1_md25.nc (1-680, 1) -----
+Warning: Frame 680 coords 1 & 2 overlap at origin; may be corrupt.
 100% Complete.
 
-Read 40000 frames and processed 40000 frames.
-TIME: Avg. throughput= 129.7361 frames / second.
+Read 48680 frames and processed 48680 frames.
+TIME: Avg. throughput= 73.1527 frames / second.
 
 ACTION OUTPUT:
 
 RUN TIMING:
 TIME:		Init               : 0.0001 s (  0.00%)
-TIME:		Trajectory Process : 308.3183 s (100.00%)
+TIME:		Trajectory Process : 665.4575 s (100.00%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
 TIME:		Analysis           : 0.0000 s (  0.00%)
 TIME:		Data File Write    : 0.0000 s (  0.00%)
-TIME:		Other              : 0.0026 s (  0.00%)
-TIME:	Run Total 308.3209 s
+TIME:		Other              : 0.0021 s (  0.00%)
+TIME:	Run Total 665.4596 s
 ---------- RUN END ---------------------------------------------------
   [clear all]
 	Clearing Actions.
@@ -179,39 +205,11 @@ TIME:	Run Total 308.3209 s
 	Clearing Analyses.
 	Clearing data files.
 	Clearing data sets.
-  [parm ../closed10_dry.parm7]
-	Reading '../closed10_dry.parm7' as Amber Topology
-	Radius Set: modified Bondi radii (mbondi)
-  [reference ../open10_dry.rst7]
-	Reading '../open10_dry.rst7' as Amber Restart
-	Setting active reference for distance-based masks: 'open10_dry.rst7'
-  [trajin ../closed_dry_1.nc]
-	Reading '../closed_dry_1.nc' as Amber NetCDF
-  [rms reference out ../closed_rmsd_to_open_1.dat '(!:WAT & @CA,C,N,O)']
-    RMSD: ((!:WAT & @CA,C,N,O)), reference is "Cpptraj Generated Restart" ((!:WAT & @CA,C,N,O)).
-	Best-fit RMSD will be calculated, coords will be rotated and translated.
-  [run]
----------- RUN BEGIN -------------------------------------------------
+  [quit]
+TIME: Total execution time: 667.9832 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
 
-PARAMETER FILES (1 total):
- 0: closed10_dry.parm7, 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
-
-INPUT TRAJECTORIES (1 total):
- 0: 'closed_dry_1.nc' is a NetCDF AMBER trajectory, Parm closed10_dry.parm7 (Trunc. Oct. box) (reading 40000 of 40000)
-  Coordinate processing will occur on 40000 frames.
-
-REFERENCE FRAMES (1 total):
-    0: open10_dry.rst7:1
-	Active reference frame for distance-based masks is 'Cpptraj Generated Restart'
-
-BEGIN TRAJECTORY PROCESSING:
-.....................................................
-ACTION SETUP FOR PARM 'closed10_dry.parm7' (1 actions):
-  0: [rms reference out ../closed_rmsd_to_open_1.dat '(!:WAT & @CA,C,N,O)']
-	Target mask: [(!:WAT & @CA,C,N,O)](738)
-	Reference mask: [(!:WAT & @CA,C,N,O)](738)
-Warning: Coordinates are being rotated and box coordinates are present.
-Warning: Unit cell vectors are NOT rotated; imaging will not be possible
-Warning:  after the RMS-fit is performed.
------ closed_dry_1.nc (1-40000, 1) -----
- 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 

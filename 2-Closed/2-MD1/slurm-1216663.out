@@ -1,6 +1,0 @@
-/tmp/slurmd/job1216663/slurm_script: line 17: cd: /mnt/storage/home/el14718/el14718/10-ALKEIG/2-Closed/2-MD1/: No such file or directory
-/tmp/slurmd/job1216663/slurm_script: line 19: 26179 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
-/tmp/slurmd/job1216663/slurm_script: line 19: 26225 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
-/tmp/slurmd/job1216663/slurm_script: line 19: 26295 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
-/tmp/slurmd/job1216663/slurm_script: line 19: 26509 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
-/tmp/slurmd/job1216663/slurm_script: line 19: 27459 Segmentation fault      $AMBERHOME/bin/cpptraj < analysis_traj_${i}.in > analysis_traj_${i}.log
