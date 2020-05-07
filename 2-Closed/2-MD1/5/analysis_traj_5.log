@@ -4,62 +4,62 @@ CPPTRAJ: Trajectory Analysis. V17.00
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 04/08/20 16:35:14
-| Available memory: 108.064 GB
+| Date/time: 05/06/20 16:22:45
+| Available memory: 103.492 GB
 
 INPUT: Reading input from 'STDIN'
   [parm closed10.parm7]
 	Reading 'closed10.parm7' as Amber Topology
 	Radius Set: modified Bondi radii (mbondi)
-  [trajin ./closed_5_md1.nc]
+  [trajin ./closed_5_md1.nc 1 last 2]
 	Reading './closed_5_md1.nc' as Amber NetCDF
-  [trajin ./closed_5_md2.nc]
+  [trajin ./closed_5_md2.nc 1 last 2]
 	Reading './closed_5_md2.nc' as Amber NetCDF
-  [trajin ./closed_5_md3.nc]
+  [trajin ./closed_5_md3.nc 1 last 2]
 	Reading './closed_5_md3.nc' as Amber NetCDF
-  [trajin ./closed_5_md4.nc]
+  [trajin ./closed_5_md4.nc 1 last 2]
 	Reading './closed_5_md4.nc' as Amber NetCDF
-  [trajin ./closed_5_md5.nc]
+  [trajin ./closed_5_md5.nc 1 last 2]
 	Reading './closed_5_md5.nc' as Amber NetCDF
-  [trajin ./closed_5_md6.nc]
+  [trajin ./closed_5_md6.nc 1 last 2]
 	Reading './closed_5_md6.nc' as Amber NetCDF
-  [trajin ./closed_5_md7.nc]
+  [trajin ./closed_5_md7.nc 1 last 2]
 	Reading './closed_5_md7.nc' as Amber NetCDF
-  [trajin ./closed_5_md8.nc]
+  [trajin ./closed_5_md8.nc 1 last 2]
 	Reading './closed_5_md8.nc' as Amber NetCDF
-  [trajin ./closed_5_md9.nc]
+  [trajin ./closed_5_md9.nc 1 last 2]
 	Reading './closed_5_md9.nc' as Amber NetCDF
-  [trajin ./closed_5_md10.nc]
+  [trajin ./closed_5_md10.nc 1 last 2]
 	Reading './closed_5_md10.nc' as Amber NetCDF
-  [trajin ./closed_5_md11.nc]
+  [trajin ./closed_5_md11.nc 1 last 2]
 	Reading './closed_5_md11.nc' as Amber NetCDF
-  [trajin ./closed_5_md12.nc]
+  [trajin ./closed_5_md12.nc 1 last 2]
 	Reading './closed_5_md12.nc' as Amber NetCDF
-  [trajin ./closed_5_md13.nc]
+  [trajin ./closed_5_md13.nc 1 last 2]
 	Reading './closed_5_md13.nc' as Amber NetCDF
-  [trajin ./closed_5_md14.nc]
+  [trajin ./closed_5_md14.nc 1 last 2]
 	Reading './closed_5_md14.nc' as Amber NetCDF
-  [trajin ./closed_5_md15.nc]
+  [trajin ./closed_5_md15.nc 1 last 2]
 	Reading './closed_5_md15.nc' as Amber NetCDF
-  [trajin ./closed_5_md16.nc]
+  [trajin ./closed_5_md16.nc 1 last 2]
 	Reading './closed_5_md16.nc' as Amber NetCDF
-  [trajin ./closed_5_md17.nc]
+  [trajin ./closed_5_md17.nc 1 last 2]
 	Reading './closed_5_md17.nc' as Amber NetCDF
-  [trajin ./closed_5_md18.nc]
+  [trajin ./closed_5_md18.nc 1 last 2]
 	Reading './closed_5_md18.nc' as Amber NetCDF
-  [trajin ./closed_5_md19.nc]
+  [trajin ./closed_5_md19.nc 1 last 2]
 	Reading './closed_5_md19.nc' as Amber NetCDF
-  [trajin ./closed_5_md20.nc]
+  [trajin ./closed_5_md20.nc 1 last 2]
 	Reading './closed_5_md20.nc' as Amber NetCDF
-  [trajin ./closed_5_md21.nc]
+  [trajin ./closed_5_md21.nc 1 last 2]
 	Reading './closed_5_md21.nc' as Amber NetCDF
-  [trajin ./closed_5_md22.nc]
+  [trajin ./closed_5_md22.nc 1 last 2]
 	Reading './closed_5_md22.nc' as Amber NetCDF
-  [trajin ./closed_5_md23.nc]
+  [trajin ./closed_5_md23.nc 1 last 2]
 	Reading './closed_5_md23.nc' as Amber NetCDF
-  [trajin ./closed_5_md24.nc]
+  [trajin ./closed_5_md24.nc 1 last 2]
 	Reading './closed_5_md24.nc' as Amber NetCDF
-  [trajin ./closed_5_md25.nc]
+  [trajin ./closed_5_md25.nc 1 last 2]
 	Reading './closed_5_md25.nc' as Amber NetCDF
   [center :1-192 mass origin]
     CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
@@ -82,35 +82,35 @@ PARAMETER FILES (1 total):
  0: closed10.parm7, 43615 atoms, 13833 res, box: Trunc. Oct., 13647 mol, 13583 solvent
 
 INPUT TRAJECTORIES (25 total):
- 0: 'closed_5_md1.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 1: 'closed_5_md2.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 2: 'closed_5_md3.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 3: 'closed_5_md4.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 4: 'closed_5_md5.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 5: 'closed_5_md6.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 6: 'closed_5_md7.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 7: 'closed_5_md8.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 8: 'closed_5_md9.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 9: 'closed_5_md10.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 10: 'closed_5_md11.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 11: 'closed_5_md12.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 12: 'closed_5_md13.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 13: 'closed_5_md14.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 14: 'closed_5_md15.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 15: 'closed_5_md16.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 16: 'closed_5_md17.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 17: 'closed_5_md18.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 18: 'closed_5_md19.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 19: 'closed_5_md20.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 20: 'closed_5_md21.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 21: 'closed_5_md22.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 22: 'closed_5_md23.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 23: 'closed_5_md24.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
- 24: 'closed_5_md25.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
-  Coordinate processing will occur on 50000 frames.
+ 0: 'closed_5_md1.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 1: 'closed_5_md2.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 2: 'closed_5_md3.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 3: 'closed_5_md4.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 4: 'closed_5_md5.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 5: 'closed_5_md6.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 6: 'closed_5_md7.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 7: 'closed_5_md8.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 8: 'closed_5_md9.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 9: 'closed_5_md10.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 10: 'closed_5_md11.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 11: 'closed_5_md12.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 12: 'closed_5_md13.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 13: 'closed_5_md14.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 14: 'closed_5_md15.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 15: 'closed_5_md16.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 16: 'closed_5_md17.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 17: 'closed_5_md18.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 18: 'closed_5_md19.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 19: 'closed_5_md20.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 20: 'closed_5_md21.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 21: 'closed_5_md22.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 22: 'closed_5_md23.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 23: 'closed_5_md24.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+ 24: 'closed_5_md25.nc' is a NetCDF AMBER trajectory, Parm closed10.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+  Coordinate processing will occur on 25000 frames.
 
 OUTPUT TRAJECTORIES (1 total):
-  'closed_dry_5.nc' (50000 frames) is a NetCDF AMBER trajectory
+  'closed_dry_5.nc' (25000 frames) is a NetCDF AMBER trajectory
 
 BEGIN TRAJECTORY PROCESSING:
 .....................................................
@@ -130,70 +130,70 @@ ACTION SETUP FOR PARM 'closed10.parm7' (5 actions):
   4: [strip :Cl-]
 	Stripping 32 atoms.
 	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
------ closed_5_md1.nc (1-2000, 1) -----
+----- closed_5_md1.nc (1-2000, 2) -----
  0% 
------ closed_5_md2.nc (1-2000, 1) -----
+----- closed_5_md2.nc (1-2000, 2) -----
 
------ closed_5_md3.nc (1-2000, 1) -----
+----- closed_5_md3.nc (1-2000, 2) -----
 10% 
------ closed_5_md4.nc (1-2000, 1) -----
+----- closed_5_md4.nc (1-2000, 2) -----
 
------ closed_5_md5.nc (1-2000, 1) -----
+----- closed_5_md5.nc (1-2000, 2) -----
 
------ closed_5_md6.nc (1-2000, 1) -----
+----- closed_5_md6.nc (1-2000, 2) -----
 20% 
------ closed_5_md7.nc (1-2000, 1) -----
+----- closed_5_md7.nc (1-2000, 2) -----
 
------ closed_5_md8.nc (1-2000, 1) -----
+----- closed_5_md8.nc (1-2000, 2) -----
 30% 
------ closed_5_md9.nc (1-2000, 1) -----
+----- closed_5_md9.nc (1-2000, 2) -----
 
------ closed_5_md10.nc (1-2000, 1) -----
+----- closed_5_md10.nc (1-2000, 2) -----
 
------ closed_5_md11.nc (1-2000, 1) -----
+----- closed_5_md11.nc (1-2000, 2) -----
 40% 
------ closed_5_md12.nc (1-2000, 1) -----
+----- closed_5_md12.nc (1-2000, 2) -----
 
------ closed_5_md13.nc (1-2000, 1) -----
+----- closed_5_md13.nc (1-2000, 2) -----
 50% 
------ closed_5_md14.nc (1-2000, 1) -----
+----- closed_5_md14.nc (1-2000, 2) -----
 
------ closed_5_md15.nc (1-2000, 1) -----
+----- closed_5_md15.nc (1-2000, 2) -----
 
------ closed_5_md16.nc (1-2000, 1) -----
+----- closed_5_md16.nc (1-2000, 2) -----
 60% 
------ closed_5_md17.nc (1-2000, 1) -----
+----- closed_5_md17.nc (1-2000, 2) -----
 
------ closed_5_md18.nc (1-2000, 1) -----
+----- closed_5_md18.nc (1-2000, 2) -----
 70% 
------ closed_5_md19.nc (1-2000, 1) -----
+----- closed_5_md19.nc (1-2000, 2) -----
 
------ closed_5_md20.nc (1-2000, 1) -----
+----- closed_5_md20.nc (1-2000, 2) -----
 
------ closed_5_md21.nc (1-2000, 1) -----
+----- closed_5_md21.nc (1-2000, 2) -----
 80% 
------ closed_5_md22.nc (1-2000, 1) -----
+----- closed_5_md22.nc (1-2000, 2) -----
 
------ closed_5_md23.nc (1-2000, 1) -----
+----- closed_5_md23.nc (1-2000, 2) -----
 90% 
------ closed_5_md24.nc (1-2000, 1) -----
+----- closed_5_md24.nc (1-2000, 2) -----
 
------ closed_5_md25.nc (1-2000, 1) -----
+----- closed_5_md25.nc (1-2000, 2) -----
 100% Complete.
 
-Read 50000 frames and processed 50000 frames.
-TIME: Avg. throughput= 67.6303 frames / second.
+Read 25000 frames and processed 25000 frames.
+TIME: Avg. throughput= 68.8422 frames / second.
 
 ACTION OUTPUT:
 
 RUN TIMING:
 TIME:		Init               : 0.0001 s (  0.00%)
-TIME:		Trajectory Process : 739.3138 s (100.00%)
+TIME:		Trajectory Process : 363.1495 s (100.00%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
 TIME:		Analysis           : 0.0000 s (  0.00%)
 TIME:		Data File Write    : 0.0000 s (  0.00%)
-TIME:		Other              : 0.0019 s (  0.00%)
-TIME:	Run Total 739.3158 s
+TIME:		Other              : 0.0015 s (  0.00%)
+TIME:	Run Total 363.1511 s
 ---------- RUN END ---------------------------------------------------
   [clear all]
 	Clearing Actions.
@@ -205,7 +205,7 @@ TIME:	Run Total 739.3158 s
 	Clearing data files.
 	Clearing data sets.
   [quit]
-TIME: Total execution time: 741.3977 seconds.
+TIME: Total execution time: 365.0051 seconds.
 --------------------------------------------------------------------------------
 To cite CPPTRAJ use:
 Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for

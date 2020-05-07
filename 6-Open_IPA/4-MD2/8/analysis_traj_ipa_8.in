@@ -1,20 +1,23 @@
 parm open_ipa_HMR.parm7
-trajin ./open_ipa_8_md1.nc
-trajin ./open_ipa_8_md2.nc
-trajin ./open_ipa_8_md3.nc
-trajin ./open_ipa_8_md4.nc
-trajin ./open_ipa_8_md5.nc
-trajin ./open_ipa_8_md6.nc
-trajin ./open_ipa_8_md7.nc
-trajin ./open_ipa_8_md8.nc
-trajin ./open_ipa_8_md9.nc
-trajin ./open_ipa_8_md10.nc
+trajin ./open_ipa_8_md1.nc 1 last 2
+trajin ./open_ipa_8_md2.nc 1 last 2
+trajin ./open_ipa_8_md3.nc 1 last 2
+trajin ./open_ipa_8_md4.nc 1 last 2
+trajin ./open_ipa_8_md5.nc 1 last 2
+trajin ./open_ipa_8_md6.nc 1 last 2
+trajin ./open_ipa_8_md7.nc 1 last 2
+trajin ./open_ipa_8_md8.nc 1 last 2
+trajin ./open_ipa_8_md9.nc 1 last 2
+trajin ./open_ipa_8_md10.nc 1 last 2
+trajin ./open_ipa_8_md11.nc 1 last 2
+trajin ./open_ipa_8_md12.nc 1 last 2
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT
 strip :Na+
 strip :Cl-
-trajout ../traj_dry_ipa_noeq/open_ipa_dry_8.nc
+strip :IPA
+trajout ../traj_dry_noeq/open_ipa_dry_8.nc
 run
 clear all
 quit

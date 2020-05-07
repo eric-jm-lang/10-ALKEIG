@@ -1,0 +1,18 @@
+parm open_ipa_HMR.parm7
+trajin ./open_ipa_5_md1.nc
+trajin ./open_ipa_5_md2.nc
+trajin ./open_ipa_5_md3.nc
+trajin ./open_ipa_5_md4.nc
+trajin ./open_ipa_5_md5.nc
+trajin ./open_ipa_5_md6.nc
+trajin ./open_ipa_5_md7.nc
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+strip :IPA
+trajout ../traj_dry_noeq/open_ipa_dry_5.nc
+run
+clear all
+quit

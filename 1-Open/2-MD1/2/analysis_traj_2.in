@@ -1,29 +1,29 @@
 parm open10.parm7
-trajin ./open_2_md1.nc
-trajin ./open_2_md2.nc
-trajin ./open_2_md3.nc
-trajin ./open_2_md4.nc
-trajin ./open_2_md5.nc
-trajin ./open_2_md6.nc
-trajin ./open_2_md7.nc
-trajin ./open_2_md8.nc
-trajin ./open_2_md9.nc
-trajin ./open_2_md10.nc
-trajin ./open_2_md11.nc
-trajin ./open_2_md12.nc
-trajin ./open_2_md13.nc
-trajin ./open_2_md14.nc
-trajin ./open_2_md15.nc
-trajin ./open_2_md16.nc
-trajin ./open_2_md17.nc
-trajin ./open_2_md18.nc
-trajin ./open_2_md19.nc
-trajin ./open_2_md20.nc
-trajin ./open_2_md21.nc
-trajin ./open_2_md22.nc
-trajin ./open_2_md23.nc
-trajin ./open_2_md24.nc
-trajin ./open_2_md25.nc
+trajin ./open_2_md1.nc 1 last 2
+trajin ./open_2_md2.nc 1 last 2
+trajin ./open_2_md3.nc 1 last 2
+trajin ./open_2_md4.nc 1 last 2
+trajin ./open_2_md5.nc 1 last 2
+trajin ./open_2_md6.nc 1 last 2
+trajin ./open_2_md7.nc 1 last 2
+trajin ./open_2_md8.nc 1 last 2
+trajin ./open_2_md9.nc 1 last 2
+trajin ./open_2_md10.nc 1 last 2
+trajin ./open_2_md11.nc 1 last 2
+trajin ./open_2_md12.nc 1 last 2
+trajin ./open_2_md13.nc 1 last 2
+trajin ./open_2_md14.nc 1 last 2
+trajin ./open_2_md15.nc 1 last 2
+trajin ./open_2_md16.nc 1 last 2
+trajin ./open_2_md17.nc 1 last 2
+trajin ./open_2_md18.nc 1 last 2
+trajin ./open_2_md19.nc 1 last 2
+trajin ./open_2_md20.nc 1 last 2
+trajin ./open_2_md21.nc 1 last 2
+trajin ./open_2_md22.nc 1 last 2
+trajin ./open_2_md23.nc 1 last 2
+trajin ./open_2_md24.nc 1 last 2
+trajin ./open_2_md25.nc 1 last 2
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT

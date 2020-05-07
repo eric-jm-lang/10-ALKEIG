@@ -1,28 +1,28 @@
 parm open10.parm7
-trajin ./open_5_md1.nc
-trajin ./open_5_md2.nc
-trajin ./open_5_md3.nc
-trajin ./open_5_md4.nc
-trajin ./open_5_md5.nc
-trajin ./open_5_md6.nc
-trajin ./open_5_md7.nc
-trajin ./open_5_md8.nc
-trajin ./open_5_md9.nc
-trajin ./open_5_md10.nc
-trajin ./open_5_md11.nc
-trajin ./open_5_md12.nc
-trajin ./open_5_md13.nc
-trajin ./open_5_md14.nc
-trajin ./open_5_md15.nc
-trajin ./open_5_md16.nc
-trajin ./open_5_md17.nc
-trajin ./open_5_md18.nc
+trajin ./open_5_md1.nc 1 last 2
+trajin ./open_5_md2.nc 1 last 2
+trajin ./open_5_md3.nc 1 last 2
+trajin ./open_5_md4.nc 1 last 2
+trajin ./open_5_md5.nc 1 last 2
+trajin ./open_5_md6.nc 1 last 2
+trajin ./open_5_md7.nc 1 last 2
+trajin ./open_5_md8.nc 1 last 2
+trajin ./open_5_md9.nc 1 last 2
+trajin ./open_5_md10.nc 1 last 2
+trajin ./open_5_md11.nc 1 last 2
+trajin ./open_5_md12.nc 1 last 2
+trajin ./open_5_md13.nc 1 last 2
+trajin ./open_5_md14.nc 1 last 2
+trajin ./open_5_md15.nc 1 last 2
+trajin ./open_5_md16.nc 1 last 2
+trajin ./open_5_md17.nc 1 last 2
+trajin ./open_5_md18.nc 1 last 2
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT
 strip :Na+
 strip :Cl-
-trajout ../traj_dry_noeq/open_dry_5.nc
+trajout ../traj_dry_noeq/open_dry_10.nc
 run
 clear all
 quit

@@ -1,14 +1,14 @@
 parm closed_ipa_HMR.parm7
-trajin ./closed_ipa_1_md1.nc
-trajin ./closed_ipa_1_md2.nc
-trajin ./closed_ipa_1_md3.nc
-trajin ./closed_ipa_1_md4.nc
-trajin ./closed_ipa_1_md5.nc
-trajin ./closed_ipa_1_md6.nc
-trajin ./closed_ipa_1_md7.nc
-trajin ./closed_ipa_1_md8.nc
-trajin ./closed_ipa_1_md9.nc
-trajin ./closed_ipa_1_md10.nc
+trajin ./closed_ipa_1_md1.nc 1 last 2
+trajin ./closed_ipa_1_md2.nc 1 last 2
+trajin ./closed_ipa_1_md3.nc 1 last 2
+trajin ./closed_ipa_1_md4.nc 1 last 2
+trajin ./closed_ipa_1_md5.nc 1 last 2
+trajin ./closed_ipa_1_md6.nc 1 last 2
+trajin ./closed_ipa_1_md7.nc 1 last 2
+trajin ./closed_ipa_1_md8.nc 1 last 2
+trajin ./closed_ipa_1_md9.nc 1 last 2
+trajin ./closed_ipa_1_md10.nc 1 last 2
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT

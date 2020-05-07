@@ -1,29 +1,29 @@
 parm closed10.parm7
-trajin ./closed_5_md1.nc
-trajin ./closed_5_md2.nc
-trajin ./closed_5_md3.nc
-trajin ./closed_5_md4.nc
-trajin ./closed_5_md5.nc
-trajin ./closed_5_md6.nc
-trajin ./closed_5_md7.nc
-trajin ./closed_5_md8.nc
-trajin ./closed_5_md9.nc
-trajin ./closed_5_md10.nc
-trajin ./closed_5_md11.nc
-trajin ./closed_5_md12.nc
-trajin ./closed_5_md13.nc
-trajin ./closed_5_md14.nc
-trajin ./closed_5_md15.nc
-trajin ./closed_5_md16.nc
-trajin ./closed_5_md17.nc
-trajin ./closed_5_md18.nc
-trajin ./closed_5_md19.nc
-trajin ./closed_5_md20.nc
-trajin ./closed_5_md21.nc
-trajin ./closed_5_md22.nc
-trajin ./closed_5_md23.nc
-trajin ./closed_5_md24.nc
-trajin ./closed_5_md25.nc
+trajin ./closed_5_md1.nc 1 last 2
+trajin ./closed_5_md2.nc 1 last 2
+trajin ./closed_5_md3.nc 1 last 2
+trajin ./closed_5_md4.nc 1 last 2
+trajin ./closed_5_md5.nc 1 last 2
+trajin ./closed_5_md6.nc 1 last 2
+trajin ./closed_5_md7.nc 1 last 2
+trajin ./closed_5_md8.nc 1 last 2
+trajin ./closed_5_md9.nc 1 last 2
+trajin ./closed_5_md10.nc 1 last 2
+trajin ./closed_5_md11.nc 1 last 2
+trajin ./closed_5_md12.nc 1 last 2
+trajin ./closed_5_md13.nc 1 last 2
+trajin ./closed_5_md14.nc 1 last 2
+trajin ./closed_5_md15.nc 1 last 2
+trajin ./closed_5_md16.nc 1 last 2
+trajin ./closed_5_md17.nc 1 last 2
+trajin ./closed_5_md18.nc 1 last 2
+trajin ./closed_5_md19.nc 1 last 2
+trajin ./closed_5_md20.nc 1 last 2
+trajin ./closed_5_md21.nc 1 last 2
+trajin ./closed_5_md22.nc 1 last 2
+trajin ./closed_5_md23.nc 1 last 2
+trajin ./closed_5_md24.nc 1 last 2
+trajin ./closed_5_md25.nc 1 last 2
 center :1-192 mass origin
 image familiar com :1-192
 strip :WAT

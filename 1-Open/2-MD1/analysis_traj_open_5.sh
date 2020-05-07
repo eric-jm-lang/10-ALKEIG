@@ -14,7 +14,7 @@ for i in 1 2 3 4 5; do
   echo "parm open10.parm7" >> analysis_traj_${i}.in
 
   for j in  md1 md2 md3 md4 md5 md6 md7 md8 md9 md10 md11 md12 md13 md14 md15 md16 md17 md18 md19 md20 md21 md22 md23 md24 md25; do
-    echo "trajin ./open_${i}_${j}.nc" >> analysis_traj_${i}.in
+    echo "trajin ./open_${i}_${j}.nc 1 last 2" >> analysis_traj_${i}.in
   done
 
 echo "center :1-192 mass origin

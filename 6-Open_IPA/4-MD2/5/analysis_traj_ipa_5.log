@@ -4,32 +4,32 @@ CPPTRAJ: Trajectory Analysis. V17.00
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 04/17/20 17:09:24
-| Available memory: 108.191 GB
+| Date/time: 05/06/20 15:59:39
+| Available memory: 103.437 GB
 
 INPUT: Reading input from 'STDIN'
   [parm open_ipa_HMR.parm7]
 	Reading 'open_ipa_HMR.parm7' as Amber Topology
 	Radius Set: modified Bondi radii (mbondi)
-  [trajin ./open_ipa_5_md1.nc]
+  [trajin ./open_ipa_5_md1.nc 1 last 2]
 	Reading './open_ipa_5_md1.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md2.nc]
+  [trajin ./open_ipa_5_md2.nc 1 last 2]
 	Reading './open_ipa_5_md2.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md3.nc]
+  [trajin ./open_ipa_5_md3.nc 1 last 2]
 	Reading './open_ipa_5_md3.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md4.nc]
+  [trajin ./open_ipa_5_md4.nc 1 last 2]
 	Reading './open_ipa_5_md4.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md5.nc]
+  [trajin ./open_ipa_5_md5.nc 1 last 2]
 	Reading './open_ipa_5_md5.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md6.nc]
+  [trajin ./open_ipa_5_md6.nc 1 last 2]
 	Reading './open_ipa_5_md6.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md7.nc]
+  [trajin ./open_ipa_5_md7.nc 1 last 2]
 	Reading './open_ipa_5_md7.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md8.nc]
+  [trajin ./open_ipa_5_md8.nc 1 last 2]
 	Reading './open_ipa_5_md8.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md9.nc]
+  [trajin ./open_ipa_5_md9.nc 1 last 2]
 	Reading './open_ipa_5_md9.nc' as Amber NetCDF
-  [trajin ./open_ipa_5_md10.nc]
+  [trajin ./open_ipa_5_md10.nc 1 last 2]
 	Reading './open_ipa_5_md10.nc' as Amber NetCDF
   [center :1-192 mass origin]
     CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
@@ -43,8 +43,10 @@ INPUT: Reading input from 'STDIN'
     STRIP: Stripping atoms in mask [:Na+]
   [strip :Cl-]
     STRIP: Stripping atoms in mask [:Cl-]
-  [trajout ../traj_dry_ipa_noeq/open_ipa_dry_5.nc]
-	Writing '../traj_dry_ipa_noeq/open_ipa_dry_5.nc' as Amber NetCDF
+  [strip :IPA]
+    STRIP: Stripping atoms in mask [:IPA]
+  [trajout ../traj_dry_noeq/open_ipa_dry_5.nc]
+	Writing '../traj_dry_noeq/open_ipa_dry_5.nc' as Amber NetCDF
   [run]
 ---------- RUN BEGIN -------------------------------------------------
 
@@ -52,24 +54,24 @@ PARAMETER FILES (1 total):
  0: open_ipa_HMR.parm7, 47100 atoms, 12350 res, box: Trunc. Oct., 12164 mol, 11216 solvent
 
 INPUT TRAJECTORIES (10 total):
- 0: 'open_ipa_5_md1.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 1: 'open_ipa_5_md2.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 2: 'open_ipa_5_md3.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 3: 'open_ipa_5_md4.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 4: 'open_ipa_5_md5.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 5: 'open_ipa_5_md6.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 6: 'open_ipa_5_md7.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 4000 of 4000)
- 7: 'open_ipa_5_md8.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 10000 of 10000)
- 8: 'open_ipa_5_md9.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 10000 of 10000)
- 9: 'open_ipa_5_md10.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 2000)
-  Coordinate processing will occur on 50000 frames.
+ 0: 'open_ipa_5_md1.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 1: 'open_ipa_5_md2.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 2: 'open_ipa_5_md3.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 3: 'open_ipa_5_md4.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 4: 'open_ipa_5_md5.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 5: 'open_ipa_5_md6.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 6: 'open_ipa_5_md7.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 2000 of 4000)
+ 7: 'open_ipa_5_md8.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 5000 of 10000)
+ 8: 'open_ipa_5_md9.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 5000 of 10000)
+ 9: 'open_ipa_5_md10.nc' is a NetCDF AMBER trajectory, Parm open_ipa_HMR.parm7 (Trunc. Oct. box) (reading 1000 of 2000)
+  Coordinate processing will occur on 25000 frames.
 
 OUTPUT TRAJECTORIES (1 total):
-  'open_ipa_dry_5.nc' (50000 frames) is a NetCDF AMBER trajectory
+  'open_ipa_dry_5.nc' (25000 frames) is a NetCDF AMBER trajectory
 
 BEGIN TRAJECTORY PROCESSING:
 .....................................................
-ACTION SETUP FOR PARM 'open_ipa_HMR.parm7' (5 actions):
+ACTION SETUP FOR PARM 'open_ipa_HMR.parm7' (6 actions):
   0: [center :1-192 mass origin]
 	Mask [:1-192] corresponds to 2808 atoms.
   1: [image familiar com :1-192]
@@ -85,40 +87,43 @@ ACTION SETUP FOR PARM 'open_ipa_HMR.parm7' (5 actions):
   4: [strip :Cl-]
 	Stripping 33 atoms.
 	Stripped topology: 13392 atoms, 1074 res, box: Trunc. Oct., 888 mol
------ open_ipa_5_md1.nc (1-4000, 1) -----
+  5: [strip :IPA]
+	Stripping 10584 atoms.
+	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+----- open_ipa_5_md1.nc (1-4000, 2) -----
  0% 
------ open_ipa_5_md2.nc (1-4000, 1) -----
+----- open_ipa_5_md2.nc (1-4000, 2) -----
 10% 
------ open_ipa_5_md3.nc (1-4000, 1) -----
+----- open_ipa_5_md3.nc (1-4000, 2) -----
 20% 
------ open_ipa_5_md4.nc (1-4000, 1) -----
+----- open_ipa_5_md4.nc (1-4000, 2) -----
 30% 
------ open_ipa_5_md5.nc (1-4000, 1) -----
+----- open_ipa_5_md5.nc (1-4000, 2) -----
 
------ open_ipa_5_md6.nc (1-4000, 1) -----
+----- open_ipa_5_md6.nc (1-4000, 2) -----
 40% 
------ open_ipa_5_md7.nc (1-4000, 1) -----
+----- open_ipa_5_md7.nc (1-4000, 2) -----
 50% 
------ open_ipa_5_md8.nc (1-10000, 1) -----
+----- open_ipa_5_md8.nc (1-10000, 2) -----
 60% 70% 
------ open_ipa_5_md9.nc (1-10000, 1) -----
+----- open_ipa_5_md9.nc (1-10000, 2) -----
 80% 90% 
------ open_ipa_5_md10.nc (1-2000, 1) -----
+----- open_ipa_5_md10.nc (1-2000, 2) -----
 100% Complete.
 
-Read 50000 frames and processed 50000 frames.
-TIME: Avg. throughput= 55.4046 frames / second.
+Read 25000 frames and processed 25000 frames.
+TIME: Avg. throughput= 65.7324 frames / second.
 
 ACTION OUTPUT:
 
 RUN TIMING:
 TIME:		Init               : 0.0000 s (  0.00%)
-TIME:		Trajectory Process : 902.4522 s (100.00%)
+TIME:		Trajectory Process : 380.3297 s (100.00%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
 TIME:		Analysis           : 0.0000 s (  0.00%)
 TIME:		Data File Write    : 0.0000 s (  0.00%)
-TIME:		Other              : 0.0075 s (  0.00%)
-TIME:	Run Total 902.4597 s
+TIME:		Other              : 0.0046 s (  0.00%)
+TIME:	Run Total 380.3344 s
 ---------- RUN END ---------------------------------------------------
   [clear all]
 	Clearing Actions.
@@ -130,7 +135,7 @@ TIME:	Run Total 902.4597 s
 	Clearing data files.
 	Clearing data sets.
   [quit]
-TIME: Total execution time: 903.5915 seconds.
+TIME: Total execution time: 381.3031 seconds.
 --------------------------------------------------------------------------------
 To cite CPPTRAJ use:
 Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for

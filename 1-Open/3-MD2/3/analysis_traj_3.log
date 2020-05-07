@@ -4,49 +4,57 @@ CPPTRAJ: Trajectory Analysis. V17.00
      | \/ | \/ | \/ | 
     _|_/\_|_/\_|_/\_|_
 
-| Date/time: 04/08/20 15:39:03
-| Available memory: 108.085 GB
+| Date/time: 05/07/20 09:00:29
+| Available memory: 96.001 GB
 
 INPUT: Reading input from 'STDIN'
   [parm open10.parm7]
 	Reading 'open10.parm7' as Amber Topology
 	Radius Set: modified Bondi radii (mbondi)
-  [trajin ./open_3_md1.nc]
+  [trajin ./open_3_md1.nc 1 last 2]
 	Reading './open_3_md1.nc' as Amber NetCDF
-  [trajin ./open_3_md2.nc]
+  [trajin ./open_3_md2.nc 1 last 2]
 	Reading './open_3_md2.nc' as Amber NetCDF
-  [trajin ./open_3_md3.nc]
+  [trajin ./open_3_md3.nc 1 last 2]
 	Reading './open_3_md3.nc' as Amber NetCDF
-  [trajin ./open_3_md4.nc]
+  [trajin ./open_3_md4.nc 1 last 2]
 	Reading './open_3_md4.nc' as Amber NetCDF
-  [trajin ./open_3_md5.nc]
+  [trajin ./open_3_md5.nc 1 last 2]
 	Reading './open_3_md5.nc' as Amber NetCDF
-  [trajin ./open_3_md6.nc]
+  [trajin ./open_3_md6.nc 1 last 2]
 	Reading './open_3_md6.nc' as Amber NetCDF
-  [trajin ./open_3_md7.nc]
+  [trajin ./open_3_md7.nc 1 last 2]
 	Reading './open_3_md7.nc' as Amber NetCDF
-  [trajin ./open_3_md8.nc]
+  [trajin ./open_3_md8.nc 1 last 2]
 	Reading './open_3_md8.nc' as Amber NetCDF
-  [trajin ./open_3_md9.nc]
+  [trajin ./open_3_md9.nc 1 last 2]
 	Reading './open_3_md9.nc' as Amber NetCDF
-  [trajin ./open_3_md10.nc]
+  [trajin ./open_3_md10.nc 1 last 2]
 	Reading './open_3_md10.nc' as Amber NetCDF
-  [trajin ./open_3_md11.nc]
+  [trajin ./open_3_md11.nc 1 last 2]
 	Reading './open_3_md11.nc' as Amber NetCDF
-  [trajin ./open_3_md12.nc]
+  [trajin ./open_3_md12.nc 1 last 2]
 	Reading './open_3_md12.nc' as Amber NetCDF
-  [trajin ./open_3_md13.nc]
+  [trajin ./open_3_md13.nc 1 last 2]
 	Reading './open_3_md13.nc' as Amber NetCDF
-  [trajin ./open_3_md14.nc]
+  [trajin ./open_3_md14.nc 1 last 2]
 	Reading './open_3_md14.nc' as Amber NetCDF
-  [trajin ./open_3_md15.nc]
+  [trajin ./open_3_md15.nc 1 last 2]
 	Reading './open_3_md15.nc' as Amber NetCDF
-  [trajin ./open_3_md16.nc]
+  [trajin ./open_3_md16.nc 1 last 2]
 	Reading './open_3_md16.nc' as Amber NetCDF
-  [trajin ./open_3_md17.nc]
+  [trajin ./open_3_md17.nc 1 last 2]
 	Reading './open_3_md17.nc' as Amber NetCDF
-  [trajin ./open_3_md18.nc]
+  [trajin ./open_3_md18.nc 1 last 2]
 	Reading './open_3_md18.nc' as Amber NetCDF
+  [trajin ./open_3_md19.nc 1 last 2]
+	Reading './open_3_md19.nc' as Amber NetCDF
+  [trajin ./open_3_md20.nc 1 last 2]
+	Reading './open_3_md20.nc' as Amber NetCDF
+  [trajin ./open_3_md21.nc 1 last 2]
+	Reading './open_3_md21.nc' as Amber NetCDF
+  [trajin ./open_3_md22.nc 1 last 2]
+	Reading './open_3_md22.nc' as Amber NetCDF
   [center :1-192 mass origin]
     CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
 	coordinate origin.
@@ -59,37 +67,41 @@ INPUT: Reading input from 'STDIN'
     STRIP: Stripping atoms in mask [:Na+]
   [strip :Cl-]
     STRIP: Stripping atoms in mask [:Cl-]
-  [trajout ../traj_dry_noeq/open_dry_3.nc]
-	Writing '../traj_dry_noeq/open_dry_3.nc' as Amber NetCDF
+  [trajout ../traj_dry_noeq/open_dry_8.nc]
+	Writing '../traj_dry_noeq/open_dry_8.nc' as Amber NetCDF
   [run]
 ---------- RUN BEGIN -------------------------------------------------
 
 PARAMETER FILES (1 total):
  0: open10.parm7, 38558 atoms, 12142 res, box: Trunc. Oct., 11956 mol, 11900 solvent
 
-INPUT TRAJECTORIES (18 total):
- 0: 'open_3_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 1: 'open_3_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 2: 'open_3_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 3: 'open_3_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 4: 'open_3_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 5: 'open_3_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 6: 'open_3_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 7: 'open_3_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 8: 'open_3_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 9: 'open_3_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 1000 of 1000)
- 10: 'open_3_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 11: 'open_3_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 12: 'open_3_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 13: 'open_3_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 14: 'open_3_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 15: 'open_3_md16.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 16: 'open_3_md17.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
- 17: 'open_3_md18.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
-  Coordinate processing will occur on 50000 frames.
+INPUT TRAJECTORIES (22 total):
+ 0: 'open_3_md1.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 1: 'open_3_md2.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 2: 'open_3_md3.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 3: 'open_3_md4.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 4: 'open_3_md5.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 5: 'open_3_md6.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 6: 'open_3_md7.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 7: 'open_3_md8.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 8: 'open_3_md9.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 9: 'open_3_md10.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 500 of 1000)
+ 10: 'open_3_md11.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 11: 'open_3_md12.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 12: 'open_3_md13.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 13: 'open_3_md14.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 14: 'open_3_md15.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 15: 'open_3_md16.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 16: 'open_3_md17.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 17: 'open_3_md18.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 18: 'open_3_md19.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 19: 'open_3_md20.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 20: 'open_3_md21.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+ 21: 'open_3_md22.nc' is a NetCDF AMBER trajectory, Parm open10.parm7 (Trunc. Oct. box) (reading 2500 of 5000)
+  Coordinate processing will occur on 35000 frames.
 
 OUTPUT TRAJECTORIES (1 total):
-  'open_dry_3.nc' (50000 frames) is a NetCDF AMBER trajectory
+  'open_dry_8.nc' (35000 frames) is a NetCDF AMBER trajectory
 
 BEGIN TRAJECTORY PROCESSING:
 .....................................................
@@ -109,56 +121,64 @@ ACTION SETUP FOR PARM 'open10.parm7' (5 actions):
   4: [strip :Cl-]
 	Stripping 28 atoms.
 	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
------ open_3_md1.nc (1-1000, 1) -----
+----- open_3_md1.nc (1-1000, 2) -----
  0% 
------ open_3_md2.nc (1-1000, 1) -----
+----- open_3_md2.nc (1-1000, 2) -----
 
------ open_3_md3.nc (1-1000, 1) -----
+----- open_3_md3.nc (1-1000, 2) -----
 
------ open_3_md4.nc (1-1000, 1) -----
+----- open_3_md4.nc (1-1000, 2) -----
 
------ open_3_md5.nc (1-1000, 1) -----
+----- open_3_md5.nc (1-1000, 2) -----
 
------ open_3_md6.nc (1-1000, 1) -----
+----- open_3_md6.nc (1-1000, 2) -----
+
+----- open_3_md7.nc (1-1000, 2) -----
+
+----- open_3_md8.nc (1-1000, 2) -----
 10% 
------ open_3_md7.nc (1-1000, 1) -----
+----- open_3_md9.nc (1-1000, 2) -----
 
------ open_3_md8.nc (1-1000, 1) -----
+----- open_3_md10.nc (1-1000, 2) -----
 
------ open_3_md9.nc (1-1000, 1) -----
-
------ open_3_md10.nc (1-1000, 1) -----
-
------ open_3_md11.nc (1-5000, 1) -----
+----- open_3_md11.nc (1-5000, 2) -----
 20% 
------ open_3_md12.nc (1-5000, 1) -----
-30% 
------ open_3_md13.nc (1-5000, 1) -----
-40% 
------ open_3_md14.nc (1-5000, 1) -----
-50% 
------ open_3_md15.nc (1-5000, 1) -----
-60% 
------ open_3_md16.nc (1-5000, 1) -----
-70% 
------ open_3_md17.nc (1-5000, 1) -----
-80% 
------ open_3_md18.nc (1-5000, 1) -----
-90% 100% Complete.
+----- open_3_md12.nc (1-5000, 2) -----
 
-Read 50000 frames and processed 50000 frames.
-TIME: Avg. throughput= 72.5019 frames / second.
+----- open_3_md13.nc (1-5000, 2) -----
+30% 
+----- open_3_md14.nc (1-5000, 2) -----
+40% 
+----- open_3_md15.nc (1-5000, 2) -----
+
+----- open_3_md16.nc (1-5000, 2) -----
+50% 
+----- open_3_md17.nc (1-5000, 2) -----
+60% 
+----- open_3_md18.nc (1-5000, 2) -----
+70% 
+----- open_3_md19.nc (1-5000, 2) -----
+
+----- open_3_md20.nc (1-5000, 2) -----
+80% 
+----- open_3_md21.nc (1-5000, 2) -----
+90% 
+----- open_3_md22.nc (1-5000, 2) -----
+100% Complete.
+
+Read 35000 frames and processed 35000 frames.
+TIME: Avg. throughput= 54.0915 frames / second.
 
 ACTION OUTPUT:
 
 RUN TIMING:
 TIME:		Init               : 0.0001 s (  0.00%)
-TIME:		Trajectory Process : 689.6369 s (100.00%)
+TIME:		Trajectory Process : 647.0512 s (100.00%)
 TIME:		Action Post        : 0.0000 s (  0.00%)
 TIME:		Analysis           : 0.0000 s (  0.00%)
 TIME:		Data File Write    : 0.0000 s (  0.00%)
-TIME:		Other              : 0.0014 s (  0.00%)
-TIME:	Run Total 689.6384 s
+TIME:		Other              : 0.0020 s (  0.00%)
+TIME:	Run Total 647.0533 s
 ---------- RUN END ---------------------------------------------------
   [clear all]
 	Clearing Actions.
@@ -170,7 +190,7 @@ TIME:	Run Total 689.6384 s
 	Clearing data files.
 	Clearing data sets.
   [quit]
-TIME: Total execution time: 691.1998 seconds.
+TIME: Total execution time: 648.8553 seconds.
 --------------------------------------------------------------------------------
 To cite CPPTRAJ use:
 Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for

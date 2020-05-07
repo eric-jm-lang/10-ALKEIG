@@ -15,7 +15,7 @@ source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
 #
 cd $SLURM_SUBMIT_DIR
 
-for i in 9 10; do
+for i in 5 10; do
   cd $i
 
   $AMBERHOME/bin/cpptraj < analysis_traj_ipa_${i}.in > analysis_traj_ipa_${i}.log
