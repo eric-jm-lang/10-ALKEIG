@@ -6,7 +6,7 @@
 #SBATCH --mail-user=eric.lang@bristol.ac.uk
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=1          # number of tasks
-#SBATCH --ntasks-per-node=1 # number of tasks per node
+#SBATCH --ntasks-per-node=14 # number of tasks per node
 #SBATCH --gres=gpu:1
 #
 module add OpenMPI/2.0.1-gcccuda-2016.10
@@ -16,17 +16,17 @@ source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
 cd $SLURM_SUBMIT_DIR
 #
 old=wat
-for name in min1 min2 min3 min4 min5 min6 heat eq1; do
+for name in min1 min2 min3 min4 min5 min6 heat; do
 
-$AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_2_${name}.mdout -p adapt1_ipa_2_wat_HMR.parm7 -c adapt1_ipa_2_${old}.rst7 -ref adapt1_ipa_2_wat.rst7 -x adapt1_ipa_2_${name}.nc -r adapt1_ipa_2_${name}.rst7 -inf adapt1_ipa_2_${name}.mdinfo
+mpirun -n 12 $AMBERHOME/bin/pmemd.MPI -O -i ${name}.i -o adapt1_ipa_2_${name}.mdout -p adapt1_ipa_2_wat_HMR.parm7 -c adapt1_ipa_2_${old}.rst7 -ref adapt1_ipa_2_wat.rst7 -x adapt1_ipa_2_${name}.nc -r adapt1_ipa_2_${name}.rst7 -inf adapt1_ipa_2_${name}.mdinfo
 
 old=${name}
 
 done
 
-old=eq1
+old=heat
 
-for name in eq2 eq3 eq4 eq5 eq6 eq7 md1; do
+for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 md1; do
 
 $AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_2_${name}.mdout -p adapt1_ipa_2_wat_HMR.parm7 -c adapt1_ipa_2_${old}.rst7 -ref adapt1_ipa_2_wat.rst7 -x adapt1_ipa_2_${name}.nc -r adapt1_ipa_2_${name}.rst7 -inf adapt1_ipa_2_${name}.mdinfo
 

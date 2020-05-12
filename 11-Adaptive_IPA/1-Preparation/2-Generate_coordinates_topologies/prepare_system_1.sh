@@ -141,7 +141,7 @@ quit
 EOF
   parmed -O -i parmed_$i.in > parmed_$i.out
 
-# Delete the temporary files
+# Delete the temporary files and intermediate PDBs
 rm  *.txt *.log *.out *.in *_temp* *_sslink *.lis *_nonprot.pdb *_amb.pdb
 
 done

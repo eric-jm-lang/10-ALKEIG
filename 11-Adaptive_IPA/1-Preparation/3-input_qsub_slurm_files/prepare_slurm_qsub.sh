@@ -12,7 +12,7 @@ echo "#!/bin/bash -login
 #SBATCH --mail-user=eric.lang@bristol.ac.uk
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=1          # number of tasks
-#SBATCH --ntasks-per-node=1 # number of tasks per node
+#SBATCH --ntasks-per-node=14 # number of tasks per node
 #SBATCH --gres=gpu:1
 #
 module add OpenMPI/2.0.1-gcccuda-2016.10
@@ -22,17 +22,17 @@ source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
 cd \$SLURM_SUBMIT_DIR
 #
 old=wat
-for name in min1 min2 min3 min4 min5 min6 heat eq1; do
+for name in min1 min2 min3 min4 min5 min6 heat; do
 
-\$AMBERHOME/bin/pmemd.cuda -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
+mpirun -n 12 \$AMBERHOME/bin/pmemd.MPI -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
 
 old=\${name}
 
 done
 
-old=eq1
+old=heat
 
-for name in eq2 eq3 eq4 eq5 eq6 eq7 md1; do
+for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 md1; do
 
 \$AMBERHOME/bin/pmemd.cuda -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
 
@@ -75,18 +75,9 @@ source /home/el14718/SOFTWARE/amber18/amber.sh
 #
 cd \$PBS_O_WORKDIR
 #
-old=wat
-for name in min1 min2 min3 min4 min5 min6 heat eq1; do
+old=heat
 
-\$AMBERHOME/bin/pmemd.cuda -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
-
-old=\${name}
-
-done
-
-old=eq1
-
-for name in eq2 eq3 eq4 eq5 eq6 eq7 md1; do
+for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 md1; do
 
 \$AMBERHOME/bin/pmemd.cuda -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
 
@@ -110,11 +101,38 @@ done
 
 " >  run.qsub
 
+echo "#!/bin/bash
+#
+#PBS -l select=1:ncpus=24:mpiprocs=24:ompthreads=1
+#PBS -l walltime=3:00:00
+#PBS -j oe
+#PBS -M eric.lang@bristol.ac.uk
+#PBS -m abe
+#PBS -N ipa${i}
+#
+module add lang/intel-parallel-studio-xe/2019.u3
+module add lang/cuda/10.1.105
+export CUDA_HOME=/usr/local/cuda
+export AMBERHOME=/home/el14718/SOFTWARE/amber18
+source /home/el14718/SOFTWARE/amber18/amber.sh
+#
+cd \$PBS_O_WORKDIR
+#
+old=wat
+for name in min1 min2 min3 min4 min5 min6 heat; do
+
+mpiexec \$AMBERHOME/bin/pmemd.MPI -O -i \${name}.i -o adapt1_ipa_${i}_\${name}.mdout -p adapt1_ipa_${i}_wat_HMR.parm7 -c adapt1_ipa_${i}_\${old}.rst7 -ref adapt1_ipa_${i}_wat.rst7 -x adapt1_ipa_${i}_\${name}.nc -r adapt1_ipa_${i}_\${name}.rst7 -inf adapt1_ipa_${i}_\${name}.mdinfo
+
+old=\${name}
+
+done
+" >  minheat.qsub
 
 
   mkdir ../../2-MD1/${i}
   mv run.slurm ../../2-MD1/${i}
   mv run.qsub ../../2-MD1/${i}
+  mv minheat.qsub ../../2-MD1/${i}
   cp *.i ../../2-MD1/${i}
   cp ../2-Generate_coordinates_topologies/adapt1_ipa_${i}_wat_HMR.parm7 ../../2-MD1/${i}/adapt1_ipa_${i}_wat_HMR.parm7
   cp ../2-Generate_coordinates_topologies/adapt1_ipa_${i}_wat.rst7 ../../2-MD1/${i}/adapt1_ipa_${i}_wat.rst7
