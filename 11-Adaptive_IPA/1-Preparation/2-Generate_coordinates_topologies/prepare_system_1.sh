@@ -4,7 +4,7 @@
 # Loop over the number of structures
 for i in {1..25}; do
 	# pdb4amber needed for the proper format and residue numbering
-	pdb4amber -i ../1-rep_struct_with_IPA_1/sample.pdb.${i} -o ${i}_amb.pdb > ${i}.log
+	pdb4amber -i ../1-rep_struct_with_IPA_1/sample.pdb.${i} -o ${i}_amb.pdb --nohyd > ${i}.log
 	
 	sed -i 's/HETATM/ATOM  /g' ${i}_amb.pdb
 
