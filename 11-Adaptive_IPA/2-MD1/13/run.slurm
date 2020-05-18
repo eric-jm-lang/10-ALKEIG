@@ -15,18 +15,28 @@ source /mnt/storage/scratch/el14718/SOFTWARE/amber16-mofified/amber16/amber.sh
 #
 cd $SLURM_SUBMIT_DIR
 #
-old=wat
-for name in min1 min2 min3 min4 min5 min6 heat; do
+#old=wat
+#for name in min1 min2 min3 min4 min5 min6 heat; do
+#
+#mpirun -n 12 $AMBERHOME/bin/pmemd.MPI -O -i ${name}.i -o adapt1_ipa_13_${name}.mdout -p adapt1_ipa_13_wat_HMR.parm7 -c adapt1_ipa_13_${old}.rst7 -ref adapt1_ipa_13_wat.rst7 -x adapt1_ipa_13_${name}.nc -r adapt1_ipa_13_${name}.rst7 -inf adapt1_ipa_13_${name}.mdinfo
+#
+#old=${name}
+#
+#done
 
-mpirun -n 12 $AMBERHOME/bin/pmemd.MPI -O -i ${name}.i -o adapt1_ipa_13_${name}.mdout -p adapt1_ipa_13_wat_HMR.parm7 -c adapt1_ipa_13_${old}.rst7 -ref adapt1_ipa_13_wat.rst7 -x adapt1_ipa_13_${name}.nc -r adapt1_ipa_13_${name}.rst7 -inf adapt1_ipa_13_${name}.mdinfo
+old=heat
+
+for name in eq1 eq2 eq3 eq4 eq5 eq6; do
+
+$AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_13_${name}.mdout -p adapt1_ipa_13_wat_HMR.parm7 -c adapt1_ipa_13_${old}.rst7 -ref adapt1_ipa_13_wat.rst7 -x adapt1_ipa_13_${name}.nc -r adapt1_ipa_13_${name}.rst7 -inf adapt1_ipa_13_${name}.mdinfo
 
 old=${name}
 
 done
 
-old=heat
+old=eq6
 
-for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 md1; do
+for name in eq7 md1; do
 
 $AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_13_${name}.mdout -p adapt1_ipa_13_wat_HMR.parm7 -c adapt1_ipa_13_${old}.rst7 -ref adapt1_ipa_13_wat.rst7 -x adapt1_ipa_13_${name}.nc -r adapt1_ipa_13_${name}.rst7 -inf adapt1_ipa_13_${name}.mdinfo
 

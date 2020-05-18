@@ -1,0 +1,251 @@
+ 
+ University of Bristol ACRC HPC Bluepebble Service
+ -------------------------------------------------
+ Job ipa17, jobid 192672.bp1, username el14718 - started execution at 17 :22:28 Tue 05/12/20 on node bp1-02-02-01.data.bp.acrc.priv
+ 
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:20
+| Available memory: 36.684 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq1.rst7]
+	Reading 'TEMP_adapt1_ipa_17_eq1.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout adapt1_ipa_17_eq1.rst7 restart]
+	Writing 'adapt1_ipa_17_eq1.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: adapt1_ipa_17_wat_HMR.parm7, 53072 atoms, 13962 res, box: Trunc. Oct., 13776 mol, 12692 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_adapt1_ipa_17_eq1.rst7' is an AMBER restart file with velocity info, Parm adapt1_ipa_17_wat_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'adapt1_ipa_17_eq1.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'adapt1_ipa_17_wat_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 53072 atoms.
+	Number of molecules to be imaged is 13776
+	com: mask [:1-192] contains 2808 atoms.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  adapt1_ipa_17_eq1.rst7 (coordinates, velocities, time, box)
+----- TEMP_adapt1_ipa_17_eq1.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 4.9975 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.2001 s ( 99.80%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0004 s (  0.00%)
+TIME:	Run Total 0.2005 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.3664 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+Error: an illegal memory access was encountered launching kernel kNLSkinTest
+cp: cannot stat ‘adapt1_ipa_17_eq2.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq2.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq2.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq2.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:22
+| Available memory: 36.660 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq2.rst7]
+TIME: Total execution time: 0.0825 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq2.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_eq3.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq3.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq3.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq3.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:23
+| Available memory: 36.703 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq3.rst7]
+TIME: Total execution time: 0.0832 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq3.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_eq4.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq4.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq4.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq4.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:24
+| Available memory: 36.677 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq4.rst7]
+TIME: Total execution time: 0.0831 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq4.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_eq5.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq5.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq5.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq5.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:25
+| Available memory: 36.688 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq5.rst7]
+TIME: Total execution time: 0.0835 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq5.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_eq6.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq6.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq6.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq6.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:26
+| Available memory: 36.655 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq6.rst7]
+TIME: Total execution time: 0.0811 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq6.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_eq7.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_eq7.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_eq7.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_eq7.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:27
+| Available memory: 36.713 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_eq7.rst7]
+TIME: Total execution time: 0.0831 seconds.
+
+
+  Unit    9 Error on OPEN: adapt1_ipa_17_eq7.rst7                                                                                                                                                                                                                                          
+PMEMD Terminated Abnormally!
+cp: cannot stat ‘adapt1_ipa_17_md1.rst7’: No such file or directory
+mv: cannot stat ‘adapt1_ipa_17_md1.rst7’: No such file or directory
+Error: 'TEMP_adapt1_ipa_17_md1.rst7': No such file or directory
+Error: Could not set up input trajectory 'TEMP_adapt1_ipa_17_md1.rst7'.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/12/20 17:28:29
+| Available memory: 36.667 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_17_wat_HMR.parm7]
+	Reading 'adapt1_ipa_17_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_17_md1.rst7]
+TIME: Total execution time: 0.0817 seconds.
+

@@ -1,0 +1,151 @@
+ 
+ University of Bristol ACRC HPC Bluepebble Service
+ -------------------------------------------------
+ Job ipa11, jobid 192727.bp1, username el14718 - started execution at 09 :30:49 Thu 05/14/20 on node bp1-02-04-01.data.bp.acrc.priv
+ 
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/14/20 09:46:53
+| Available memory: 8.558 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_11_wat_HMR.parm7]
+	Reading 'adapt1_ipa_11_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_11_eq7.rst7]
+	Reading 'TEMP_adapt1_ipa_11_eq7.rst7' as Amber Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout adapt1_ipa_11_eq7.rst7 restart]
+	Writing 'adapt1_ipa_11_eq7.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: adapt1_ipa_11_wat_HMR.parm7, 50041 atoms, 13132 res, box: Trunc. Oct., 12946 mol, 11927 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_adapt1_ipa_11_eq7.rst7' is an AMBER restart file with velocity info, Parm adapt1_ipa_11_wat_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'adapt1_ipa_11_eq7.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'adapt1_ipa_11_wat_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 50041 atoms.
+	Number of molecules to be imaged is 12946
+	com: mask [:1-192] contains 2808 atoms.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  adapt1_ipa_11_eq7.rst7 (coordinates, velocities, time, box)
+----- TEMP_adapt1_ipa_11_eq7.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 5.3937 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.1854 s ( 99.90%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.1856 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.3438 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.10)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/15/20 19:19:55
+| Available memory: 43.424 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_11_wat_HMR.parm7]
+	Reading 'adapt1_ipa_11_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin TEMP_adapt1_ipa_11_md1.rst7]
+	Reading 'TEMP_adapt1_ipa_11_md1.rst7' as Amber NC Restart
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [trajout adapt1_ipa_11_md1.rst7 restart]
+	Writing 'adapt1_ipa_11_md1.rst7' as Amber Restart
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: adapt1_ipa_11_wat_HMR.parm7, 50041 atoms, 13132 res, box: Trunc. Oct., 12946 mol, 11927 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'TEMP_adapt1_ipa_11_md1.rst7' is a NetCDF AMBER restart file with coordinates, velocities, time, box, Parm adapt1_ipa_11_wat_HMR.parm7 (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'adapt1_ipa_11_md1.rst7' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'adapt1_ipa_11_wat_HMR.parm7' (2 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 50041 atoms.
+	Number of molecules to be imaged is 12946
+	com: mask [:1-192] contains 2808 atoms.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  adapt1_ipa_11_md1.rst7 (coordinates, velocities, time, box)
+----- TEMP_adapt1_ipa_11_md1.rst7 (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 5.2476 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.01%)
+TIME:		Trajectory Process : 0.1906 s ( 99.89%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0002 s (  0.00%)
+TIME:	Run Total 0.1908 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.5678 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

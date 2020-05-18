@@ -11,7 +11,7 @@ Minimization of water, hydrogens atoms and ions with restraints for solute
  ioutfm=1,			        ! Use Binary NetCDF trajectory format (better)
  iwrap=0, 			        ! Wrapping will be performed
  ntxo=1, 			          ! NetCDF file
- ntc=2, ntf=2,                         ! SHAKE on all H
+ ntc=1, ntf=1,                         ! SHAKE on all H
  ntr=1,                 ! Restraints turn on
  restraint_wt=25.0,     ! kcal/mol/A**2 restraint force constant
  restraintmask='!(:WAT,IPA,Na+,Cl-  | @H=)', ! @H=: any atom name starting with H

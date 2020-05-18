@@ -1,0 +1,682 @@
+ 
+ University of Bristol ACRC HPC Bluepebble Service
+ -------------------------------------------------
+ Job ipa11, jobid 192629.bp1, username el14718 - started execution at 16 :43:00 Tue 05/12/20 on node bp1-13-11-01.data.bp.acrc.priv
+ 
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F4A9CCB6555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F4A9D2305F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F4A9DABCC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F4A9DABEBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F4A9DAF1703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F4A9DAEB106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F4A9EABF824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F4A9BD9E505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F9BE53D1555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F9BE594B5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9BE61D7C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9BE61D9BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9BE620C703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F9BE6206106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F9BE71DA824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F9BE44B9505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FF8DC8AE555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FF8DCE285F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF8DD6B4C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF8DD6B6BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF8DD6E9703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FF8DD6E3106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FF8DE6B7824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FF8DB996505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F8C02272555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F8C027EC5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F8C030799EC  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F8C0307ABC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F8C030AD703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F8C030A7106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F8C0407B824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F8C0135A505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FE731313555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FE73188D5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FE732119BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FE73211BBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FE73214E703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FE732148106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FE73311C824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FE7303FB505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FC9F200E555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FC9F25885F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FC9F2E14C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FC9F2E16BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FC9F2E49703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FC9F2E43106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FC9F3E17824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FC9F10F6505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F6F17817555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F6F17D915F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F6F1861DC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F6F1861FBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F6F18652703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F6F1864C106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F6F19620824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F6F168FF505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F506231C555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F50628965F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5063122C68  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5063124BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5063157703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5063151106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F5064125824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F5061404505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FB11EB77555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FB11F0F15F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB11F97DC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB11F97FBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB11F9B2703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB11F9AC106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FB120980824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FB11DC5F505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F0BB76D3555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F0BB7C4D5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F0BB84D9C68  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F0BB84DBBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F0BB850E703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F0BB8508106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F0BB94DC824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F0BB67BB505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FBBBA8C1555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FBBBAE3B5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBBBB6C7C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBBBB6C9BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBBBB6FC703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FBBBB6F6106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FBBBC6CA824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FBBB99A9505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F581FD67555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F58202E15F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5820B6DC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5820B6FBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5820BA2703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5820B9C106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F5821B70824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F581EE4F505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FB65BBAF555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FB65C1295F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB65C9B5C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB65C9B7BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB65C9EA703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FB65C9E4106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FB65D9B8824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FB65AC97505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F6327788555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F6327D025F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F632858EC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F6328590BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F63285C3703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F63285BD106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F6329591824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F6326870505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FA269E05555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FA26A37F5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA26AC0BC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA26AC0DBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA26AC40703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FA26AC3A106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FA26BC0E824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FA268EED505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F5D969A6555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F5D96F205F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5D977ACC68  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5D977AEBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5D977E1703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F5D977DB106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F5D987AF824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F5D95A8E505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F0424AA7555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F04250215F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F04258ADC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F04258AFBC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F04258E2703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F04258DC106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F04268B0824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F0423B8F505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F00BBFFD555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F00BC5775F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F00BCE03C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F00BCE05BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F00BCE38703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F00BCE32106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F00BDE06824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F00BB0E5505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F29F2AA8555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F29F30225F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F29F38AEC63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F29F38B0BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F29F38E3703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F29F38DD106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F29F48B1824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F29F1B90505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FAF6A600555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FAF6AB7A5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FAF6B406C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FAF6B408BC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FAF6B43B703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007FAF6B435106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007FAF6C409824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FAF696E8505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007EFDD1512555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007EFDD1A8C5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007EFDD2318C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007EFDD231ABC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007EFDD234D703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007EFDD2347106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007EFDD331B824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007EFDD05FA505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F3E39DE2555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F3E3A35C5F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F3E3ABE8C63  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F3E3ABEABC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F3E3AC1D703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F3E3AC17106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F3E3BBEB824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F3E38ECA505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F87DEEC2555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F87DF43C5F0  Unknown               Unknown  Unknown
+libsockets-fi.so   00007F872DA34574  Unknown               Unknown  Unknown
+libsockets-fi.so   00007F872DA35620  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F87DFE59612  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F87DFCC8C22  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F87DFCCABC2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F87DFCFD703  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F87DFCF7106  MPI_Bcast             Unknown  Unknown
+libmpifort.so.12.  00007F87E0CCB824  pmpi_bcast            Unknown  Unknown
+pmemd.MPI          00000000005F8F94  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053BDCA  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F87DDFAA505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F023C19F555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F023C7195F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F023C7186BD  write                 Unknown  Unknown
+libmpi.so.12.0.0   00007F023D80F869  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F023D80EAE2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F023D129382  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00007F023CDFB3C5  MPI_Abort             Unknown  Unknown
+libmpifort.so.12.  00007F023DFA712D  mpi_abort             Unknown  Unknown
+pmemd.MPI          0000000000815B21  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000615EE1  Unknown               Unknown  Unknown
+pmemd.MPI          00000000005F9B93  Unknown               Unknown  Unknown
+pmemd.MPI          000000000053B2F5  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007F023B287505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 9, file /work/el14718/10-ALKEIG/11-Adaptive_IPA/2-MD1/11/adapt1_ipa_11_min1.rst7
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FDF6C6367B6  for__io_return        Unknown  Unknown
+libifcoremt.so.5   00007FDF6C674C60  for_read_seq_fmt      Unknown  Unknown
+pmemd.MPI          0000000000802649  Unknown               Unknown  Unknown
+pmemd.MPI          000000000054A742  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000539CD8  Unknown               Unknown  Unknown
+pmemd.MPI          0000000000406232  Unknown               Unknown  Unknown
+libc-2.17.so       00007FDF6B733505  __libc_start_main     Unknown  Unknown
+pmemd.MPI          0000000000406139  Unknown               Unknown  Unknown
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 141042 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   EXIT STATUS: 24
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 141043 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 141044 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 141045 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 141046 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 141047 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 141048 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 141049 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 141050 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 141051 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 141052 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 141053 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 141054 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 141055 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 141056 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 141057 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 16 PID 141058 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 141059 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 141060 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 19 PID 141061 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 20 PID 141062 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 21 PID 141063 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 22 PID 141064 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 141065 RUNNING AT bp1-13-11-01.data.bp.acrc.priv
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+  Unit    9 Error on OPEN: adapt1_ipa_11_min2.rst7                                                                                                                                                                                                                                         
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F7F2695F555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F7F26ED95F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F7F26ED6533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FDE11F5E555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FDE124D85F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FDE124D5533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F87278B4555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F8727E2E5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F8727E2B533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F82C557C555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F82C5AF65F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F82C5AF3533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F8760BCD555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F87611475F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F8761144533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F8B9E306555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F8B9E8805F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F8B9E87D533  pthread_spin_lock     Unknown  Unknown
+
+  Unit    9 Error on OPEN: adapt1_ipa_11_min3.rst7                                                                                                                                                                                                                                         
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FA6C5402555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FA6C597C5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FA6C5979533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FD8464A7555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FD846A215F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FD846A1E530  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FA4E21C9555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FA4E27435F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FA4E2740533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FC8298E8555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FC829E625F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FC829E5F533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F2839842555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F2839DBC5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F2839DB9533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F4367E14555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F436838E5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F436838B533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F1F4489E555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F1F44E185F0  Unknown               Unknown  Unknown
+libsockets-fi.so   00007F1E9340C960  Unknown               Unknown  Unknown
+
+  Unit    9 Error on OPEN: adapt1_ipa_11_min4.rst7                                                                                                                                                                                                                                         
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F59177EE555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F5917D685F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F5917D65530  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FE5480F6555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FE5486705F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FE54866D533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FE028FF1555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FE02956B5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FE029568530  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007EFDF63E2555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007EFDF695C5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007EFDF6959533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F297F217555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F297F7915F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F297F78E533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F553F2D4555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F553F84E5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F553F84B533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F7D9F630555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F7D9FBAA5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F7D9FBA7533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FF3E69E8555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FF3E6F625F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FF3E6F5F570  pthread_spin_init     Unknown  Unknown
+
+  Unit    9 Error on OPEN: adapt1_ipa_11_min5.rst7                                                                                                                                                                                                                                         
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FAA05826555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FAA05DA05F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FAA05D9D533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F7489D73555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F748A2ED5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F748A2EA533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F9D3B45A555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F9D3B9D45F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F9D3B9D1533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FF998114555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FF99868E5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FF99868B533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F0FEFFE4555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F0FF055E5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F0FF055B533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F791F313555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F791F88D5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F791F88A533  pthread_spin_lock     Unknown  Unknown
+
+  Unit    9 Error on OPEN: adapt1_ipa_11_min6.rst7                                                                                                                                                                                                                                         
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F74F3A60555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F74F3FDA5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F74F3FD7530  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F8348906555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F8348E805F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F8348E7D533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007FD62EBD3555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007FD62F14D5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007FD62F14A533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F50C0F51555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F50C14CB5F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F50C14C8533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F9C34B99555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F9C351135F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F9C35110533  pthread_spin_lock     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libifcoremt.so.5   00007F34BF2C8555  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00007F34BF8425F0  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F34BF83F533  pthread_spin_lock     Unknown  Unknown

@@ -15,9 +15,20 @@ source /home/el14718/SOFTWARE/amber18/amber.sh
 #
 cd $PBS_O_WORKDIR
 #
+
 old=heat
 
-for name in eq1 eq2 eq3 eq4 eq5 eq6 eq7 md1; do
+for name in eq1 eq2 eq3 eq4 eq5 eq6; do
+
+$AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_16_${name}.mdout -p adapt1_ipa_16_wat_HMR.parm7 -c adapt1_ipa_16_${old}.rst7 -ref adapt1_ipa_16_wat.rst7 -x adapt1_ipa_16_${name}.nc -r adapt1_ipa_16_${name}.rst7 -inf adapt1_ipa_16_${name}.mdinfo
+
+old=${name}
+
+done
+
+old=eq6
+
+for name in eq7 md1; do
 
 $AMBERHOME/bin/pmemd.cuda -O -i ${name}.i -o adapt1_ipa_16_${name}.mdout -p adapt1_ipa_16_wat_HMR.parm7 -c adapt1_ipa_16_${old}.rst7 -ref adapt1_ipa_16_wat.rst7 -x adapt1_ipa_16_${name}.nc -r adapt1_ipa_16_${name}.rst7 -inf adapt1_ipa_16_${name}.mdinfo
 

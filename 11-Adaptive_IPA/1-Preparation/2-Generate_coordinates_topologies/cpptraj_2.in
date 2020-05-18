@@ -1,0 +1,8 @@
+parm adapt1_ipa_2_wat.parm7
+trajin adapt1_ipa_2_wat_temp.rst7
+principal :1-192 dorotation mass
+center :1-192 mass origin
+trajout adapt1_ipa_2_wat.rst7
+trajout adapt1_ipa_2_wat.pdb
+run
+quit
