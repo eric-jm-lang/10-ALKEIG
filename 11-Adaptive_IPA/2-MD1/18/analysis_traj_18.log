@@ -1,0 +1,99 @@
+
+CPPTRAJ: Trajectory Analysis. V17.00
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/18/20 14:16:34
+| Available memory: 103.463 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm adapt1_ipa_18_wat_HMR.parm7]
+	Reading 'adapt1_ipa_18_wat_HMR.parm7' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin ./adapt1_ipa_18_md1.nc 1 last 1]
+	Reading './adapt1_ipa_18_md1.nc' as Amber NetCDF
+  [center :1-192 mass origin]
+    CENTER: Centering coordinates using center of mass of atoms in mask (:1-192) to
+	coordinate origin.
+  [image familiar com :1-192]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape centering on atoms in mask :1-192.
+  [strip :WAT]
+    STRIP: Stripping atoms in mask [:WAT]
+  [strip :Na+]
+    STRIP: Stripping atoms in mask [:Na+]
+  [strip :Cl-]
+    STRIP: Stripping atoms in mask [:Cl-]
+  [strip :IPA]
+    STRIP: Stripping atoms in mask [:IPA]
+  [trajout ../traj_dry_noeq/adapt1_ipa_dry_18.nc]
+	Writing '../traj_dry_noeq/adapt1_ipa_dry_18.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: adapt1_ipa_18_wat_HMR.parm7, 55405 atoms, 14654 res, box: Trunc. Oct., 14468 mol, 13353 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'adapt1_ipa_18_md1.nc' is a NetCDF AMBER trajectory, Parm adapt1_ipa_18_wat_HMR.parm7 (Trunc. Oct. box) (reading 5000 of 5000)
+  Coordinate processing will occur on 5000 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'adapt1_ipa_dry_18.nc' (5000 frames) is a NetCDF AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'adapt1_ipa_18_wat_HMR.parm7' (6 actions):
+  0: [center :1-192 mass origin]
+	Mask [:1-192] corresponds to 2808 atoms.
+  1: [image familiar com :1-192]
+	Mask [*] corresponds to 55405 atoms.
+	Number of molecules to be imaged is 14468
+	com: mask [:1-192] contains 2808 atoms.
+  2: [strip :WAT]
+	Stripping 40059 atoms.
+	Stripped topology: 15346 atoms, 1301 res, box: Trunc. Oct., 1115 mol
+  3: [strip :Na+]
+	Stripping 32 atoms.
+	Stripped topology: 15314 atoms, 1269 res, box: Trunc. Oct., 1083 mol
+  4: [strip :Cl-]
+	Stripping 38 atoms.
+	Stripped topology: 15276 atoms, 1231 res, box: Trunc. Oct., 1045 mol
+  5: [strip :IPA]
+	Stripping 12468 atoms.
+	Stripped topology: 2808 atoms, 192 res, box: Trunc. Oct., 6 mol
+----- adapt1_ipa_18_md1.nc (1-5000, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 5000 frames and processed 5000 frames.
+TIME: Avg. throughput= 45.4584 frames / second.
+
+ACTION OUTPUT:
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 109.9907 s ( 99.98%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0201 s (  0.00%)
+TIME:	Run Total 110.0109 s
+---------- RUN END ---------------------------------------------------
+  [clear all]
+	Clearing Actions.
+	Clearing input trajectories/ensembles.
+	Clearing reference coordinates.
+	Clearing output trajectories.
+	Clearing topologies.
+	Clearing Analyses.
+	Clearing data files.
+	Clearing data sets.
+  [quit]
+TIME: Total execution time: 110.3786 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

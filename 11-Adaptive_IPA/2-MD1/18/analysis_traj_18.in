@@ -1,0 +1,12 @@
+parm adapt1_ipa_18_wat_HMR.parm7
+trajin ./adapt1_ipa_18_md1.nc 1 last 1
+center :1-192 mass origin
+image familiar com :1-192
+strip :WAT
+strip :Na+
+strip :Cl-
+strip :IPA
+trajout ../traj_dry_noeq/adapt1_ipa_dry_18.nc
+run
+clear all
+quit
