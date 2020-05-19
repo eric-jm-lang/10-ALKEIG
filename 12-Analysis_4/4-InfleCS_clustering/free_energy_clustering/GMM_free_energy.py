@@ -521,7 +521,7 @@ class FreeEnergyClustering(object):
 
 		return
 
-	def visualize(self,title="Free energy landscape", fontsize=30, savefig=True, xlabel='x', ylabel='y', zlabel='z', vmax=7.5,
+	def visualize(self,title="Free energy landscape", fontsize=30, savefig=True, xlabel='x', ylabel='y', zlabel='z', vmax=7.5, colormap='nipy_spectral',
 				  n_contour_levels=15, show_data=False, figsize= [12, 10], filename='free_energy_landscape', dx=1, ax=None):
 
 		if self.n_dims_ > 3:
@@ -529,7 +529,7 @@ class FreeEnergyClustering(object):
 			return
 		
 		# Set custom colormaps
-		my_cmap = matplotlib.cm.get_cmap('jet')
+		my_cmap = matplotlib.cm.get_cmap(colormap)
 		my_cmap.set_over('white')
 		my_cmap_cont = matplotlib.colors.ListedColormap(['black'])
 		my_cmap_cont.set_over('white')
@@ -542,41 +542,43 @@ class FreeEnergyClustering(object):
 				ax = fig.add_subplot(1, 1, 1)
 			else:
 				ax = fig.add_subplot(111, projection='3d')
-		ax.tick_params(labelsize=fontsize - 2)
+		ax.tick_params(labelsize=fontsize)
 
-		plt.tick_params(axis='both', which='major', labelsize=fontsize-4)
+		plt.tick_params(axis='both', which='major', labelsize=fontsize)
 
 		for tick in ax.get_xticklabels():
-			tick.set_fontname("Serif")
-			tick.set_fontweight('light')
+			tick.set_fontname("Arial")
+			# tick.set_fontweight('light')
 		
 		for tick in ax.get_yticklabels():
-			tick.set_fontname("Serif")
-			tick.set_fontweight('light')
+			tick.set_fontname("Arial")
+			# tick.set_fontweight('light')
 
 		# Plot free energy landscape
 		FE_landscape = np.copy(self.FE_landscape_)
-		FE_landscape[self.FE_landscape_ > vmax+0.5] = vmax+0.5
+		FE_landscape[self.FE_landscape_ > vmax+0.1] = vmax+0.1
+
 
 		if self.n_dims_ == 2:
 			ctf = ax.contourf(self.coords_[0], self.coords_[1], FE_landscape, n_contour_levels, cmap=my_cmap, vmin=0, vmax=vmax)
 			cb=plt.colorbar(ctf, label='[kcal/mol]')
 			text = cb.ax.yaxis.label
-			font = matplotlib.font_manager.FontProperties(size=fontsize-3,family='serif',weight='light')
+			font = matplotlib.font_manager.FontProperties(size=fontsize,family='Arial',weight='light')
 			text.set_font_properties(font)
-			cb.ax.tick_params(labelsize=fontsize-2)
+			cb.ax.tick_params(labelsize=fontsize)
 
 			for tick in cb.ax.get_yticklabels():
-				tick.set_fontname("Serif")
-				tick.set_fontweight('light')
+				tick.set_fontname("Arial")
+				# tick.set_fontweight('light')
 
 			ax.set_ylim([self.coords_[1].min(), self.coords_[1].max()])
-			ax.set_ylabel(ylabel, fontsize=fontsize - 2,fontname='serif',fontweight='light')
+			ax.set_ylabel(ylabel, fontsize=fontsize,fontname='Arial',fontweight='light')
+			ax.set_aspect('equal')
 		elif self.n_dims_ == 1:
 			if self.standard_error_FE_ is not None:
 				ax.fill_between(self.coords_[0], FE_landscape - self.standard_error_FE_, FE_landscape + self.standard_error_FE_, color='k', alpha=0.2,zorder=2)
 			ax.plot(self.coords_[0], FE_landscape, linewidth=3,color='k',zorder=1)
-			ax.set_ylabel('Free energy [kcal/mol]',fontsize=fontsize-2,fontname='serif',fontweight='light')
+			ax.set_ylabel('Free energy [kcal/mol]',fontsize=fontsize,fontname='Arial',fontweight='light')
 		else:
 			sc = ax.scatter(self.data_[::dx,0], self.data_[::dx,1], self.data_[::dx,2], s=30, c=self.FE_points_[::dx], alpha=0.8, cmap=my_cmap, vmin=0, vmax=vmax, edgecolor='k')
 			
@@ -585,12 +587,12 @@ class FreeEnergyClustering(object):
 			
 			cb=plt.colorbar(sc,label='[kcal/mol]')
 			text = cb.ax.yaxis.label
-			font = matplotlib.font_manager.FontProperties(size=fontsize-3,family='serif',weight='light')
+			font = matplotlib.font_manager.FontProperties(size=fontsize,family='Arial',weight='light')
 			text.set_font_properties(font)
-			cb.ax.tick_params(labelsize=fontsize-2)
+			cb.ax.tick_params(labelsize=fontsize)
 			
-			ax.set_ylabel(ylabel, fontsize=fontsize - 2,fontname='serif',fontweight='light')
-			ax.set_zlabel(zlabel, fontsize=fontsize - 2,fontname='serif',fontweight='light')
+			ax.set_ylabel(ylabel, fontsize=fontsize,fontname='Arial',fontweight='light')
+			ax.set_zlabel(zlabel, fontsize=fontsize,fontname='Arial',fontweight='light')
 		
 		ax.set_xlim([self.coords_[0].min(), self.coords_[0].max()])
 		
@@ -611,9 +613,9 @@ class FreeEnergyClustering(object):
 					ax.scatter(self.data_[self.labels_>0], self.FE_points_[self.labels_>0], s=50, c=self.labels_[self.labels_>0],
 						   edgecolor='k', cmap=my_cmap, label='Intermediate state',alpha=0.8,zorder=4)
 				if fontsize > 18:
-					plt.legend(fontsize=fontsize-10,facecolor=[0.9,0.9,0.92])
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 				else:
-					plt.legend(fontsize=fontsize-4,facecolor=[0.9,0.9,0.92])
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 			else:
 				if self.n_dims_ > 1:
 					ax.scatter(self.data_[:, 0], self.data_[:, 1], s=30, c=[0.67, 0.67, 0.65],alpha=0.5)
@@ -631,9 +633,9 @@ class FreeEnergyClustering(object):
 						ax.plot(p[:, 0], p[:, 1], color=[43.0/256.0,46.0/256.0,60.0/256.0], linewidth=5, marker='')
 				
 				if fontsize > 18:
-					plt.legend(fontsize=fontsize-10,facecolor=[0.9,0.9,0.92])
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 				else:
-					plt.legend(fontsize=fontsize-4,facecolor=[0.9,0.9,0.92])
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 			
 			# Plot cluster centers in landscape
 			if self.cluster_centers_ is not None:
@@ -644,14 +646,14 @@ class FreeEnergyClustering(object):
 					ax.scatter(self.data_[self.cluster_centers_], self.FE_points_[self.cluster_centers_], marker='s', s=120,
 						   linewidth=4, facecolor='',edgecolor='w', label='Cluster center',zorder=5)					
 				if fontsize > 18:
-					plt.legend(fontsize=fontsize-10,facecolor=[0.9,0.9,0.92])
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 				else:
-					plt.legend(fontsize=fontsize-4,facecolor=[0.9,0.9,0.92])
-		ax.set_title(title, fontsize=fontsize,fontname='serif',fontweight='light')
-		ax.set_xlabel(xlabel, fontsize=fontsize - 2,fontname='serif',fontweight='light')
-		plt.rc('xtick', labelsize=fontsize-2)
-		plt.rc('ytick', labelsize=fontsize-2)
-		matplotlib.rc('font',family='Serif')
+					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
+		ax.set_title(title, fontsize=fontsize,fontname='Arial',fontweight='light')
+		ax.set_xlabel(xlabel, fontsize=fontsize,fontname='Arial',fontweight='light')
+		plt.rc('xtick', labelsize=fontsize)
+		plt.rc('ytick', labelsize=fontsize)
+		matplotlib.rc('font',family='Arial')
 
 		if savefig:
 			plt.savefig(filename + '.svg')
