@@ -9,6 +9,7 @@ import free_energy_clustering as FEC
 import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 class FreeEnergyClustering(object):
 
@@ -67,7 +68,7 @@ class FreeEnergyClustering(object):
 		self.bias_factors_ = bias_factors
 
 		self.BICs_ = []
-		
+
 		if data_weights is not None or bias_factors is not None:
 			use_data_weights = True
 			# Convert data weights to the right format
@@ -89,7 +90,7 @@ class FreeEnergyClustering(object):
 			print('   temperature = ' + str(temperature))
 			print('   min_n_components = ' + str(min_n_components))
 			print('   max_n_components = ' + str(max_n_components))
-			print('   n_components_step = ' + str(n_components_step))			
+			print('   n_components_step = ' + str(n_components_step))
 			print('   Using weighted data: ' + str(use_data_weights))
 			print('*----------------------------------------------------------------------------*')
 		return
@@ -120,7 +121,7 @@ class FreeEnergyClustering(object):
 			coords = self._get_grid_coords()
 		else:
 			coords = self.coords_
-		
+
 		if self.n_dims_ == 1:
 			densities = density_est.density(coords[0][:,np.newaxis])
 			return coords, densities
@@ -150,9 +151,9 @@ class FreeEnergyClustering(object):
 		print('Estimating standard error.')
 		n_points = self.data_.shape[0]
 		n_data_points = int(n_points/n_data_blocks)
-		
+
 		free_energies = []
-	
+
 		for i in range(n_data_blocks):
 
 			if i != n_data_blocks-1:
@@ -162,11 +163,11 @@ class FreeEnergyClustering(object):
 
 			if self.n_dims_ == 1:
 				data = data[:,np.newaxis]
-			
+
 			_, density_model = self._fit_FE(data, set_density_model=False)
 			_, density = self._density_landscape(density_model)
 			free_energies.append(self._free_energy(density))
-		
+
 		free_energies = np.asarray(free_energies)
 		self.standard_error_FE_ = np.std(free_energies,axis=0)/np.sqrt(n_data_blocks-1)
 		print('Standard error estimation done.')
@@ -323,12 +324,12 @@ class FreeEnergyClustering(object):
 			ICs = np.asarray(ICs)
 			model_weights = np.exp(-0.5 *(ICs-ICs.min()))
 			model_weights /= model_weights.sum()
-			
+
 			# Fit mixture of density estimators using the validation data
 			density_est = FEC.LandscapeStacker(data, list_of_validation_data, list_of_GMMs, n_splits=1,
 														convergence_tol=self.convergence_tol_, n_iterations=self.n_iterations_,
 														model_weights=model_weights)
-			
+
 			density = density_est.density(data_orig)
 			if set_density_model:
 					self.density_est_ = density_est
@@ -354,18 +355,18 @@ class FreeEnergyClustering(object):
 				gmm = list_of_GMMs[model_ind]
 				best_n_components = gmm.weights_.shape[0]
 				density_est = GMM.GaussianMixture(n_components=best_n_components)
-	
+
 				print('Identifying final model with ' + str(density_est.n_components_) + ' components.')
-				
+
 				density_est.weights_ = gmm.weights_
 				density_est.means_ = gmm.means_
 				density_est.covariances_ = gmm.covariances_
 
 			density = density_est.density(data_orig)
-		
+
 			if set_density_model:
 				self.density_est_ = density_est
-		
+
 		if set_density_model:
 			# Compute test set loglikelihood on the test set if test set exists
 			if n_points_test > 0:
@@ -378,7 +379,7 @@ class FreeEnergyClustering(object):
 		"""
 		Computing free energy landscape with
 		G(x) = -kT*log(p(x|T))
-		Returns the X,Y coordinate matrices (meshgrid) and 
+		Returns the X,Y coordinate matrices (meshgrid) and
 		their corresponding free energy.
 		"""
 
@@ -386,7 +387,7 @@ class FreeEnergyClustering(object):
 			FE_points = self._fit_FE(self.data_[:,np.newaxis])
 		else:
 			FE_points = self._fit_FE(self.data_)
-		
+
 		print('Evaluating density in landscape')
 		coords, density = self._density_landscape(self.density_est_)
 
@@ -409,9 +410,9 @@ class FreeEnergyClustering(object):
 		"""
 		density = self.density_est_.density(data)
 		free_energy = self._free_energy(density)
-		if self.min_FE_ is not None:		
+		if self.min_FE_ is not None:
 			free_energy -= self.min_FE_
-		
+
 		return free_energy
 
 	def population_states(self, n_sampled_points=10000):
@@ -465,7 +466,7 @@ class FreeEnergyClustering(object):
 
 		print('Clustering free energy landscape...')
 		self.cl_ = FEC.LandscapeClustering(self.stack_landscapes_,verbose=self.verbose_)
-		
+
 		if eval_points is not None and unravel_grid:
 			tmp_points = []
 			for x in points:
@@ -474,21 +475,21 @@ class FreeEnergyClustering(object):
 
 		if len(points.shape) == 1:
 			points = points[:,np.newaxis]
-		
+
 
 		if eval_points is not None:
 			if len(eval_points.shape) == 1:
 				eval_points = eval_points[:,np.newaxis]
-		
+
 		self.labels_, self.is_FE_min = self.cl_.cluster(self.density_est_, points, eval_points=eval_points, use_FE_landscape=use_FE_landscape, transition_matrix=self.transition_matrix_)
-		
+
 		self.core_labels_ = np.copy(self.labels_)
-		
+
 		if eval_points is not None:
 			self.cluster_centers_ = self.cl_.get_cluster_representative(eval_points, self.labels_, free_energies)
 		else:
 			self.cluster_centers_ = self.cl_.get_cluster_representative(points, self.labels_, free_energies)
-		
+
 		if assign_transition_points:
 			if eval_points is not None:
 				self.labels_ = self.cl_.assign_transition_points(self.labels_, eval_points, self.density_est_)
@@ -521,13 +522,16 @@ class FreeEnergyClustering(object):
 
 		return
 
-	def visualize(self,title="Free energy landscape", fontsize=30, savefig=True, xlabel='x', ylabel='y', zlabel='z', vmax=7.5, colormap='nipy_spectral',
-				  n_contour_levels=15, show_data=False, figsize= [12, 10], filename='free_energy_landscape', dx=1, ax=None):
+	def visualize(self,title="Free energy landscape", fontsize=30, savefig=True, xlabel='x', ylabel='y', zlabel='z', vmax=7.5, colormap='nipy_spectral', lim=0.1,
+                      n_contour_levels=15, show_data=False, figsize= [12, 10], transition_point_size=1, core_point_size=5, core_point_edgecolor='k', colormap2='spectral',
+                      clust_point_edgecolor='w', clust_point_facecolor='', clust_point_size=5, clust_point_linewidth=4, clust_point_marker='s',legend=None,
+                      extend='neither', rmsd_point_size=20, rmsd_point_fontsize=8, filename='free_energy_landscape', dx=1, ax=None, #constrained_layout=True,
+                      core_point_alpha=0.8, transition_point_alpha=0.5):
 
 		if self.n_dims_ > 3:
 			print('Plotting does not support > 3 dimensions')
 			return
-		
+
 		# Set custom colormaps
 		my_cmap = matplotlib.cm.get_cmap(colormap)
 		my_cmap.set_over('white')
@@ -535,6 +539,7 @@ class FreeEnergyClustering(object):
 		my_cmap_cont.set_over('white')
 
 		plt.rcParams['figure.figsize'] = figsize
+		# plt.rcParams['figure.constrained_layout.use'] = constrained_layout
 
 		if ax is None:
 			fig = plt.figure()
@@ -549,21 +554,25 @@ class FreeEnergyClustering(object):
 		for tick in ax.get_xticklabels():
 			tick.set_fontname("Arial")
 			# tick.set_fontweight('light')
-		
+
 		for tick in ax.get_yticklabels():
 			tick.set_fontname("Arial")
 			# tick.set_fontweight('light')
 
+
+
 		# Plot free energy landscape
 		FE_landscape = np.copy(self.FE_landscape_)
-		FE_landscape[self.FE_landscape_ > vmax+0.1] = vmax+0.1
+		FE_landscape[self.FE_landscape_ > vmax+lim] = vmax+lim
 
 
 		if self.n_dims_ == 2:
-			ctf = ax.contourf(self.coords_[0], self.coords_[1], FE_landscape, n_contour_levels, cmap=my_cmap, vmin=0, vmax=vmax)
-			cb=plt.colorbar(ctf, label='[kcal/mol]')
+			ctf = ax.contourf(self.coords_[0], self.coords_[1], FE_landscape, n_contour_levels, cmap=my_cmap, vmin=0, vmax=vmax, extend=extend)
+			divider = make_axes_locatable(ax)
+			cax = divider.append_axes("right", size="5%", pad=0.2)
+			cb=plt.colorbar(ctf, cax=cax, label='Free energy (kcal/mol)')
 			text = cb.ax.yaxis.label
-			font = matplotlib.font_manager.FontProperties(size=fontsize,family='Arial',weight='light')
+			font = matplotlib.font_manager.FontProperties(size=fontsize,family='Arial')
 			text.set_font_properties(font)
 			cb.ax.tick_params(labelsize=fontsize)
 
@@ -572,32 +581,45 @@ class FreeEnergyClustering(object):
 				# tick.set_fontweight('light')
 
 			ax.set_ylim([self.coords_[1].min(), self.coords_[1].max()])
-			ax.set_ylabel(ylabel, fontsize=fontsize,fontname='Arial',fontweight='light')
+			ax.set_ylabel(ylabel, fontsize=fontsize,fontname='Arial')
 			ax.set_aspect('equal')
+
+			ax.set_xticks(np.arange(0, 5, 0.5))
+			ax.set_yticks(np.arange(0, 5, 0.5))
+
+			ax.scatter(x=0.0, y=3.1458, s=rmsd_point_size, c="midnightblue", marker="s")
+			ax.scatter(x=3.1458, y=0.0, s=rmsd_point_size, c="midnightblue", marker="s")
+
+			ax.set_aspect('equal')
+			ax.text(0.1, 3.2458, "Closed \ncrystal \nstructure", c="black", fontsize=rmsd_point_fontsize)
+			ax.text(3.2458, 0.1, "Open \ncrystal \nstructure", c="black", fontsize=rmsd_point_fontsize)
+
+
 		elif self.n_dims_ == 1:
 			if self.standard_error_FE_ is not None:
 				ax.fill_between(self.coords_[0], FE_landscape - self.standard_error_FE_, FE_landscape + self.standard_error_FE_, color='k', alpha=0.2,zorder=2)
 			ax.plot(self.coords_[0], FE_landscape, linewidth=3,color='k',zorder=1)
-			ax.set_ylabel('Free energy [kcal/mol]',fontsize=fontsize,fontname='Arial',fontweight='light')
+			ax.set_ylabel('Free energy [kcal/mol]',fontsize=fontsize,fontname='Arial')
 		else:
 			sc = ax.scatter(self.data_[::dx,0], self.data_[::dx,1], self.data_[::dx,2], s=30, c=self.FE_points_[::dx], alpha=0.8, cmap=my_cmap, vmin=0, vmax=vmax, edgecolor='k')
-			
+
 			ax.set_ylim([self.coords_[1].min(), self.coords_[1].max()])
 			ax.set_zlim([self.coords_[2].min(), self.coords_[2].max()])
-			
-			cb=plt.colorbar(sc,label='[kcal/mol]')
+
+			cb=plt.colorbar(sc,label='Free energy (kcal/mol)')
 			text = cb.ax.yaxis.label
 			font = matplotlib.font_manager.FontProperties(size=fontsize,family='Arial',weight='light')
 			text.set_font_properties(font)
 			cb.ax.tick_params(labelsize=fontsize)
-			
+
 			ax.set_ylabel(ylabel, fontsize=fontsize,fontname='Arial',fontweight='light')
 			ax.set_zlabel(zlabel, fontsize=fontsize,fontname='Arial',fontweight='light')
-		
+
 		ax.set_xlim([self.coords_[0].min(), self.coords_[0].max()])
-		
+
 		# Plot projected data points
 		if show_data and self.n_dims_ < 3:
+			my_cmap2 = matplotlib.cm.get_cmap(colormap2)
 
 			# Plot projected data points
 			if self.labels_ is not None:
@@ -605,17 +627,16 @@ class FreeEnergyClustering(object):
 					transition_points=self.data_[self.labels_==0]
 					core_points = self.data_[self.labels_ > 0]
 					core_labels = self.labels_[self.labels_>0]
-					ax.scatter(transition_points[::dx, 0], transition_points[::dx, 1], s=30, c=0.67*np.ones((transition_points[::dx].shape[0],3)),alpha=0.5)
-					ax.scatter(core_points[::dx, 0], core_points[::dx, 1], s=80, c=core_labels[::dx],
-						   edgecolor='k', cmap=my_cmap, label='Intermediate state',alpha=0.8)
+					ax.scatter(transition_points[::dx, 0], transition_points[::dx, 1], s=transition_point_size, c=0.67*np.ones((transition_points[::dx].shape[0],3)),alpha=transition_point_alpha)
+					ax.scatter(core_points[::dx, 0], core_points[::dx, 1], s=core_point_size, c=core_labels[::dx],
+						   edgecolor=core_point_edgecolor, cmap=my_cmap2, label='Intermediate state',alpha=core_point_alpha)
 				else:
-					ax.scatter(self.data_[self.labels_==0], self.FE_points_[self.labels_==0], s=30, c=[0.67, 0.67, 0.65],alpha=0.6,zorder=3)
-					ax.scatter(self.data_[self.labels_>0], self.FE_points_[self.labels_>0], s=50, c=self.labels_[self.labels_>0],
-						   edgecolor='k', cmap=my_cmap, label='Intermediate state',alpha=0.8,zorder=4)
-				if fontsize > 18:
+					ax.scatter(self.data_[self.labels_==0], self.FE_points_[self.labels_==0], s=transition_point_size, c=[0.67, 0.67, 0.65],alpha=0.6,zorder=3)
+					ax.scatter(self.data_[self.labels_>0], self.FE_points_[self.labels_>0], s=core_point_size, c=self.labels_[self.labels_>0],
+						   edgecolor=core_point_edgecolor, cmap=my_cmap2, label='Intermediate state',alpha=0.8,zorder=4)
+				if legend is not None:
 					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
-				else:
-					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
+
 			else:
 				if self.n_dims_ > 1:
 					ax.scatter(self.data_[:, 0], self.data_[:, 1], s=30, c=[0.67, 0.67, 0.65],alpha=0.5)
@@ -631,33 +652,32 @@ class FreeEnergyClustering(object):
 						set_pathway_label = False
 					else:
 						ax.plot(p[:, 0], p[:, 1], color=[43.0/256.0,46.0/256.0,60.0/256.0], linewidth=5, marker='')
-				
+
 				if fontsize > 18:
 					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
 				else:
 					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
-			
+
 			# Plot cluster centers in landscape
 			if self.cluster_centers_ is not None:
 				if self.n_dims_ > 1:
-					ax.scatter(self.data_[self.cluster_centers_,0], self.data_[self.cluster_centers_,1], marker='s', s=120,
-						   linewidth=4, facecolor='',edgecolor='w', label='Cluster center')
+					ax.scatter(self.data_[self.cluster_centers_,0], self.data_[self.cluster_centers_,1], marker=clust_point_marker, s=clust_point_size,
+						   linewidth=clust_point_linewidth, facecolor=clust_point_facecolor,edgecolor=clust_point_edgecolor, label='Cluster center')
 				else:
 					ax.scatter(self.data_[self.cluster_centers_], self.FE_points_[self.cluster_centers_], marker='s', s=120,
-						   linewidth=4, facecolor='',edgecolor='w', label='Cluster center',zorder=5)					
-				if fontsize > 18:
+						   linewidth=4, facecolor='',edgecolor='w', label='Cluster center',zorder=5)
+				if legend is not None:
 					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
-				else:
-					plt.legend(fontsize=fontsize,facecolor=[0.9,0.9,0.92])
-		ax.set_title(title, fontsize=fontsize,fontname='Arial',fontweight='light')
-		ax.set_xlabel(xlabel, fontsize=fontsize,fontname='Arial',fontweight='light')
+
+		ax.set_title(title, fontsize=fontsize,fontname='Arial')
+		ax.set_xlabel(xlabel, fontsize=fontsize,fontname='Arial')
 		plt.rc('xtick', labelsize=fontsize)
 		plt.rc('ytick', labelsize=fontsize)
 		matplotlib.rc('font',family='Arial')
+		plt.tight_layout()
+
 
 		if savefig:
-			plt.savefig(filename + '.svg')
-			plt.savefig(filename + '.eps')
-			plt.savefig(filename + '.png')
+			plt.savefig(filename + '.png', dpi=600)
 
 		return
