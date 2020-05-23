@@ -526,7 +526,7 @@ class FreeEnergyClustering(object):
                       n_contour_levels=15, show_data=False, figsize= [12, 10], transition_point_size=1, core_point_size=5, core_point_edgecolor='k', colormap2='spectral',
                       clust_point_edgecolor='w', clust_point_facecolor='', clust_point_size=5, clust_point_linewidth=4, clust_point_marker='s',legend=None,
                       extend='neither', rmsd_point_size=20, rmsd_point_fontsize=8, filename='free_energy_landscape', dx=1, ax=None, #constrained_layout=True,
-                      core_point_alpha=0.8, transition_point_alpha=0.5):
+                      core_point_alpha=0.8, transition_point_alpha=0.5, rmsd_point_color="midnightblue", rmsd_point_marker="s", surface_alpha=1):
 
 		if self.n_dims_ > 3:
 			print('Plotting does not support > 3 dimensions')
@@ -567,7 +567,7 @@ class FreeEnergyClustering(object):
 
 
 		if self.n_dims_ == 2:
-			ctf = ax.contourf(self.coords_[0], self.coords_[1], FE_landscape, n_contour_levels, cmap=my_cmap, vmin=0, vmax=vmax, extend=extend)
+			ctf = ax.contourf(self.coords_[0], self.coords_[1], FE_landscape, n_contour_levels, cmap=my_cmap, vmin=0, vmax=vmax, extend=extend, alpha=surface_alpha)
 			divider = make_axes_locatable(ax)
 			cax = divider.append_axes("right", size="5%", pad=0.2)
 			cb=plt.colorbar(ctf, cax=cax, label='Free energy (kcal/mol)')
@@ -587,8 +587,8 @@ class FreeEnergyClustering(object):
 			ax.set_xticks(np.arange(0, 5, 0.5))
 			ax.set_yticks(np.arange(0, 5, 0.5))
 
-			ax.scatter(x=0.0, y=3.1458, s=rmsd_point_size, c="midnightblue", marker="s")
-			ax.scatter(x=3.1458, y=0.0, s=rmsd_point_size, c="midnightblue", marker="s")
+			ax.scatter(x=0.0, y=3.1458, s=rmsd_point_size, c=rmsd_point_color, marker=rmsd_point_marker)
+			ax.scatter(x=3.1458, y=0.0, s=rmsd_point_size, c=rmsd_point_color, marker=rmsd_point_marker)
 
 			ax.set_aspect('equal')
 			ax.text(0.1, 3.2458, "Closed \ncrystal \nstructure", c="black", fontsize=rmsd_point_fontsize)
