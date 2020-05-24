@@ -13,3 +13,5 @@
 *.p
 *.pickle
 slurm-*
+*-checkpoint.ipynb
+*.pyc
