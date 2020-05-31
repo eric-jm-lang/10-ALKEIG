@@ -10,8 +10,7 @@
 *.OLD
 *.old
 *.bck
-*.p
-*.pickle
 slurm-*
 *-checkpoint.ipynb
 *.pyc
+*.pickle
