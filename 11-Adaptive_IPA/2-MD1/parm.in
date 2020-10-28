@@ -1,0 +1,10 @@
+parm ./1/adapt1_ipa_1_wat_HMR.parm7
+parmstrip :WAT
+parmstrip :Na+
+parmstrip :Cl-
+parmwrite out ./traj_dry_ipa_noeq/adapt1_ipa_dry.parm7
+parm ./1/adapt1_ipa_1_wat_HMR.parm7
+parmstrip :WAT
+parmstrip :Na+
+parmstrip :Cl-
+parmwrite out ./traj_dry_ipa_noeq/adapt1_ipa_dry.parm7

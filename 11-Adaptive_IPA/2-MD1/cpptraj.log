@@ -1,0 +1,11 @@
+# 06/04/20 12:28:47
+quit
+# 06/04/20 12:39:32
+parm ./1/adapt1_ipa_1_wat_HMR.parm7
+parmstrip :WAT
+parmstrip :Na+
+parmstrip :Cl-
+parmwrite out ./traj_dry_ipa_noeq/adapt1_ipa_dry.parm7
+run
+ls traj_dry_ipa_noeq
+quit

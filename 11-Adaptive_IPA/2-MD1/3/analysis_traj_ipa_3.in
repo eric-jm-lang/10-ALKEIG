@@ -1,0 +1,8 @@
+parm adapt1_ipa_3_wat_HMR.parm7
+trajin ./adapt1_ipa_3_wat.rst7
+strip :WAT
+strip :Na+
+strip :Cl-
+trajout ../traj_dry_ipa_noeq/adapt1_ipa_dry_3.rst7
+run
+quit
