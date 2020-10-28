@@ -1,0 +1,11 @@
+# 07/20/20 11:43:01
+parm adapt1_ipa_dry_5.parm7
+trajin adapt1_ipa_dry_5_aligned.nc
+watershell ":1-192" out watershell_out.dat noimage ":IPA"
+# 07/20/20 11:49:15
+parm adapt1_ipa_dry_5.parm7
+trajin adapt1_ipa_dry_5_aligned.nc first last 50
+trajin adapt1_ipa_dry_5_aligned.nc 1 last 50
+watershell ":1-192" out watershell_out.dat noimage ":IPA"
+run
+quit
