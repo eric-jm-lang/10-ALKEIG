@@ -526,7 +526,7 @@ class FreeEnergyClustering(object):
                       n_contour_levels=15, show_data=False, figsize= [12, 10], transition_point_size=1, core_point_size=5, core_point_edgecolor='k', colormap2='spectral',
                       clust_point_edgecolor='w', clust_point_facecolor='', clust_point_size=5, clust_point_linewidth=4, clust_point_marker='s',legend=None,
                       extend='neither', rmsd_point_size=20, rmsd_point_fontsize=8, filename='free_energy_landscape', dx=1, ax=None, #constrained_layout=True,
-                      core_point_alpha=0.8, transition_point_alpha=0.5, rmsd_point_color="midnightblue", rmsd_point_marker="s", surface_alpha=1):
+                      core_point_alpha=0.8, transition_point_alpha=0.5, rmsd_point_color="midnightblue", rmsd_point_marker="s", surface_alpha=1, core_point_marker='.'):
 
 		if self.n_dims_ > 3:
 			print('Plotting does not support > 3 dimensions')
@@ -628,7 +628,7 @@ class FreeEnergyClustering(object):
 					core_points = self.data_[self.labels_ > 0]
 					core_labels = self.labels_[self.labels_>0]
 					ax.scatter(transition_points[::dx, 0], transition_points[::dx, 1], s=transition_point_size, c=0.67*np.ones((transition_points[::dx].shape[0],3)),alpha=transition_point_alpha)
-					ax.scatter(core_points[::dx, 0], core_points[::dx, 1], s=core_point_size, c=core_labels[::dx],
+					ax.scatter(core_points[::dx, 0], core_points[::dx, 1], s=core_point_size, c=core_labels[::dx],marker=core_point_marker,
 						   edgecolor=core_point_edgecolor, cmap=my_cmap2, label='Intermediate state',alpha=core_point_alpha)
 				else:
 					ax.scatter(self.data_[self.labels_==0], self.FE_points_[self.labels_==0], s=transition_point_size, c=[0.67, 0.67, 0.65],alpha=0.6,zorder=3)
